@@ -1,3 +1,5 @@
+> Original build spec (21 Nov, 12:00). Current behaviour: README.md and DECISIONS.md.
+
 # Follow the Rupee: build spec (hand this to Claude Code)
 
 Synthetic data only. Label it in the footer: "Synthetic dataset, Claude Impact Lab Mumbai. Flags are evidence for review, not verdicts."

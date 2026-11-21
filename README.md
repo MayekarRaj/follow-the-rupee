@@ -57,7 +57,7 @@ When a ward officer changes a flag's status, the citizen's trail shows that ward
 - Adds an audit layer to BMC's existing systems (the Pothole Tracking System, the Measurement Book and the Unified Schedule of Rates). It doesn't replace any of them.
 - The complaint trail could supply status replies for BMC's existing WhatsApp assistant (MyBMC Assist) rather than building a new channel.
 - Accessibility follows India's UX4G and GIGW 3.0 standards: WCAG 2.1 AA, A−/A/A+ text size, English/मराठी/हिंदी, keyboard navigation, readable at 200% zoom.
-- Every decision and the reason for it are in **[DECISIONS.md](DECISIONS.md)** (D1–D111). Design rules are in [DESIGN.md](DESIGN.md). [SPEC.md](SPEC.md) is the original build spec.
+- Every decision and the reason for it are in **[DECISIONS.md](DECISIONS.md)** (D1–D112). Design rules are in [DESIGN.md](DESIGN.md). [SPEC.md](SPEC.md) is the original build spec.
 
 ## Run it
 ```bash
