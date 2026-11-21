@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { cleanName, inr } from "@/lib/format";
-import { useData, type Flag, type Summary, type WorkOrderEvidence } from "@/lib/data";
+import { useData, type Flag, type Summary, type Ward, type WorkOrderEvidence } from "@/lib/data";
 import { NEXT_STEP, whyFlagged } from "@/lib/flagInfo";
 import { usePrefs } from "@/lib/prefs";
 import {
@@ -12,6 +12,7 @@ import {
   useStatuses,
 } from "@/lib/status";
 import Drawer from "./Drawer";
+import EscalationSheet from "./EscalationSheet";
 import Stamp, { stampFor } from "./Stamp";
 import SourceTag from "./SourceTag";
 import StatusTag from "./StatusTag";
@@ -272,6 +273,8 @@ export default function FlagDrawer({
     fallback: boolean;
   } | null>(null);
   const [loading, setLoading] = useState(false);
+  const [escOpen, setEscOpen] = useState(false);
+  const { data: wards } = useData<Ward[]>("wards.json");
 
   async function runExplain() {
     setLoading(true);
@@ -404,6 +407,12 @@ export default function FlagDrawer({
           </p>
         </div>
         <StatusPanel flag={flag} />
+        <button
+          onClick={() => setEscOpen(true)}
+          className="mt-3 min-h-11 w-full border border-ink px-3 text-sm font-semibold text-ink hover:bg-road/25"
+        >
+          {t("esc.draft")}
+        </button>
       </Part>
 
       <button
@@ -428,6 +437,18 @@ export default function FlagDrawer({
         </p>
       )}
       <p className="mt-4 text-xs text-ink/70">{t("oneLine")}</p>
+      {escOpen && (
+        <EscalationSheet
+          flag={{ ...flag, original: original ?? flag.original ?? null }}
+          ward={{
+            ward_code: flag.ward,
+            ward_name:
+              wards?.find((w) => w.ward_code === flag.ward)?.ward_name ??
+              flag.ward,
+          }}
+          onClose={() => setEscOpen(false)}
+        />
+      )}
     </Drawer>
   );
 }

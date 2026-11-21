@@ -247,3 +247,33 @@ Every significant decision, with the reason for it. Format: **Decision**, then *
 
 **D79. Checked in Chrome on the dev server at port 3002, 1440 px wide, one screenshot per change: sidebar brand, `/fits-bmc`, the citizen trail for BMC25-004490 (tags on steps 1, 2, 3, 4 and 6), and the DLP flag drawer for WO25-01723. `tsc --noEmit` is clean and the console had no errors on a fresh load. Not checked: 390 px width, Marathi/Hindi on the new page, the DUPLICATE_BILL drawer with tags, and the collapsed rail with the new icon.**
 *Why:* Records what was actually tested. One hydration warning appeared right after a hot-reload edit to the brand block; it was gone after reload.
+
+**D80. "Draft escalation note" button added at the bottom of part 3 "What to do next" in the flag drawer. It opens a modal sheet (`components/EscalationSheet.tsx`, rendered in a portal) with EN / मराठी toggle, Copy text, Print and Close. Esc closes only the sheet, not the drawer under it. No data files changed.**
+*Why:* The next step in part 3 ends with someone writing a note upstairs; the draft sits right where that step is described. The portal keeps the print CSS simple.
+
+**D81. The model writes only five pieces (Sub:, two Ref: lines, the intro sentence, the ground text, "Action requested"), returned as JSON. Everything else is fixed or computed in code (`lib/escalation.ts`): the office header, To:, the particulars table (WO, contractor, method, area, billed, rate card, ratio, completed date), the four ground headings, signature block, Encl. and copy list. Amounts, ratios and dates are pre-formatted in code ("Rs. 3,15,328/-", dd/mm/yyyy) and the model is told to copy them.**
+*Why:* A table of rupee figures must not depend on the model getting arithmetic or formatting right. The prose still reads like a drafted note.
+
+**D82. Which ground is ticked is decided in code, not by the model: OVERBILLED, DUPLICATE_BILL and DLP_REVIEW → Ground 2 "Excess item & financial variation"; DLP_PAID → Ground 4 "Risk & cost action under Defects Liability". Exactly one box is ticked; all four headings are printed, only the ticked one has text. Ground 2 for DLP_REVIEW is worded "verify whether linked to resurfacing". Duplicates cite both WOs and both amounts; DLP_PAID cites the resurfaced date. The marker is "[x]" / "[ ]" plus a screen-reader "Ticked:" label, so it is not colour-only.**
+*Why:* Follows the instruction literally and makes "exactly one" impossible to break. Grounds 1 and 3 (delay, utility hindrance) cannot be shown from this data, so they are never ticked.
+
+**D83. Brackets kept where the data has nothing: Outward No., Date, office address, PIN, zone/central office, officer name. Forwarding officer is "[Sub-Engineer] (Roads Department)", with a copy to the Assistant Commissioner of the ward. "Roads Department" is my assumption for the department line. The template's "Sub-Engineer / Assistant Engineer" copy line is replaced by "Office Copy / Work Order Master File". Encl. lists the work order copy and an "audit flag evidence extract", not the template's hindrance register, notices and site photographs (the data has none).**
+*Why:* Brackets make it obvious what the officer must fill in. Listing enclosures we cannot produce would be false.
+
+**D84. Wording guard: the prompt forbids fraud / corruption / theft and requires "for verification and recovery if confirmed". The server also rejects any reply that contains those words (English or Marathi equivalents), is not valid JSON, or lacks the work order id. A rejected reply returns 502 and the client uses the local template.**
+*Why:* The wording rule in CLAUDE.md should hold even if the model slips. Checking the WO id catches a reply written for the wrong record.
+
+**D85. Language: `lang` is "en" or "mr" only (Hindi is not offered on the sheet). Marathi is written by the model, keeping ids, names, numbers and dates in Latin characters. The sheet language is independent of the app language. Cached by WO id + lang on the server (in memory) and in the browser for the session. max_tokens 1500 for this mode, no sentence trimming (JSON must not be cut).**
+*Why:* Matches the requested EN / मराठी toggle. A Marathi reply that runs past 1500 tokens fails the JSON check and falls back to the template, which is the safe outcome.
+
+**D86. Fallback: on any API error, bad reply or missing key, the browser fills the same sheet from `localNote()` using the flag's own fields (EN and Marathi). The sheet then shows "AI drafting unavailable. Filled from the flag's own fields." (screen only, not printed). The Marathi template text is hand-written and has not been reviewed by a Marathi speaker.**
+*Why:* The demo must never break. The fallback is plain but correct since every figure comes from the record.
+
+**D87. The sheet heading uses the serif face (IBM Plex Serif), which DESIGN.md reserves for ₹ figures and KPIs. Exception made because the request asked for a serif heading and the sheet imitates a printed office note. Body text stays Plex Sans / Devanagari. Ruled lines: double rule under the masthead, ruled particulars table, hairline between grounds. The top line "Draft for officer review · format modelled on BMC office notes · synthetic data" is part of the sheet, so it prints too (translated for Marathi). No BMC logo or emblem.**
+*Why:* A printed copy must not be mistaken for an official note once it leaves the screen.
+
+**D88. Print: `@media print` in `globals.css` hides everything in `body` except the sheet root (`.esc-root`), drops the toolbar (`.no-print`), the page border and the dark overlay, and sets 16 mm page margins. List items and table rows avoid page breaks.**
+*Why:* Matches "print shows only the sheet". The print dialog itself was not opened in this check.
+
+**D89. Checked in Chrome at 1440 px, one screenshot: F/N ward, first duplicate flag (WO25-02479 against WO25-02032) → live Claude draft (header, To:, Sub:, Ref:, intro and the start of the particulars table visible). Also called the API directly for a duplicate in S ward (worked; found "(synthetic)" in the contractor and a "Ground 2:" prefix, both fixed by cleaning the contractor name in the prompt and stripping the prefix). `tsc --noEmit` and eslint are clean. Not checked: the lower half of the sheet (grounds, signature), Marathi, the local fallback, Copy, the actual print preview, 390 px width, the other three flag types.**
+*Why:* Records what was actually tested, per the "one screenshot" instruction.

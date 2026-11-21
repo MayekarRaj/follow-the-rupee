@@ -86,3 +86,39 @@ html:lang(mr) *:not(:lang(en)),
 html:lang(hi) *:not(:lang(en)) {
   letter-spacing: normal !important;
 }
+
+/* Escalation note: print only the sheet (components/EscalationSheet.tsx). */
+@media print {
+  @page {
+    margin: 16mm;
+  }
+  body > *:not(.esc-root) {
+    display: none !important;
+  }
+  body {
+    overflow: visible !important;
+    background: #fff !important;
+  }
+  .esc-root {
+    position: static !important;
+    inset: auto !important;
+    overflow: visible !important;
+    background: #fff !important;
+    padding: 0 !important;
+  }
+  .esc-root > div {
+    max-width: none !important;
+  }
+  .esc-root .no-print {
+    display: none !important;
+  }
+  .esc-sheet {
+    border: 0 !important;
+    padding: 0 !important;
+    font-size: 11pt;
+  }
+  .esc-sheet li,
+  .esc-sheet tr {
+    break-inside: avoid;
+  }
+}
