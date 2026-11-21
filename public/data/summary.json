@@ -1,0 +1,41 @@
+{
+ "total_spend_inr": 134328183,
+ "work_orders": 2499,
+ "flag_counts": {
+  "DLP_PAID": 270,
+  "DLP_REVIEW": 217,
+  "OVERBILLED": 109,
+  "DUPLICATE_BILL": 45
+ },
+ "flagged_excess_inr": 16860178,
+ "flagged_work_orders": 621,
+ "overbill_watchlist": [
+  "WO25-00018",
+  "WO25-00045",
+  "WO25-00342",
+  "WO25-00372",
+  "WO25-00405",
+  "WO25-00359",
+  "WO25-01389",
+  "WO25-02490",
+  "WO25-02291"
+ ],
+ "open_complaints_after_noise": 853,
+ "open_complaints_linked_to_road": 850,
+ "link_methods": {
+  "road_name": 291,
+  "gps": 260,
+  "road_name+gps": 245,
+  "locality": 54,
+  "unlinked ": 3
+ },
+ "thresholds": {
+  "overbill_ratio": 1.5,
+  "dup_window_days": 10,
+  "surface_work_types": [
+   "Broken paver blocks",
+   "Pothole",
+   "Road cave-in"
+  ]
+ }
+}

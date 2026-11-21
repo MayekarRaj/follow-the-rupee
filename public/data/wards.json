@@ -1,0 +1,968 @@
+[
+ {
+  "ward_code": "A",
+  "ward_name": "Colaba, Fort, Churchgate",
+  "budget_inr": 1600000,
+  "spend_inr": 1655330,
+  "utilisation_pct": 103.5,
+  "remaining_inr": -55330,
+  "jobs": 29,
+  "low_lying_index": 0.35,
+  "spend_by_contractor": {
+   "Mithi Infra Projects (synthetic)": 592238,
+   "Mahalaxmi Civil Contractors (synthetic)": 339671,
+   "Arabian Sea Engineering (synthetic)": 263681,
+   "Deccan Paving Solutions (synthetic)": 159249,
+   "Western Coast Asphalt Co (synthetic)": 155457,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 72625,
+   "Sahyadri Infra Works (synthetic)": 54576,
+   "Shivneri Construction (synthetic)": 17833
+  },
+  "spend_by_method": {
+   "Excavation, pipeline repair, PQC patch": 610896,
+   "Paver blocks relaid": 285181,
+   "Drain desilting": 238033,
+   "Cold mix patch": 185467,
+   "Desilting and garbage removal": 84687,
+   "Hot mix patch": 77291,
+   "Dewatering pump deployed": 70770,
+   "Manhole cover replaced + grating": 55707,
+   "Mastic asphalt": 47298
+  },
+  "failed_fix_spend_inr": 582099,
+  "flagged_excess_inr": 278223,
+  "flags": {
+   "DLP_PAID": 7,
+   "DLP_REVIEW": 2,
+   "OVERBILLED": 1,
+   "DUPLICATE_BILL": 1
+  },
+  "sla_met_pct": 65.5
+ },
+ {
+  "ward_code": "B",
+  "ward_name": "Dongri, Masjid Bunder",
+  "budget_inr": 4300000,
+  "spend_inr": 3507952,
+  "utilisation_pct": 81.6,
+  "remaining_inr": 792048,
+  "jobs": 44,
+  "low_lying_index": 0.55,
+  "spend_by_contractor": {
+   "Konkan Roadcon Pvt Ltd (synthetic)": 781363,
+   "Sahyadri Infra Works (synthetic)": 766738,
+   "Mahalaxmi Civil Contractors (synthetic)": 617836,
+   "Arabian Sea Engineering (synthetic)": 527095,
+   "Western Coast Asphalt Co (synthetic)": 249736,
+   "Shivneri Construction (synthetic)": 244465,
+   "Deccan Paving Solutions (synthetic)": 204427,
+   "Mithi Infra Projects (synthetic)": 116292
+  },
+  "spend_by_method": {
+   "Drain desilting": 968703,
+   "Pump + debris removal": 673302,
+   "Desilting and garbage removal": 532479,
+   "Dewatering pump deployed": 490832,
+   "Excavation, pipeline repair, PQC patch": 410330,
+   "Manhole cover replaced + grating": 170132,
+   "Mastic asphalt": 124400,
+   "Cold mix patch": 84721,
+   "Paver blocks relaid": 41778,
+   "Hot mix patch": 11275
+  },
+  "failed_fix_spend_inr": 578915,
+  "flagged_excess_inr": 594537,
+  "flags": {
+   "OVERBILLED": 5,
+   "DLP_REVIEW": 2,
+   "DLP_PAID": 1
+  },
+  "sla_met_pct": 56.8
+ },
+ {
+  "ward_code": "C",
+  "ward_name": "Kalbadevi, Bhuleshwar, Marine Lines",
+  "budget_inr": 900000,
+  "spend_inr": 796803,
+  "utilisation_pct": 88.5,
+  "remaining_inr": 103197,
+  "jobs": 20,
+  "low_lying_index": 0.45,
+  "spend_by_contractor": {
+   "Sahyadri Infra Works (synthetic)": 237077,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 196539,
+   "Arabian Sea Engineering (synthetic)": 124811,
+   "Mahalaxmi Civil Contractors (synthetic)": 88368,
+   "Shivneri Construction (synthetic)": 73924,
+   "Deccan Paving Solutions (synthetic)": 27860,
+   "Western Coast Asphalt Co (synthetic)": 26950,
+   "Mithi Infra Projects (synthetic)": 21274
+  },
+  "spend_by_method": {
+   "Excavation, pipeline repair, PQC patch": 381063,
+   "Cold mix patch": 113876,
+   "Mastic asphalt": 103828,
+   "Paver blocks relaid": 81343,
+   "Hot mix patch": 66884,
+   "Manhole cover replaced + grating": 49809
+  },
+  "failed_fix_spend_inr": 247660,
+  "flagged_excess_inr": 142598,
+  "flags": {
+   "DLP_PAID": 4,
+   "OVERBILLED": 2,
+   "DLP_REVIEW": 1
+  },
+  "sla_met_pct": 65.0
+ },
+ {
+  "ward_code": "D",
+  "ward_name": "Grant Road, Malabar Hill, Tardeo",
+  "budget_inr": 1600000,
+  "spend_inr": 1272300,
+  "utilisation_pct": 79.5,
+  "remaining_inr": 327700,
+  "jobs": 40,
+  "low_lying_index": 0.4,
+  "spend_by_contractor": {
+   "Sahyadri Infra Works (synthetic)": 393630,
+   "Mithi Infra Projects (synthetic)": 234744,
+   "Deccan Paving Solutions (synthetic)": 202114,
+   "Shivneri Construction (synthetic)": 139203,
+   "Arabian Sea Engineering (synthetic)": 135966,
+   "Mahalaxmi Civil Contractors (synthetic)": 86287,
+   "Western Coast Asphalt Co (synthetic)": 65099,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 15257
+  },
+  "spend_by_method": {
+   "Desilting and garbage removal": 307528,
+   "Hot mix patch": 187676,
+   "Excavation, pipeline repair, PQC patch": 172034,
+   "Cold mix patch": 153813,
+   "Manhole cover replaced + grating": 134094,
+   "Mastic asphalt": 122940,
+   "Dewatering pump deployed": 98931,
+   "Paver blocks relaid": 95284
+  },
+  "failed_fix_spend_inr": 235027,
+  "flagged_excess_inr": 346720,
+  "flags": {
+   "DLP_PAID": 7,
+   "DLP_REVIEW": 3,
+   "OVERBILLED": 1,
+   "DUPLICATE_BILL": 1
+  },
+  "sla_met_pct": 55.0
+ },
+ {
+  "ward_code": "E",
+  "ward_name": "Byculla, Agripada, Mumbai Central",
+  "budget_inr": 5300000,
+  "spend_inr": 6322991,
+  "utilisation_pct": 119.3,
+  "remaining_inr": -1022991,
+  "jobs": 118,
+  "low_lying_index": 0.7,
+  "spend_by_contractor": {
+   "Western Coast Asphalt Co (synthetic)": 1207172,
+   "Arabian Sea Engineering (synthetic)": 988038,
+   "Deccan Paving Solutions (synthetic)": 924949,
+   "Sahyadri Infra Works (synthetic)": 714863,
+   "Mahalaxmi Civil Contractors (synthetic)": 705721,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 668983,
+   "Shivneri Construction (synthetic)": 661453,
+   "Mithi Infra Projects (synthetic)": 451812
+  },
+  "spend_by_method": {
+   "Drain desilting": 1550852,
+   "Pump + debris removal": 1034163,
+   "Dewatering pump deployed": 834303,
+   "Desilting and garbage removal": 776658,
+   "Mastic asphalt": 523959,
+   "Paver blocks relaid": 491352,
+   "Cold mix patch": 300231,
+   "Excavation, pipeline repair, PQC patch": 288722,
+   "Hot mix patch": 282374,
+   "Manhole cover replaced + grating": 240377
+  },
+  "failed_fix_spend_inr": 2011624,
+  "flagged_excess_inr": 1174921,
+  "flags": {
+   "DLP_PAID": 22,
+   "DLP_REVIEW": 19,
+   "OVERBILLED": 9,
+   "DUPLICATE_BILL": 2
+  },
+  "sla_met_pct": 62.7
+ },
+ {
+  "ward_code": "F/S",
+  "ward_name": "Parel, Lalbaug, Sewri",
+  "budget_inr": 9800000,
+  "spend_inr": 8026151,
+  "utilisation_pct": 81.9,
+  "remaining_inr": 1773849,
+  "jobs": 135,
+  "low_lying_index": 0.85,
+  "spend_by_contractor": {
+   "Arabian Sea Engineering (synthetic)": 1372104,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 1149128,
+   "Shivneri Construction (synthetic)": 999565,
+   "Deccan Paving Solutions (synthetic)": 949295,
+   "Sahyadri Infra Works (synthetic)": 942284,
+   "Mithi Infra Projects (synthetic)": 925508,
+   "Western Coast Asphalt Co (synthetic)": 886909,
+   "Mahalaxmi Civil Contractors (synthetic)": 801358
+  },
+  "spend_by_method": {
+   "Pump + debris removal": 2099709,
+   "Desilting and garbage removal": 1829641,
+   "Drain desilting": 1281839,
+   "Dewatering pump deployed": 976863,
+   "Manhole cover replaced + grating": 539846,
+   "Cold mix patch": 339566,
+   "Excavation, pipeline repair, PQC patch": 323637,
+   "Hot mix patch": 318818,
+   "Mastic asphalt": 223426,
+   "Paver blocks relaid": 92806
+  },
+  "failed_fix_spend_inr": 1335554,
+  "flagged_excess_inr": 855206,
+  "flags": {
+   "DLP_PAID": 11,
+   "OVERBILLED": 7,
+   "DLP_REVIEW": 3,
+   "DUPLICATE_BILL": 2
+  },
+  "sla_met_pct": 26.7
+ },
+ {
+  "ward_code": "F/N",
+  "ward_name": "Matunga, Sion, Wadala",
+  "budget_inr": 10500000,
+  "spend_inr": 9412574,
+  "utilisation_pct": 89.6,
+  "remaining_inr": 1087426,
+  "jobs": 150,
+  "low_lying_index": 0.9,
+  "spend_by_contractor": {
+   "Mithi Infra Projects (synthetic)": 2014298,
+   "Sahyadri Infra Works (synthetic)": 1490646,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 1296028,
+   "Shivneri Construction (synthetic)": 1172621,
+   "Western Coast Asphalt Co (synthetic)": 1067157,
+   "Arabian Sea Engineering (synthetic)": 949448,
+   "Mahalaxmi Civil Contractors (synthetic)": 823519,
+   "Deccan Paving Solutions (synthetic)": 598857
+  },
+  "spend_by_method": {
+   "Pump + debris removal": 2472761,
+   "Desilting and garbage removal": 1700212,
+   "Drain desilting": 1590920,
+   "Excavation, pipeline repair, PQC patch": 880719,
+   "Dewatering pump deployed": 879748,
+   "Paver blocks relaid": 531221,
+   "Cold mix patch": 383209,
+   "Mastic asphalt": 366416,
+   "Hot mix patch": 318706,
+   "Manhole cover replaced + grating": 288662
+  },
+  "failed_fix_spend_inr": 2134363,
+  "flagged_excess_inr": 1420916,
+  "flags": {
+   "DLP_PAID": 20,
+   "DLP_REVIEW": 17,
+   "OVERBILLED": 6,
+   "DUPLICATE_BILL": 3
+  },
+  "sla_met_pct": 42.7
+ },
+ {
+  "ward_code": "G/S",
+  "ward_name": "Worli, Lower Parel, Prabhadevi",
+  "budget_inr": 3200000,
+  "spend_inr": 2821986,
+  "utilisation_pct": 88.2,
+  "remaining_inr": 378014,
+  "jobs": 64,
+  "low_lying_index": 0.6,
+  "spend_by_contractor": {
+   "Sahyadri Infra Works (synthetic)": 496871,
+   "Mahalaxmi Civil Contractors (synthetic)": 444092,
+   "Mithi Infra Projects (synthetic)": 438547,
+   "Shivneri Construction (synthetic)": 351707,
+   "Deccan Paving Solutions (synthetic)": 312143,
+   "Western Coast Asphalt Co (synthetic)": 306414,
+   "Arabian Sea Engineering (synthetic)": 270805,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 201407
+  },
+  "spend_by_method": {
+   "Pump + debris removal": 1012792,
+   "Desilting and garbage removal": 408014,
+   "Dewatering pump deployed": 388751,
+   "Cold mix patch": 260415,
+   "Manhole cover replaced + grating": 201662,
+   "Drain desilting": 190750,
+   "Hot mix patch": 187010,
+   "Mastic asphalt": 118194,
+   "Paver blocks relaid": 54398
+  },
+  "failed_fix_spend_inr": 1057467,
+  "flagged_excess_inr": 157052,
+  "flags": {
+   "DLP_REVIEW": 11,
+   "DLP_PAID": 10
+  },
+  "sla_met_pct": 56.2
+ },
+ {
+  "ward_code": "G/N",
+  "ward_name": "Dadar West, Mahim, Dharavi",
+  "budget_inr": 8400000,
+  "spend_inr": 6755738,
+  "utilisation_pct": 80.4,
+  "remaining_inr": 1644262,
+  "jobs": 139,
+  "low_lying_index": 0.8,
+  "spend_by_contractor": {
+   "Arabian Sea Engineering (synthetic)": 1541646,
+   "Shivneri Construction (synthetic)": 1103153,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 1071472,
+   "Mithi Infra Projects (synthetic)": 797665,
+   "Deccan Paving Solutions (synthetic)": 689081,
+   "Sahyadri Infra Works (synthetic)": 680642,
+   "Mahalaxmi Civil Contractors (synthetic)": 551781,
+   "Western Coast Asphalt Co (synthetic)": 320298
+  },
+  "spend_by_method": {
+   "Drain desilting": 1525432,
+   "Pump + debris removal": 923323,
+   "Manhole cover replaced + grating": 688116,
+   "Dewatering pump deployed": 625390,
+   "Excavation, pipeline repair, PQC patch": 566060,
+   "Desilting and garbage removal": 564452,
+   "Paver blocks relaid": 528856,
+   "Cold mix patch": 503392,
+   "Mastic asphalt": 469876,
+   "Hot mix patch": 360841
+  },
+  "failed_fix_spend_inr": 1729109,
+  "flagged_excess_inr": 1052801,
+  "flags": {
+   "DLP_PAID": 13,
+   "DLP_REVIEW": 10,
+   "DUPLICATE_BILL": 7,
+   "OVERBILLED": 3
+  },
+  "sla_met_pct": 36.7
+ },
+ {
+  "ward_code": "H/E",
+  "ward_name": "Bandra East, Santacruz East, Khar East",
+  "budget_inr": 8200000,
+  "spend_inr": 6145533,
+  "utilisation_pct": 74.9,
+  "remaining_inr": 2054467,
+  "jobs": 111,
+  "low_lying_index": 0.75,
+  "spend_by_contractor": {
+   "Sahyadri Infra Works (synthetic)": 1171183,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 1061624,
+   "Deccan Paving Solutions (synthetic)": 835989,
+   "Mahalaxmi Civil Contractors (synthetic)": 753268,
+   "Mithi Infra Projects (synthetic)": 704878,
+   "Shivneri Construction (synthetic)": 604270,
+   "Western Coast Asphalt Co (synthetic)": 582327,
+   "Arabian Sea Engineering (synthetic)": 431994
+  },
+  "spend_by_method": {
+   "Pump + debris removal": 1317488,
+   "Drain desilting": 1153755,
+   "Desilting and garbage removal": 854862,
+   "Mastic asphalt": 622099,
+   "Excavation, pipeline repair, PQC patch": 445505,
+   "Manhole cover replaced + grating": 438912,
+   "Dewatering pump deployed": 400474,
+   "Paver blocks relaid": 397396,
+   "Cold mix patch": 335868,
+   "Hot mix patch": 179174
+  },
+  "failed_fix_spend_inr": 1612052,
+  "flagged_excess_inr": 820556,
+  "flags": {
+   "DLP_PAID": 11,
+   "OVERBILLED": 6,
+   "DLP_REVIEW": 6,
+   "DUPLICATE_BILL": 5
+  },
+  "sla_met_pct": 48.6
+ },
+ {
+  "ward_code": "H/W",
+  "ward_name": "Bandra West, Khar West, Santacruz West",
+  "budget_inr": 4300000,
+  "spend_inr": 4245242,
+  "utilisation_pct": 98.7,
+  "remaining_inr": 54758,
+  "jobs": 62,
+  "low_lying_index": 0.55,
+  "spend_by_contractor": {
+   "Western Coast Asphalt Co (synthetic)": 813676,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 704217,
+   "Arabian Sea Engineering (synthetic)": 626378,
+   "Mithi Infra Projects (synthetic)": 589626,
+   "Deccan Paving Solutions (synthetic)": 529564,
+   "Sahyadri Infra Works (synthetic)": 443781,
+   "Shivneri Construction (synthetic)": 412980,
+   "Mahalaxmi Civil Contractors (synthetic)": 125020
+  },
+  "spend_by_method": {
+   "Drain desilting": 1151834,
+   "Desilting and garbage removal": 706174,
+   "Dewatering pump deployed": 660742,
+   "Pump + debris removal": 643436,
+   "Excavation, pipeline repair, PQC patch": 502163,
+   "Mastic asphalt": 202046,
+   "Manhole cover replaced + grating": 138030,
+   "Paver blocks relaid": 88590,
+   "Cold mix patch": 83256,
+   "Hot mix patch": 68971
+  },
+  "failed_fix_spend_inr": 1391670,
+  "flagged_excess_inr": 251638,
+  "flags": {
+   "DLP_REVIEW": 26,
+   "DLP_PAID": 3,
+   "OVERBILLED": 1,
+   "DUPLICATE_BILL": 1
+  },
+  "sla_met_pct": 45.2
+ },
+ {
+  "ward_code": "K/E",
+  "ward_name": "Andheri East, Vile Parle East, Jogeshwari East",
+  "budget_inr": 9100000,
+  "spend_inr": 8264048,
+  "utilisation_pct": 90.8,
+  "remaining_inr": 835952,
+  "jobs": 165,
+  "low_lying_index": 0.65,
+  "spend_by_contractor": {
+   "Konkan Roadcon Pvt Ltd (synthetic)": 1680225,
+   "Arabian Sea Engineering (synthetic)": 1288243,
+   "Mithi Infra Projects (synthetic)": 1152199,
+   "Mahalaxmi Civil Contractors (synthetic)": 1101933,
+   "Deccan Paving Solutions (synthetic)": 918753,
+   "Western Coast Asphalt Co (synthetic)": 814645,
+   "Sahyadri Infra Works (synthetic)": 804721,
+   "Shivneri Construction (synthetic)": 503329
+  },
+  "spend_by_method": {
+   "Drain desilting": 1780351,
+   "Pump + debris removal": 1572169,
+   "Excavation, pipeline repair, PQC patch": 1095671,
+   "Desilting and garbage removal": 801936,
+   "Dewatering pump deployed": 724616,
+   "Manhole cover replaced + grating": 668912,
+   "Cold mix patch": 528565,
+   "Mastic asphalt": 459079,
+   "Paver blocks relaid": 379800,
+   "Hot mix patch": 252949
+  },
+  "failed_fix_spend_inr": 1741105,
+  "flagged_excess_inr": 239409,
+  "flags": {
+   "DLP_PAID": 4,
+   "OVERBILLED": 3,
+   "DLP_REVIEW": 3,
+   "DUPLICATE_BILL": 2
+  },
+  "sla_met_pct": 61.2
+ },
+ {
+  "ward_code": "K/W",
+  "ward_name": "Andheri West, Juhu, Vile Parle West",
+  "budget_inr": 8900000,
+  "spend_inr": 7845240,
+  "utilisation_pct": 88.1,
+  "remaining_inr": 1054760,
+  "jobs": 143,
+  "low_lying_index": 0.7,
+  "spend_by_contractor": {
+   "Western Coast Asphalt Co (synthetic)": 1639047,
+   "Mahalaxmi Civil Contractors (synthetic)": 1200034,
+   "Mithi Infra Projects (synthetic)": 1052243,
+   "Shivneri Construction (synthetic)": 933883,
+   "Deccan Paving Solutions (synthetic)": 904996,
+   "Arabian Sea Engineering (synthetic)": 858593,
+   "Sahyadri Infra Works (synthetic)": 811431,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 445013
+  },
+  "spend_by_method": {
+   "Pump + debris removal": 1528704,
+   "Excavation, pipeline repair, PQC patch": 1129627,
+   "Dewatering pump deployed": 1020364,
+   "Desilting and garbage removal": 951149,
+   "Drain desilting": 754175,
+   "Paver blocks relaid": 722707,
+   "Mastic asphalt": 649786,
+   "Manhole cover replaced + grating": 485216,
+   "Cold mix patch": 334232,
+   "Hot mix patch": 269280
+  },
+  "failed_fix_spend_inr": 1866600,
+  "flagged_excess_inr": 1286534,
+  "flags": {
+   "DLP_PAID": 17,
+   "DLP_REVIEW": 11,
+   "OVERBILLED": 10,
+   "DUPLICATE_BILL": 3
+  },
+  "sla_met_pct": 55.9
+ },
+ {
+  "ward_code": "P/S",
+  "ward_name": "Goregaon",
+  "budget_inr": 4800000,
+  "spend_inr": 4349997,
+  "utilisation_pct": 90.6,
+  "remaining_inr": 450003,
+  "jobs": 82,
+  "low_lying_index": 0.5,
+  "spend_by_contractor": {
+   "Konkan Roadcon Pvt Ltd (synthetic)": 921130,
+   "Mahalaxmi Civil Contractors (synthetic)": 827272,
+   "Shivneri Construction (synthetic)": 600982,
+   "Sahyadri Infra Works (synthetic)": 509465,
+   "Arabian Sea Engineering (synthetic)": 504607,
+   "Mithi Infra Projects (synthetic)": 363806,
+   "Western Coast Asphalt Co (synthetic)": 341293,
+   "Deccan Paving Solutions (synthetic)": 281442
+  },
+  "spend_by_method": {
+   "Pump + debris removal": 1425811,
+   "Excavation, pipeline repair, PQC patch": 437683,
+   "Dewatering pump deployed": 434172,
+   "Mastic asphalt": 428655,
+   "Desilting and garbage removal": 415500,
+   "Drain desilting": 394086,
+   "Manhole cover replaced + grating": 264948,
+   "Cold mix patch": 219499,
+   "Hot mix patch": 206312,
+   "Paver blocks relaid": 123331
+  },
+  "failed_fix_spend_inr": 340751,
+  "flagged_excess_inr": 534042,
+  "flags": {
+   "DLP_PAID": 10,
+   "OVERBILLED": 5,
+   "DLP_REVIEW": 4,
+   "DUPLICATE_BILL": 1
+  },
+  "sla_met_pct": 61.0
+ },
+ {
+  "ward_code": "P/N",
+  "ward_name": "Malad",
+  "budget_inr": 7700000,
+  "spend_inr": 7006462,
+  "utilisation_pct": 91.0,
+  "remaining_inr": 693538,
+  "jobs": 141,
+  "low_lying_index": 0.6,
+  "spend_by_contractor": {
+   "Western Coast Asphalt Co (synthetic)": 1380140,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 1198576,
+   "Sahyadri Infra Works (synthetic)": 997309,
+   "Deccan Paving Solutions (synthetic)": 837724,
+   "Mahalaxmi Civil Contractors (synthetic)": 707886,
+   "Shivneri Construction (synthetic)": 672020,
+   "Arabian Sea Engineering (synthetic)": 645184,
+   "Mithi Infra Projects (synthetic)": 567623
+  },
+  "spend_by_method": {
+   "Excavation, pipeline repair, PQC patch": 1298098,
+   "Drain desilting": 1145025,
+   "Pump + debris removal": 780170,
+   "Desilting and garbage removal": 746880,
+   "Manhole cover replaced + grating": 698169,
+   "Paver blocks relaid": 590062,
+   "Dewatering pump deployed": 579660,
+   "Cold mix patch": 493741,
+   "Mastic asphalt": 468924,
+   "Hot mix patch": 205733
+  },
+  "failed_fix_spend_inr": 1816577,
+  "flagged_excess_inr": 799488,
+  "flags": {
+   "DLP_PAID": 16,
+   "OVERBILLED": 7,
+   "DLP_REVIEW": 4,
+   "DUPLICATE_BILL": 2
+  },
+  "sla_met_pct": 59.6
+ },
+ {
+  "ward_code": "R/S",
+  "ward_name": "Kandivali",
+  "budget_inr": 6600000,
+  "spend_inr": 6642234,
+  "utilisation_pct": 100.6,
+  "remaining_inr": -42234,
+  "jobs": 121,
+  "low_lying_index": 0.5,
+  "spend_by_contractor": {
+   "Western Coast Asphalt Co (synthetic)": 1188375,
+   "Arabian Sea Engineering (synthetic)": 1104327,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 1067704,
+   "Sahyadri Infra Works (synthetic)": 802204,
+   "Mahalaxmi Civil Contractors (synthetic)": 718015,
+   "Deccan Paving Solutions (synthetic)": 659058,
+   "Mithi Infra Projects (synthetic)": 648531,
+   "Shivneri Construction (synthetic)": 454020
+  },
+  "spend_by_method": {
+   "Excavation, pipeline repair, PQC patch": 1785079,
+   "Desilting and garbage removal": 1043548,
+   "Pump + debris removal": 687700,
+   "Paver blocks relaid": 650586,
+   "Manhole cover replaced + grating": 556817,
+   "Cold mix patch": 437808,
+   "Mastic asphalt": 398971,
+   "Drain desilting": 385079,
+   "Hot mix patch": 365138,
+   "Dewatering pump deployed": 331508
+  },
+  "failed_fix_spend_inr": 1020154,
+  "flagged_excess_inr": 503466,
+  "flags": {
+   "OVERBILLED": 7,
+   "DLP_REVIEW": 6,
+   "DLP_PAID": 5
+  },
+  "sla_met_pct": 56.2
+ },
+ {
+  "ward_code": "R/C",
+  "ward_name": "Borivali",
+  "budget_inr": 2900000,
+  "spend_inr": 3312447,
+  "utilisation_pct": 114.2,
+  "remaining_inr": -412447,
+  "jobs": 86,
+  "low_lying_index": 0.4,
+  "spend_by_contractor": {
+   "Mithi Infra Projects (synthetic)": 785832,
+   "Western Coast Asphalt Co (synthetic)": 713411,
+   "Sahyadri Infra Works (synthetic)": 467343,
+   "Arabian Sea Engineering (synthetic)": 429575,
+   "Shivneri Construction (synthetic)": 401784,
+   "Mahalaxmi Civil Contractors (synthetic)": 278570,
+   "Deccan Paving Solutions (synthetic)": 219541,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 16391
+  },
+  "spend_by_method": {
+   "Manhole cover replaced + grating": 633590,
+   "Desilting and garbage removal": 537827,
+   "Excavation, pipeline repair, PQC patch": 371558,
+   "Mastic asphalt": 369276,
+   "Paver blocks relaid": 338552,
+   "Cold mix patch": 325846,
+   "Hot mix patch": 273002,
+   "Pump + debris removal": 227755,
+   "Dewatering pump deployed": 135878,
+   "Drain desilting": 99163
+  },
+  "failed_fix_spend_inr": 539981,
+  "flagged_excess_inr": 717665,
+  "flags": {
+   "DLP_PAID": 17,
+   "DLP_REVIEW": 11,
+   "DUPLICATE_BILL": 2
+  },
+  "sla_met_pct": 59.3
+ },
+ {
+  "ward_code": "R/N",
+  "ward_name": "Dahisar",
+  "budget_inr": 4800000,
+  "spend_inr": 3533838,
+  "utilisation_pct": 73.6,
+  "remaining_inr": 1266162,
+  "jobs": 82,
+  "low_lying_index": 0.65,
+  "spend_by_contractor": {
+   "Shivneri Construction (synthetic)": 972620,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 655052,
+   "Western Coast Asphalt Co (synthetic)": 452208,
+   "Deccan Paving Solutions (synthetic)": 387125,
+   "Mithi Infra Projects (synthetic)": 316438,
+   "Sahyadri Infra Works (synthetic)": 305242,
+   "Arabian Sea Engineering (synthetic)": 250624,
+   "Mahalaxmi Civil Contractors (synthetic)": 194529
+  },
+  "spend_by_method": {
+   "Drain desilting": 813290,
+   "Dewatering pump deployed": 460969,
+   "Excavation, pipeline repair, PQC patch": 428772,
+   "Paver blocks relaid": 423167,
+   "Mastic asphalt": 387424,
+   "Manhole cover replaced + grating": 320774,
+   "Desilting and garbage removal": 306271,
+   "Cold mix patch": 233600,
+   "Hot mix patch": 159571
+  },
+  "failed_fix_spend_inr": 1160682,
+  "flagged_excess_inr": 367361,
+  "flags": {
+   "DLP_PAID": 18,
+   "DLP_REVIEW": 4,
+   "DUPLICATE_BILL": 1
+  },
+  "sla_met_pct": 54.9
+ },
+ {
+  "ward_code": "L",
+  "ward_name": "Kurla",
+  "budget_inr": 11900000,
+  "spend_inr": 13043418,
+  "utilisation_pct": 109.6,
+  "remaining_inr": -1143418,
+  "jobs": 232,
+  "low_lying_index": 0.85,
+  "spend_by_contractor": {
+   "Sahyadri Infra Works (synthetic)": 2160647,
+   "Arabian Sea Engineering (synthetic)": 2009975,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 1769854,
+   "Mithi Infra Projects (synthetic)": 1720714,
+   "Mahalaxmi Civil Contractors (synthetic)": 1634435,
+   "Shivneri Construction (synthetic)": 1293376,
+   "Western Coast Asphalt Co (synthetic)": 1285415,
+   "Deccan Paving Solutions (synthetic)": 1169002
+  },
+  "spend_by_method": {
+   "Pump + debris removal": 2751187,
+   "Drain desilting": 2385648,
+   "Excavation, pipeline repair, PQC patch": 1911905,
+   "Desilting and garbage removal": 1478009,
+   "Mastic asphalt": 967964,
+   "Dewatering pump deployed": 917247,
+   "Manhole cover replaced + grating": 847986,
+   "Cold mix patch": 652936,
+   "Paver blocks relaid": 630950,
+   "Hot mix patch": 499586
+  },
+  "failed_fix_spend_inr": 1820204,
+  "flagged_excess_inr": 1737644,
+  "flags": {
+   "DLP_REVIEW": 34,
+   "DLP_PAID": 18,
+   "OVERBILLED": 8,
+   "DUPLICATE_BILL": 4
+  },
+  "sla_met_pct": 31.9
+ },
+ {
+  "ward_code": "M/E",
+  "ward_name": "Govandi, Mankhurd, Deonar",
+  "budget_inr": 9100000,
+  "spend_inr": 7235685,
+  "utilisation_pct": 79.5,
+  "remaining_inr": 1864315,
+  "jobs": 148,
+  "low_lying_index": 0.75,
+  "spend_by_contractor": {
+   "Mithi Infra Projects (synthetic)": 1336145,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 1137601,
+   "Western Coast Asphalt Co (synthetic)": 1081129,
+   "Mahalaxmi Civil Contractors (synthetic)": 1040969,
+   "Shivneri Construction (synthetic)": 1013566,
+   "Deccan Paving Solutions (synthetic)": 929900,
+   "Sahyadri Infra Works (synthetic)": 364241,
+   "Arabian Sea Engineering (synthetic)": 332134
+  },
+  "spend_by_method": {
+   "Excavation, pipeline repair, PQC patch": 1273823,
+   "Pump + debris removal": 1165962,
+   "Dewatering pump deployed": 834374,
+   "Manhole cover replaced + grating": 767240,
+   "Drain desilting": 716814,
+   "Cold mix patch": 617774,
+   "Paver blocks relaid": 597274,
+   "Mastic asphalt": 516154,
+   "Desilting and garbage removal": 470534,
+   "Hot mix patch": 275736
+  },
+  "failed_fix_spend_inr": 1427808,
+  "flagged_excess_inr": 661654,
+  "flags": {
+   "DLP_PAID": 17,
+   "DLP_REVIEW": 14,
+   "OVERBILLED": 6,
+   "DUPLICATE_BILL": 2
+  },
+  "sla_met_pct": 41.2
+ },
+ {
+  "ward_code": "M/W",
+  "ward_name": "Chembur",
+  "budget_inr": 4400000,
+  "spend_inr": 4689823,
+  "utilisation_pct": 106.6,
+  "remaining_inr": -289823,
+  "jobs": 87,
+  "low_lying_index": 0.6,
+  "spend_by_contractor": {
+   "Konkan Roadcon Pvt Ltd (synthetic)": 934872,
+   "Western Coast Asphalt Co (synthetic)": 713145,
+   "Arabian Sea Engineering (synthetic)": 703380,
+   "Deccan Paving Solutions (synthetic)": 640000,
+   "Mahalaxmi Civil Contractors (synthetic)": 528454,
+   "Mithi Infra Projects (synthetic)": 456670,
+   "Shivneri Construction (synthetic)": 447219,
+   "Sahyadri Infra Works (synthetic)": 266083
+  },
+  "spend_by_method": {
+   "Desilting and garbage removal": 1060141,
+   "Pump + debris removal": 828839,
+   "Drain desilting": 724126,
+   "Paver blocks relaid": 442151,
+   "Dewatering pump deployed": 387159,
+   "Manhole cover replaced + grating": 378377,
+   "Mastic asphalt": 334146,
+   "Hot mix patch": 228894,
+   "Excavation, pipeline repair, PQC patch": 163346,
+   "Cold mix patch": 142644
+  },
+  "failed_fix_spend_inr": 1150699,
+  "flagged_excess_inr": 804966,
+  "flags": {
+   "DLP_PAID": 14,
+   "DLP_REVIEW": 9,
+   "OVERBILLED": 4
+  },
+  "sla_met_pct": 56.3
+ },
+ {
+  "ward_code": "N",
+  "ward_name": "Ghatkopar, Vikhroli",
+  "budget_inr": 6200000,
+  "spend_inr": 5999557,
+  "utilisation_pct": 96.8,
+  "remaining_inr": 200443,
+  "jobs": 112,
+  "low_lying_index": 0.55,
+  "spend_by_contractor": {
+   "Arabian Sea Engineering (synthetic)": 1643624,
+   "Mahalaxmi Civil Contractors (synthetic)": 1082402,
+   "Sahyadri Infra Works (synthetic)": 754931,
+   "Mithi Infra Projects (synthetic)": 670825,
+   "Deccan Paving Solutions (synthetic)": 572790,
+   "Shivneri Construction (synthetic)": 558726,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 370371,
+   "Western Coast Asphalt Co (synthetic)": 345888
+  },
+  "spend_by_method": {
+   "Excavation, pipeline repair, PQC patch": 1492730,
+   "Desilting and garbage removal": 1044420,
+   "Pump + debris removal": 778270,
+   "Drain desilting": 587482,
+   "Dewatering pump deployed": 573107,
+   "Manhole cover replaced + grating": 477564,
+   "Paver blocks relaid": 320219,
+   "Cold mix patch": 319783,
+   "Hot mix patch": 213263,
+   "Mastic asphalt": 192719
+  },
+  "failed_fix_spend_inr": 970747,
+  "flagged_excess_inr": 681520,
+  "flags": {
+   "DLP_PAID": 9,
+   "OVERBILLED": 6,
+   "DLP_REVIEW": 6,
+   "DUPLICATE_BILL": 3
+  },
+  "sla_met_pct": 54.5
+ },
+ {
+  "ward_code": "S",
+  "ward_name": "Bhandup, Powai, Kanjurmarg",
+  "budget_inr": 9500000,
+  "spend_inr": 7489270,
+  "utilisation_pct": 78.8,
+  "remaining_inr": 2010730,
+  "jobs": 123,
+  "low_lying_index": 0.55,
+  "spend_by_contractor": {
+   "Sahyadri Infra Works (synthetic)": 1321811,
+   "Mahalaxmi Civil Contractors (synthetic)": 1189561,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 1170687,
+   "Western Coast Asphalt Co (synthetic)": 1000117,
+   "Shivneri Construction (synthetic)": 782242,
+   "Arabian Sea Engineering (synthetic)": 745806,
+   "Deccan Paving Solutions (synthetic)": 707462,
+   "Mithi Infra Projects (synthetic)": 571584
+  },
+  "spend_by_method": {
+   "Excavation, pipeline repair, PQC patch": 2040481,
+   "Desilting and garbage removal": 878950,
+   "Drain desilting": 836658,
+   "Dewatering pump deployed": 772390,
+   "Pump + debris removal": 709795,
+   "Paver blocks relaid": 613052,
+   "Manhole cover replaced + grating": 572847,
+   "Mastic asphalt": 505645,
+   "Cold mix patch": 383073,
+   "Hot mix patch": 176379
+  },
+  "failed_fix_spend_inr": 2219613,
+  "flagged_excess_inr": 1043125,
+  "flags": {
+   "DLP_PAID": 8,
+   "DLP_REVIEW": 7,
+   "OVERBILLED": 6,
+   "DUPLICATE_BILL": 3
+  },
+  "sla_met_pct": 50.4
+ },
+ {
+  "ward_code": "T",
+  "ward_name": "Mulund",
+  "budget_inr": 5100000,
+  "spend_inr": 3953564,
+  "utilisation_pct": 77.5,
+  "remaining_inr": 1146436,
+  "jobs": 65,
+  "low_lying_index": 0.45,
+  "spend_by_contractor": {
+   "Arabian Sea Engineering (synthetic)": 891396,
+   "Western Coast Asphalt Co (synthetic)": 855769,
+   "Mithi Infra Projects (synthetic)": 614344,
+   "Deccan Paving Solutions (synthetic)": 413461,
+   "Mahalaxmi Civil Contractors (synthetic)": 349342,
+   "Konkan Roadcon Pvt Ltd (synthetic)": 320018,
+   "Shivneri Construction (synthetic)": 257505,
+   "Sahyadri Infra Works (synthetic)": 251729
+  },
+  "spend_by_method": {
+   "Drain desilting": 971220,
+   "Pump + debris removal": 731398,
+   "Excavation, pipeline repair, PQC patch": 661555,
+   "Desilting and garbage removal": 524211,
+   "Manhole cover replaced + grating": 289293,
+   "Dewatering pump deployed": 285704,
+   "Hot mix patch": 161554,
+   "Paver blocks relaid": 132211,
+   "Cold mix patch": 102568,
+   "Mastic asphalt": 93850
+  },
+  "failed_fix_spend_inr": 1677820,
+  "flagged_excess_inr": 388136,
+  "flags": {
+   "DLP_PAID": 8,
+   "OVERBILLED": 6,
+   "DLP_REVIEW": 4
+  },
+  "sla_met_pct": 49.2
+ }
+]

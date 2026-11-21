@@ -1,0 +1,2316 @@
+{
+ "A": {
+  "remaining_budget_inr": -55330,
+  "planned_spend_inr": 0,
+  "queue": [
+   {
+    "road_id": "RD0008",
+    "road_name": "Veer Nariman Road",
+    "risk_score": 35.6,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0009",
+    "road_name": "Colaba Causeway",
+    "risk_score": 34.9,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0001",
+    "road_name": "Shahid Bhagat Singh Marg",
+    "risk_score": 31.6,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0010",
+    "road_name": "Colaba Causeway",
+    "risk_score": 25.7,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   }
+  ]
+ },
+ "B": {
+  "remaining_budget_inr": 792048,
+  "planned_spend_inr": 141742,
+  "queue": [
+   {
+    "road_id": "RD0012",
+    "road_name": "Mohammed Ali Road",
+    "risk_score": 57.3,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0016",
+    "road_name": "P D'Mello Road",
+    "risk_score": 48.4,
+    "issue": "Choked drain / nullah overflow",
+    "method": "Desilting and garbage removal",
+    "est_cost_inr": 71362,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0026",
+    "road_name": "Jagannath Shankarseth Road",
+    "risk_score": 36.9,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0020",
+    "road_name": "Nishanpada Road",
+    "risk_score": 34.2,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0019",
+    "road_name": "P D'Mello Road",
+    "risk_score": 22.9,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   }
+  ]
+ },
+ "C": {
+  "remaining_budget_inr": 103197,
+  "planned_spend_inr": 59050,
+  "queue": [
+   {
+    "road_id": "RD0025",
+    "road_name": "Jagannath Shankarseth Road",
+    "risk_score": 47.8,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0032",
+    "road_name": "Nepean Sea Road",
+    "risk_score": 42.5,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0023",
+    "road_name": "Kalbadevi Road",
+    "risk_score": 39.0,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0029",
+    "road_name": "Princess Street",
+    "risk_score": 22.3,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0030",
+    "road_name": "Princess Street",
+    "risk_score": 22.2,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0028",
+    "road_name": "Princess Street",
+    "risk_score": 21.7,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0022",
+    "road_name": "Kalbadevi Road",
+    "risk_score": 20.9,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   }
+  ]
+ },
+ "D": {
+  "remaining_budget_inr": 327700,
+  "planned_spend_inr": 35430,
+  "queue": [
+   {
+    "road_id": "RD0041",
+    "road_name": "Peddar Road",
+    "risk_score": 37.1,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0037",
+    "road_name": "Tardeo Road",
+    "risk_score": 32.0,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0034",
+    "road_name": "Pandita Ramabai Road",
+    "risk_score": 20.1,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   }
+  ]
+ },
+ "E": {
+  "remaining_budget_inr": -1022991,
+  "planned_spend_inr": 0,
+  "queue": [
+   {
+    "road_id": "RD0057",
+    "road_name": "Bellasis Road",
+    "risk_score": 69.9,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0055",
+    "road_name": "Bellasis Road",
+    "risk_score": 67.1,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0052",
+    "road_name": "Clare Road",
+    "risk_score": 57.1,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0049",
+    "road_name": "Maulana Azad Road",
+    "risk_score": 54.2,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0056",
+    "road_name": "Bellasis Road",
+    "risk_score": 47.1,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0045",
+    "road_name": "Dr Babasaheb Ambedkar Road",
+    "risk_score": 45.9,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0046",
+    "road_name": "Dr Babasaheb Ambedkar Road",
+    "risk_score": 42.8,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0053",
+    "road_name": "Clare Road",
+    "risk_score": 41.6,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0050",
+    "road_name": "Maulana Azad Road",
+    "risk_score": 33.7,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0051",
+    "road_name": "Maulana Azad Road",
+    "risk_score": 27.4,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   }
+  ]
+ },
+ "F/S": {
+  "remaining_budget_inr": 1773849,
+  "planned_spend_inr": 1020200,
+  "queue": [
+   {
+    "road_id": "RD0058",
+    "road_name": "Dr Babasaheb Ambedkar Road",
+    "risk_score": 78.1,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0068",
+    "road_name": "Acharya Donde Marg",
+    "risk_score": 56.1,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0065",
+    "road_name": "G D Ambekar Marg",
+    "risk_score": 52.2,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0093",
+    "road_name": "Ganpatrao Kadam Marg",
+    "risk_score": 50.8,
+    "issue": "Choked drain / nullah overflow",
+    "method": "Desilting and garbage removal",
+    "est_cost_inr": 71362,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0062",
+    "road_name": "Dr E Moses Road",
+    "risk_score": 50.4,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0066",
+    "road_name": "G D Ambekar Marg",
+    "risk_score": 50.0,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0063",
+    "road_name": "Dr E Moses Road",
+    "risk_score": 48.7,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0059",
+    "road_name": "Dr Babasaheb Ambedkar Road",
+    "risk_score": 48.5,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0048",
+    "road_name": "Dr Babasaheb Ambedkar Road",
+    "risk_score": 40.8,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0060",
+    "road_name": "Dr Babasaheb Ambedkar Road",
+    "risk_score": 34.6,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0061",
+    "road_name": "Dr Babasaheb Ambedkar Road",
+    "risk_score": 29.2,
+    "issue": "Choked drain / nullah overflow",
+    "method": "Desilting and garbage removal",
+    "est_cost_inr": 71362,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   }
+  ]
+ },
+ "F/N": {
+  "remaining_budget_inr": 1087426,
+  "planned_spend_inr": 737601,
+  "queue": [
+   {
+    "road_id": "RD0077",
+    "road_name": "Eastern Express Highway",
+    "risk_score": 60.8,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0074",
+    "road_name": "Sion Trombay Road",
+    "risk_score": 60.0,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0076",
+    "road_name": "Eastern Express Highway",
+    "risk_score": 59.1,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0080",
+    "road_name": "Bhaudaji Road",
+    "risk_score": 57.0,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0078",
+    "road_name": "Road No 24 Sion",
+    "risk_score": 56.3,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0106",
+    "road_name": "Gokhale Road",
+    "risk_score": 55.2,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0071",
+    "road_name": "Sion Trombay Road",
+    "risk_score": 52.5,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0073",
+    "road_name": "Sion Trombay Road",
+    "risk_score": 51.6,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0082",
+    "road_name": "Bhaudaji Road",
+    "risk_score": 47.5,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0081",
+    "road_name": "Bhaudaji Road",
+    "risk_score": 42.4,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0072",
+    "road_name": "Sion Trombay Road",
+    "risk_score": 39.6,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0103",
+    "road_name": "90 Feet Road Dharavi",
+    "risk_score": 34.5,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0075",
+    "road_name": "Eastern Express Highway",
+    "risk_score": 33.6,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0079",
+    "road_name": "Road No 24 Sion",
+    "risk_score": 33.6,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   }
+  ]
+ },
+ "G/S": {
+  "remaining_budget_inr": 378014,
+  "planned_spend_inr": 152746,
+  "queue": [
+   {
+    "road_id": "RD0083",
+    "road_name": "Senapati Bapat Marg",
+    "risk_score": 58.1,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0091",
+    "road_name": "Ganpatrao Kadam Marg",
+    "risk_score": 47.1,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0088",
+    "road_name": "Dr Annie Besant Road",
+    "risk_score": 46.1,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0085",
+    "road_name": "Senapati Bapat Marg",
+    "risk_score": 44.2,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0084",
+    "road_name": "Senapati Bapat Marg",
+    "risk_score": 42.0,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0087",
+    "road_name": "Dr Annie Besant Road",
+    "risk_score": 37.8,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0092",
+    "road_name": "Ganpatrao Kadam Marg",
+    "risk_score": 23.9,
+    "issue": "Broken paver blocks",
+    "method": "Paver blocks relaid",
+    "est_cost_inr": 58746,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   }
+  ]
+ },
+ "G/N": {
+  "remaining_budget_inr": 1644262,
+  "planned_spend_inr": 1111426,
+  "queue": [
+   {
+    "road_id": "RD0101",
+    "road_name": "90 Feet Road Dharavi",
+    "risk_score": 64.9,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0104",
+    "road_name": "Gokhale Road",
+    "risk_score": 62.9,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0094",
+    "road_name": "Senapati Bapat Marg",
+    "risk_score": 58.5,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0102",
+    "road_name": "90 Feet Road Dharavi",
+    "risk_score": 57.7,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0098",
+    "road_name": "Lady Jamshedji Road",
+    "risk_score": 49.1,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0105",
+    "road_name": "Gokhale Road",
+    "risk_score": 40.4,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0096",
+    "road_name": "Senapati Bapat Marg",
+    "risk_score": 38.7,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0095",
+    "road_name": "Senapati Bapat Marg",
+    "risk_score": 38.5,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0097",
+    "road_name": "Senapati Bapat Marg",
+    "risk_score": 35.8,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0099",
+    "road_name": "Lady Jamshedji Road",
+    "risk_score": 35.3,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0100",
+    "road_name": "Lady Jamshedji Road",
+    "risk_score": 32.5,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   }
+  ]
+ },
+ "H/E": {
+  "remaining_budget_inr": 2054467,
+  "planned_spend_inr": 326091,
+  "queue": [
+   {
+    "road_id": "RD0110",
+    "road_name": "Kalanagar Road",
+    "risk_score": 53.9,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0113",
+    "road_name": "Vakola Bridge Road",
+    "risk_score": 50.9,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0107",
+    "road_name": "Western Express Highway",
+    "risk_score": 46.1,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0115",
+    "road_name": "Vakola Bridge Road",
+    "risk_score": 44.9,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0112",
+    "road_name": "Kalanagar Road",
+    "risk_score": 32.4,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0111",
+    "road_name": "Kalanagar Road",
+    "risk_score": 32.0,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0114",
+    "road_name": "Vakola Bridge Road",
+    "risk_score": 29.3,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   }
+  ]
+ },
+ "H/W": {
+  "remaining_budget_inr": 54758,
+  "planned_spend_inr": 46760,
+  "queue": [
+   {
+    "road_id": "RD0120",
+    "road_name": "Linking Road",
+    "risk_score": 52.0,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0121",
+    "road_name": "Linking Road",
+    "risk_score": 46.0,
+    "issue": "Choked drain / nullah overflow",
+    "method": "Desilting and garbage removal",
+    "est_cost_inr": 71362,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0126",
+    "road_name": "Hill Road",
+    "risk_score": 37.6,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0119",
+    "road_name": "SV Road",
+    "risk_score": 37.6,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0127",
+    "road_name": "Milan Subway Road",
+    "risk_score": 37.6,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0118",
+    "road_name": "SV Road",
+    "risk_score": 30.3,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0116",
+    "road_name": "SV Road",
+    "risk_score": 29.0,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0117",
+    "road_name": "SV Road",
+    "risk_score": 25.3,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   }
+  ]
+ },
+ "K/E": {
+  "remaining_budget_inr": 835952,
+  "planned_spend_inr": 802747,
+  "queue": [
+   {
+    "road_id": "RD0146",
+    "road_name": "SV Road",
+    "risk_score": 58.3,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0136",
+    "road_name": "Western Express Highway",
+    "risk_score": 54.4,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0133",
+    "road_name": "Andheri Kurla Road",
+    "risk_score": 52.8,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0130",
+    "road_name": "Andheri Kurla Road",
+    "risk_score": 49.5,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0138",
+    "road_name": "Mahakali Caves Road",
+    "risk_score": 46.4,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0134",
+    "road_name": "Western Express Highway",
+    "risk_score": 45.2,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0132",
+    "road_name": "Andheri Kurla Road",
+    "risk_score": 37.4,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0139",
+    "road_name": "Mahakali Caves Road",
+    "risk_score": 36.4,
+    "issue": "Choked drain / nullah overflow",
+    "method": "Desilting and garbage removal",
+    "est_cost_inr": 71362,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0140",
+    "road_name": "Marol Maroshi Road",
+    "risk_score": 36.0,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0137",
+    "road_name": "Mahakali Caves Road",
+    "risk_score": 34.0,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0131",
+    "road_name": "Andheri Kurla Road",
+    "risk_score": 33.1,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0135",
+    "road_name": "Western Express Highway",
+    "risk_score": 32.6,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0141",
+    "road_name": "Marol Maroshi Road",
+    "risk_score": 24.0,
+    "issue": "Broken paver blocks",
+    "method": "Paver blocks relaid",
+    "est_cost_inr": 58746,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0142",
+    "road_name": "Marol Maroshi Road",
+    "risk_score": 20.4,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   }
+  ]
+ },
+ "K/W": {
+  "remaining_budget_inr": 1054760,
+  "planned_spend_inr": 305642,
+  "queue": [
+   {
+    "road_id": "RD0148",
+    "road_name": "Juhu Tara Road",
+    "risk_score": 63.2,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0147",
+    "road_name": "Juhu Tara Road",
+    "risk_score": 59.2,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0155",
+    "road_name": "Link Road",
+    "risk_score": 50.5,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0143",
+    "road_name": "SV Road",
+    "risk_score": 48.7,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0145",
+    "road_name": "SV Road",
+    "risk_score": 48.0,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0156",
+    "road_name": "Link Road",
+    "risk_score": 43.0,
+    "issue": "Choked drain / nullah overflow",
+    "method": "Desilting and garbage removal",
+    "est_cost_inr": 71362,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0144",
+    "road_name": "SV Road",
+    "risk_score": 41.1,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0152",
+    "road_name": "JP Road",
+    "risk_score": 40.2,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0154",
+    "road_name": "Andheri Subway",
+    "risk_score": 39.7,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0153",
+    "road_name": "Andheri Subway",
+    "risk_score": 31.4,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0150",
+    "road_name": "JP Road",
+    "risk_score": 29.0,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0157",
+    "road_name": "Link Road",
+    "risk_score": 26.0,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   }
+  ]
+ },
+ "P/S": {
+  "remaining_budget_inr": 450003,
+  "planned_spend_inr": 209356,
+  "queue": [
+   {
+    "road_id": "RD0169",
+    "road_name": "Link Road",
+    "risk_score": 54.4,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0166",
+    "road_name": "MG Road Goregaon",
+    "risk_score": 47.0,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0163",
+    "road_name": "Aarey Road",
+    "risk_score": 42.2,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0162",
+    "road_name": "SV Road",
+    "risk_score": 39.3,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0159",
+    "road_name": "SV Road",
+    "risk_score": 37.0,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0165",
+    "road_name": "Aarey Road",
+    "risk_score": 34.2,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0172",
+    "road_name": "Link Road",
+    "risk_score": 32.6,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0178",
+    "road_name": "SV Road",
+    "risk_score": 28.6,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0167",
+    "road_name": "MG Road Goregaon",
+    "risk_score": 28.5,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0164",
+    "road_name": "Aarey Road",
+    "risk_score": 23.3,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   }
+  ]
+ },
+ "P/N": {
+  "remaining_budget_inr": 693538,
+  "planned_spend_inr": 277952,
+  "queue": [
+   {
+    "road_id": "RD0180",
+    "road_name": "Malad Subway",
+    "risk_score": 66.2,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0173",
+    "road_name": "Marve Road",
+    "risk_score": 64.4,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0175",
+    "road_name": "Marve Road",
+    "risk_score": 63.5,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0174",
+    "road_name": "Marve Road",
+    "risk_score": 61.6,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0181",
+    "road_name": "Malad Subway",
+    "risk_score": 59.1,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0176",
+    "road_name": "SV Road",
+    "risk_score": 53.8,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0182",
+    "road_name": "Link Road",
+    "risk_score": 30.7,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   }
+  ]
+ },
+ "R/S": {
+  "remaining_budget_inr": -42234,
+  "planned_spend_inr": 0,
+  "queue": [
+   {
+    "road_id": "RD0190",
+    "road_name": "Charkop Road",
+    "risk_score": 51.8,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0184",
+    "road_name": "Link Road",
+    "risk_score": 49.3,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0183",
+    "road_name": "Link Road",
+    "risk_score": 44.2,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0195",
+    "road_name": "Thakur Village Road",
+    "risk_score": 39.2,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0189",
+    "road_name": "SV Road",
+    "risk_score": 39.0,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0186",
+    "road_name": "SV Road",
+    "risk_score": 37.9,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0185",
+    "road_name": "Link Road",
+    "risk_score": 32.0,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0191",
+    "road_name": "Charkop Road",
+    "risk_score": 31.7,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0187",
+    "road_name": "SV Road",
+    "risk_score": 28.9,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0192",
+    "road_name": "Charkop Road",
+    "risk_score": 26.5,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0193",
+    "road_name": "Thakur Village Road",
+    "risk_score": 26.2,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   }
+  ]
+ },
+ "R/C": {
+  "remaining_budget_inr": -412447,
+  "planned_spend_inr": 0,
+  "queue": [
+   {
+    "road_id": "RD0206",
+    "road_name": "Gorai Road",
+    "risk_score": 49.2,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0203",
+    "road_name": "Western Express Highway",
+    "risk_score": 46.7,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0204",
+    "road_name": "Western Express Highway",
+    "risk_score": 46.7,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0196",
+    "road_name": "SV Road",
+    "risk_score": 42.5,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0208",
+    "road_name": "Gorai Road",
+    "risk_score": 38.2,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0200",
+    "road_name": "LT Road",
+    "risk_score": 38.1,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0197",
+    "road_name": "SV Road",
+    "risk_score": 37.5,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0201",
+    "road_name": "LT Road",
+    "risk_score": 22.0,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   }
+  ]
+ },
+ "R/N": {
+  "remaining_budget_inr": 1266162,
+  "planned_spend_inr": 491048,
+  "queue": [
+   {
+    "road_id": "RD0212",
+    "road_name": "Western Express Highway",
+    "risk_score": 67.0,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0213",
+    "road_name": "Western Express Highway",
+    "risk_score": 59.1,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0202",
+    "road_name": "LT Road",
+    "risk_score": 50.6,
+    "issue": "Choked drain / nullah overflow",
+    "method": "Desilting and garbage removal",
+    "est_cost_inr": 71362,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0211",
+    "road_name": "Western Express Highway",
+    "risk_score": 48.7,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0214",
+    "road_name": "Anand Nagar Road",
+    "risk_score": 28.7,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0209",
+    "road_name": "Dahisar Subway Road",
+    "risk_score": 25.7,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0215",
+    "road_name": "Anand Nagar Road",
+    "risk_score": 19.4,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   }
+  ]
+ },
+ "L": {
+  "remaining_budget_inr": -1143418,
+  "planned_spend_inr": 0,
+  "queue": [
+   {
+    "road_id": "RD0220",
+    "road_name": "Kurla Andheri Road",
+    "risk_score": 75.7,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0216",
+    "road_name": "LBS Marg",
+    "risk_score": 74.5,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0219",
+    "road_name": "LBS Marg",
+    "risk_score": 55.5,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0224",
+    "road_name": "CST Road",
+    "risk_score": 50.4,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0222",
+    "road_name": "Kurla Andheri Road",
+    "risk_score": 45.0,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0221",
+    "road_name": "Kurla Andheri Road",
+    "risk_score": 44.6,
+    "issue": "Broken paver blocks",
+    "method": "Paver blocks relaid",
+    "est_cost_inr": 58746,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0223",
+    "road_name": "Kurla Andheri Road",
+    "risk_score": 38.1,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0228",
+    "road_name": "Kamani Junction Road",
+    "risk_score": 38.0,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0227",
+    "road_name": "Kamani Junction Road",
+    "risk_score": 32.0,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0225",
+    "road_name": "CST Road",
+    "risk_score": 31.5,
+    "issue": "Choked drain / nullah overflow",
+    "method": "Desilting and garbage removal",
+    "est_cost_inr": 71362,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0218",
+    "road_name": "LBS Marg",
+    "risk_score": 28.5,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0217",
+    "road_name": "LBS Marg",
+    "risk_score": 28.4,
+    "issue": "Broken paver blocks",
+    "method": "Paver blocks relaid",
+    "est_cost_inr": 58746,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   }
+  ]
+ },
+ "M/E": {
+  "remaining_budget_inr": 1864315,
+  "planned_spend_inr": 312902,
+  "queue": [
+   {
+    "road_id": "RD0231",
+    "road_name": "Ghatkopar Mankhurd Link Road",
+    "risk_score": 60.6,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0238",
+    "road_name": "Deonar Village Road",
+    "risk_score": 53.9,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0237",
+    "road_name": "Deonar Village Road",
+    "risk_score": 47.4,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0229",
+    "road_name": "Ghatkopar Mankhurd Link Road",
+    "risk_score": 47.3,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0235",
+    "road_name": "Sion Trombay Road",
+    "risk_score": 42.0,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0233",
+    "road_name": "Sion Trombay Road",
+    "risk_score": 39.6,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0230",
+    "road_name": "Ghatkopar Mankhurd Link Road",
+    "risk_score": 38.1,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0236",
+    "road_name": "Sion Trombay Road",
+    "risk_score": 36.8,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   }
+  ]
+ },
+ "M/W": {
+  "remaining_budget_inr": -289823,
+  "planned_spend_inr": 0,
+  "queue": [
+   {
+    "road_id": "RD0243",
+    "road_name": "RC Marg",
+    "risk_score": 67.4,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0248",
+    "road_name": "Eastern Express Highway",
+    "risk_score": 56.6,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0244",
+    "road_name": "RC Marg",
+    "risk_score": 55.5,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0247",
+    "road_name": "Eastern Express Highway",
+    "risk_score": 51.1,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0245",
+    "road_name": "RC Marg",
+    "risk_score": 51.1,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0250",
+    "road_name": "Shell Colony Road",
+    "risk_score": 41.6,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0239",
+    "road_name": "Sion Trombay Road",
+    "risk_score": 39.3,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0246",
+    "road_name": "Eastern Express Highway",
+    "risk_score": 30.4,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0241",
+    "road_name": "Sion Trombay Road",
+    "risk_score": 30.2,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0249",
+    "road_name": "Shell Colony Road",
+    "risk_score": 25.2,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   }
+  ]
+ },
+ "N": {
+  "remaining_budget_inr": 200443,
+  "planned_spend_inr": 146755,
+  "queue": [
+   {
+    "road_id": "RD0251",
+    "road_name": "LBS Marg",
+    "risk_score": 57.8,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0254",
+    "road_name": "LBS Marg",
+    "risk_score": 51.4,
+    "issue": "Choked drain / nullah overflow",
+    "method": "Desilting and garbage removal",
+    "est_cost_inr": 71362,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0261",
+    "road_name": "Andheri Ghatkopar Link Road",
+    "risk_score": 48.1,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0255",
+    "road_name": "MG Road Ghatkopar",
+    "risk_score": 45.6,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0252",
+    "road_name": "LBS Marg",
+    "risk_score": 42.8,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0253",
+    "road_name": "LBS Marg",
+    "risk_score": 42.6,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0258",
+    "road_name": "Eastern Express Highway",
+    "risk_score": 38.8,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0263",
+    "road_name": "Andheri Ghatkopar Link Road",
+    "risk_score": 36.0,
+    "issue": "Choked drain / nullah overflow",
+    "method": "Desilting and garbage removal",
+    "est_cost_inr": 71362,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   },
+   {
+    "road_id": "RD0257",
+    "road_name": "MG Road Ghatkopar",
+    "risk_score": 34.4,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": false
+   }
+  ]
+ },
+ "S": {
+  "remaining_budget_inr": 2010730,
+  "planned_spend_inr": 478181,
+  "queue": [
+   {
+    "road_id": "RD0278",
+    "road_name": "Village Road Bhandup",
+    "risk_score": 66.8,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0273",
+    "road_name": "Powai Adi Shankaracharya Marg",
+    "risk_score": 62.2,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0268",
+    "road_name": "LBS Marg",
+    "risk_score": 61.3,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0275",
+    "road_name": "Powai Adi Shankaracharya Marg",
+    "risk_score": 56.4,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0274",
+    "road_name": "Powai Adi Shankaracharya Marg",
+    "risk_score": 51.8,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0265",
+    "road_name": "LBS Marg",
+    "risk_score": 49.9,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0276",
+    "road_name": "Powai Adi Shankaracharya Marg",
+    "risk_score": 47.9,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0269",
+    "road_name": "JVLR",
+    "risk_score": 44.9,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0271",
+    "road_name": "JVLR",
+    "risk_score": 43.6,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0270",
+    "road_name": "JVLR",
+    "risk_score": 30.7,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0277",
+    "road_name": "Village Road Bhandup",
+    "risk_score": 25.6,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   }
+  ]
+ },
+ "T": {
+  "remaining_budget_inr": 1146436,
+  "planned_spend_inr": 523813,
+  "queue": [
+   {
+    "road_id": "RD0291",
+    "road_name": "Devidayal Road",
+    "risk_score": 49.0,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0280",
+    "road_name": "LBS Marg",
+    "risk_score": 41.4,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0283",
+    "road_name": "Eastern Express Highway",
+    "risk_score": 39.8,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0286",
+    "road_name": "Mulund Goregaon Link Road",
+    "risk_score": 34.3,
+    "issue": "Road cave-in",
+    "method": "Excavation, pipeline repair, PQC patch",
+    "est_cost_inr": 192128,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0282",
+    "road_name": "LBS Marg",
+    "risk_score": 33.3,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 0,
+    "funding": "Original contractor under DLP (₹0 to BMC)",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0279",
+    "road_name": "LBS Marg",
+    "risk_score": 33.3,
+    "issue": "Waterlogging",
+    "method": "Dewatering pump deployed",
+    "est_cost_inr": 63583,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0285",
+    "road_name": "Eastern Express Highway",
+    "risk_score": 29.7,
+    "issue": "Open or broken manhole",
+    "method": "Manhole cover replaced + grating",
+    "est_cost_inr": 46760,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0281",
+    "road_name": "LBS Marg",
+    "risk_score": 29.6,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0290",
+    "road_name": "Devidayal Road",
+    "risk_score": 28.7,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0288",
+    "road_name": "Mulund Goregaon Link Road",
+    "risk_score": 27.7,
+    "issue": "Pothole",
+    "method": "Cold mix patch",
+    "est_cost_inr": 11810,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   },
+   {
+    "road_id": "RD0289",
+    "road_name": "Mulund Goregaon Link Road",
+    "risk_score": 25.6,
+    "issue": "Broken paver blocks",
+    "method": "Paver blocks relaid",
+    "est_cost_inr": 58746,
+    "funding": "Ward repair budget",
+    "fundable_now": true
+   }
+  ]
+ }
+}

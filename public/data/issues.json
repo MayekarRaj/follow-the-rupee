@@ -1,0 +1,6277 @@
+[
+ {
+  "road_id": "RD0058",
+  "road_name": "Dr Babasaheb Ambedkar Road",
+  "ward_code": "F/S",
+  "road_type": "Arterial",
+  "open_complaints": 9,
+  "complaint_ids": [
+   "BMC25-000946",
+   "BMC25-001337",
+   "BMC25-001338",
+   "BMC25-001339",
+   "BMC25-001921",
+   "BMC25-002667",
+   "BMC25-002767",
+   "BMC25-002666",
+   "BMC25-003449"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 78.1,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 1.0,
+   "flood": 0.68,
+   "traffic": 0.97,
+   "accidents": 0.0,
+   "emergency_access": 1.0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Hindmata Junction",
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0220",
+  "road_name": "Kurla Andheri Road",
+  "ward_code": "L",
+  "road_type": "Arterial",
+  "open_complaints": 15,
+  "complaint_ids": [
+   "BMC25-001521",
+   "BMC25-002371",
+   "BMC25-003027",
+   "BMC25-003460",
+   "BMC25-004013",
+   "BMC25-004010",
+   "BMC25-004011",
+   "BMC25-004406",
+   "BMC25-004404",
+   "BMC25-004608",
+   "BMC25-004728",
+   "BMC25-004405",
+   "BMC25-004727",
+   "BMC25-006005",
+   "BMC25-006302"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 75.7,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 1.0,
+   "flood": 0.88,
+   "traffic": 0.6,
+   "accidents": 0.27,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Kurla LBS Marg, Kamani Junction",
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0216",
+  "road_name": "LBS Marg",
+  "ward_code": "L",
+  "road_type": "Arterial",
+  "open_complaints": 19,
+  "complaint_ids": [
+   "BMC25-000646",
+   "BMC25-001924",
+   "BMC25-001925",
+   "BMC25-002403",
+   "BMC25-003275",
+   "BMC25-003287",
+   "BMC25-003619",
+   "BMC25-004230",
+   "BMC25-004229",
+   "BMC25-004606",
+   "BMC25-005108",
+   "BMC25-005354",
+   "BMC25-005355",
+   "BMC25-005727",
+   "BMC25-006308",
+   "BMC25-006334",
+   "BMC25-006316",
+   "BMC25-006310",
+   "BMC25-006332"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 74.5,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 1.0,
+   "flood": 0.64,
+   "traffic": 0.78,
+   "accidents": 0.0,
+   "emergency_access": 1.0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Kurla Station West",
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0057",
+  "road_name": "Bellasis Road",
+  "ward_code": "E",
+  "road_type": "Main",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-001877",
+   "BMC25-001879",
+   "BMC25-001880"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 69.9,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.54,
+   "flood": 0.68,
+   "traffic": 0.33,
+   "accidents": 0.73,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Byculla Station West",
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0243",
+  "road_name": "RC Marg",
+  "ward_code": "M/W",
+  "road_type": "Main",
+  "open_complaints": 10,
+  "complaint_ids": [
+   "BMC25-000381",
+   "BMC25-000830",
+   "BMC25-000829",
+   "BMC25-000769",
+   "BMC25-001268",
+   "BMC25-002003",
+   "BMC25-002191",
+   "BMC25-002192",
+   "BMC25-002691",
+   "BMC25-002690"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 67.4,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.94,
+   "flood": 1.0,
+   "traffic": 0.2,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Chembur Shell Colony",
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0055",
+  "road_name": "Bellasis Road",
+  "ward_code": "E",
+  "road_type": "Main",
+  "open_complaints": 13,
+  "complaint_ids": [
+   "BMC25-003269",
+   "BMC25-003659",
+   "BMC25-003777",
+   "BMC25-003658",
+   "BMC25-003776",
+   "BMC25-003775",
+   "BMC25-004312",
+   "BMC25-004311",
+   "BMC25-004841",
+   "BMC25-005131",
+   "BMC25-005562",
+   "BMC25-005805",
+   "BMC25-005806"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 67.1,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 1.0,
+   "flood": 0.68,
+   "traffic": 0.23,
+   "accidents": 0.0,
+   "emergency_access": 1.0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Byculla Station West",
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0212",
+  "road_name": "Western Express Highway",
+  "ward_code": "R/N",
+  "road_type": "Highway",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-000958",
+   "BMC25-001505",
+   "BMC25-002585",
+   "BMC25-004335"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 67.0,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.56,
+   "flood": 0.88,
+   "traffic": 0.58,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Dahisar Subway",
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0278",
+  "road_name": "Village Road Bhandup",
+  "ward_code": "S",
+  "road_type": "Local",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-000537",
+   "BMC25-001958"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 66.8,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.37,
+   "flood": 0.88,
+   "traffic": 0.46,
+   "accidents": 0.8,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": "Bhandup Village Road",
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0180",
+  "road_name": "Malad Subway",
+  "ward_code": "P/N",
+  "road_type": "Local",
+  "open_complaints": 16,
+  "complaint_ids": [
+   "BMC25-000170",
+   "BMC25-000692",
+   "BMC25-000812",
+   "BMC25-000990",
+   "BMC25-000991",
+   "BMC25-001807",
+   "BMC25-002487",
+   "BMC25-002512",
+   "BMC25-002846",
+   "BMC25-002845",
+   "BMC25-004390",
+   "BMC25-004389",
+   "BMC25-004936",
+   "BMC25-005073",
+   "BMC25-005074",
+   "BMC25-005297"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 66.2,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 1.0,
+   "flood": 0.88,
+   "traffic": 0.24,
+   "accidents": 0.27,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Malad Subway",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0101",
+  "road_name": "90 Feet Road Dharavi",
+  "ward_code": "G/N",
+  "road_type": "Main",
+  "open_complaints": 17,
+  "complaint_ids": [
+   "BMC25-000726",
+   "BMC25-000862",
+   "BMC25-000863",
+   "BMC25-001257",
+   "BMC25-002043",
+   "BMC25-002248",
+   "BMC25-002377",
+   "BMC25-002249",
+   "BMC25-002376",
+   "BMC25-002537",
+   "BMC25-002790",
+   "BMC25-004315",
+   "BMC25-004316",
+   "BMC25-005899",
+   "BMC25-005900",
+   "BMC25-006270",
+   "BMC25-006271"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 64.9,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 1.0,
+   "flood": 0.44,
+   "traffic": 0.54,
+   "accidents": 0.2,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Dharavi 90 Feet Road",
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0173",
+  "road_name": "Marve Road",
+  "ward_code": "P/N",
+  "road_type": "Main",
+  "open_complaints": 19,
+  "complaint_ids": [
+   "BMC25-001319",
+   "BMC25-001808",
+   "BMC25-002232",
+   "BMC25-002455",
+   "BMC25-003579",
+   "BMC25-004072",
+   "BMC25-004040",
+   "BMC25-004038",
+   "BMC25-004151",
+   "BMC25-004039",
+   "BMC25-004760",
+   "BMC25-004716",
+   "BMC25-004719",
+   "BMC25-004718",
+   "BMC25-004603",
+   "BMC25-004940",
+   "BMC25-004717",
+   "BMC25-005339",
+   "BMC25-005640"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 64.4,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 1.0,
+   "flood": 0,
+   "traffic": 0.56,
+   "accidents": 1.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0175",
+  "road_name": "Marve Road",
+  "ward_code": "P/N",
+  "road_type": "Main",
+  "open_complaints": 11,
+  "complaint_ids": [
+   "BMC25-000255",
+   "BMC25-000254",
+   "BMC25-000245",
+   "BMC25-000813",
+   "BMC25-001843",
+   "BMC25-001842",
+   "BMC25-002456",
+   "BMC25-003224",
+   "BMC25-004150",
+   "BMC25-005441",
+   "BMC25-006249"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 63.5,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 1.0,
+   "flood": 0.88,
+   "traffic": 0.4,
+   "accidents": 0.27,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Malad Subway",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0148",
+  "road_name": "Juhu Tara Road",
+  "ward_code": "K/W",
+  "road_type": "Main",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-001059",
+   "BMC25-002894",
+   "BMC25-002898",
+   "BMC25-002897"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 63.2,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.65,
+   "flood": 0.88,
+   "traffic": 0.6,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Andheri Subway",
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0104",
+  "road_name": "Gokhale Road",
+  "ward_code": "G/N",
+  "road_type": "Main",
+  "open_complaints": 6,
+  "complaint_ids": [
+   "BMC25-000944",
+   "BMC25-001769",
+   "BMC25-001793",
+   "BMC25-001770",
+   "BMC25-001561",
+   "BMC25-004248"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 62.9,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.42,
+   "flood": 0.44,
+   "traffic": 0.46,
+   "accidents": 0.87,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Dharavi 90 Feet Road",
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0273",
+  "road_name": "Powai Adi Shankaracharya Marg",
+  "ward_code": "S",
+  "road_type": "Arterial",
+  "open_complaints": 5,
+  "complaint_ids": [
+   "BMC25-002756",
+   "BMC25-004400",
+   "BMC25-005345",
+   "BMC25-006013",
+   "BMC25-006017"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 62.2,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.33,
+   "flood": 0.88,
+   "traffic": 0.35,
+   "accidents": 0.0,
+   "emergency_access": 1.0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Bhandup Village Road",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0174",
+  "road_name": "Marve Road",
+  "ward_code": "P/N",
+  "road_type": "Main",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-000985",
+   "BMC25-001321",
+   "BMC25-003578",
+   "BMC25-004939"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 61.6,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.75,
+   "flood": 0.88,
+   "traffic": 0.48,
+   "accidents": 0.6,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": "Malad Subway",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0268",
+  "road_name": "LBS Marg",
+  "ward_code": "S",
+  "road_type": "Arterial",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-003286",
+   "BMC25-004969",
+   "BMC25-004504",
+   "BMC25-006015"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 61.3,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.51,
+   "flood": 0.88,
+   "traffic": 0.58,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Bhandup Village Road",
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0077",
+  "road_name": "Eastern Express Highway",
+  "ward_code": "F/N",
+  "road_type": "Highway",
+  "open_complaints": 6,
+  "complaint_ids": [
+   "BMC25-000477",
+   "BMC25-000509",
+   "BMC25-000508",
+   "BMC25-001638",
+   "BMC25-001637",
+   "BMC25-003416"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 60.8,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.76,
+   "flood": 0.64,
+   "traffic": 0.56,
+   "accidents": 0.4,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Sion Road No 24",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0231",
+  "road_name": "Ghatkopar Mankhurd Link Road",
+  "ward_code": "M/E",
+  "road_type": "Arterial",
+  "open_complaints": 5,
+  "complaint_ids": [
+   "BMC25-004321",
+   "BMC25-004582",
+   "BMC25-004583",
+   "BMC25-005464",
+   "BMC25-005463"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 60.6,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.59,
+   "flood": 0,
+   "traffic": 0.43,
+   "accidents": 1.0,
+   "emergency_access": 1.0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0074",
+  "road_name": "Sion Trombay Road",
+  "ward_code": "F/N",
+  "road_type": "Arterial",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-001243",
+   "BMC25-004368",
+   "BMC25-004777"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 60.0,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.46,
+   "flood": 0.8,
+   "traffic": 0.56,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Wadala Bridge Bhakti Park",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0147",
+  "road_name": "Juhu Tara Road",
+  "ward_code": "K/W",
+  "road_type": "Main",
+  "open_complaints": 5,
+  "complaint_ids": [
+   "BMC25-001898",
+   "BMC25-002513",
+   "BMC25-002895",
+   "BMC25-002714",
+   "BMC25-005457"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 59.2,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.59,
+   "flood": 0.88,
+   "traffic": 0.38,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Andheri Subway",
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0181",
+  "road_name": "Malad Subway",
+  "ward_code": "P/N",
+  "road_type": "Local",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-001169",
+   "BMC25-002130"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 59.1,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.29,
+   "flood": 0.88,
+   "traffic": 0.24,
+   "accidents": 0.27,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Malad Subway",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0213",
+  "road_name": "Western Express Highway",
+  "ward_code": "R/N",
+  "road_type": "Highway",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-005605",
+   "BMC25-005606"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 59.1,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.33,
+   "flood": 0.88,
+   "traffic": 0.75,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Dahisar Subway",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0076",
+  "road_name": "Eastern Express Highway",
+  "ward_code": "F/N",
+  "road_type": "Highway",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-001659",
+   "BMC25-002221"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 59.1,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.36,
+   "flood": 0.64,
+   "traffic": 0.65,
+   "accidents": 0.07,
+   "emergency_access": 1.0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Sion Road No 24",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0094",
+  "road_name": "Senapati Bapat Marg",
+  "ward_code": "G/N",
+  "road_type": "Arterial",
+  "open_complaints": 8,
+  "complaint_ids": [
+   "BMC25-001342",
+   "BMC25-001650",
+   "BMC25-002233",
+   "BMC25-002234",
+   "BMC25-002544",
+   "BMC25-002543",
+   "BMC25-002458",
+   "BMC25-005671"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 58.5,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.67,
+   "flood": 0,
+   "traffic": 0.59,
+   "accidents": 0.2,
+   "emergency_access": 1.0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0146",
+  "road_name": "SV Road",
+  "ward_code": "K/E",
+  "road_type": "Arterial",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-004938",
+   "BMC25-005855",
+   "BMC25-005854"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 58.3,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.37,
+   "flood": 0.88,
+   "traffic": 0.84,
+   "accidents": 0.27,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": "Andheri Subway",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0083",
+  "road_name": "Senapati Bapat Marg",
+  "ward_code": "G/S",
+  "road_type": "Arterial",
+  "open_complaints": 12,
+  "complaint_ids": [
+   "BMC25-002072",
+   "BMC25-002350",
+   "BMC25-002349",
+   "BMC25-002277",
+   "BMC25-002460",
+   "BMC25-002348",
+   "BMC25-002904",
+   "BMC25-003570",
+   "BMC25-003791",
+   "BMC25-003793",
+   "BMC25-004448",
+   "BMC25-004976"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 58.1,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 1.0,
+   "flood": 0.56,
+   "traffic": 0.72,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Worli Naka",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0251",
+  "road_name": "LBS Marg",
+  "ward_code": "N",
+  "road_type": "Arterial",
+  "open_complaints": 6,
+  "complaint_ids": [
+   "BMC25-000800",
+   "BMC25-000937",
+   "BMC25-002068",
+   "BMC25-004589",
+   "BMC25-004590",
+   "BMC25-005218"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 57.8,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.53,
+   "flood": 0.64,
+   "traffic": 0.62,
+   "accidents": 0.07,
+   "emergency_access": 1.0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": "Ghatkopar Andheri Link Road dip",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0102",
+  "road_name": "90 Feet Road Dharavi",
+  "ward_code": "G/N",
+  "road_type": "Main",
+  "open_complaints": 9,
+  "complaint_ids": [
+   "BMC25-002536",
+   "BMC25-002791",
+   "BMC25-003429",
+   "BMC25-003430",
+   "BMC25-004008",
+   "BMC25-003986",
+   "BMC25-005014",
+   "BMC25-005902",
+   "BMC25-005901"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 57.7,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 1.0,
+   "flood": 0.44,
+   "traffic": 0.72,
+   "accidents": 0.13,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Dharavi 90 Feet Road",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0012",
+  "road_name": "Mohammed Ali Road",
+  "ward_code": "B",
+  "road_type": "Arterial",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-005015",
+   "BMC25-006177",
+   "BMC25-006176"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 57.3,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.34,
+   "flood": 0.64,
+   "traffic": 0.74,
+   "accidents": 0.0,
+   "emergency_access": 1.0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": "Masjid Bunder East",
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0052",
+  "road_name": "Clare Road",
+  "ward_code": "E",
+  "road_type": "Main",
+  "open_complaints": 7,
+  "complaint_ids": [
+   "BMC25-002470",
+   "BMC25-002890",
+   "BMC25-003262",
+   "BMC25-004115",
+   "BMC25-004232",
+   "BMC25-005009",
+   "BMC25-005012"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 57.1,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.58,
+   "flood": 0.68,
+   "traffic": 0.78,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Byculla Station West",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0080",
+  "road_name": "Bhaudaji Road",
+  "ward_code": "F/N",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-004132",
+   "BMC25-004190"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 57.0,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.31,
+   "flood": 0.56,
+   "traffic": 0.51,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Gandhi Market, Kings Circle",
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0248",
+  "road_name": "Eastern Express Highway",
+  "ward_code": "M/W",
+  "road_type": "Highway",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-001050",
+   "BMC25-005930",
+   "BMC25-005929",
+   "BMC25-005928"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 56.6,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.58,
+   "flood": 1.0,
+   "traffic": 0.45,
+   "accidents": 0.13,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Govandi Station Road",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0275",
+  "road_name": "Powai Adi Shankaracharya Marg",
+  "ward_code": "S",
+  "road_type": "Arterial",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-000918",
+   "BMC25-003757"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 56.4,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.33,
+   "flood": 0.88,
+   "traffic": 0.36,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Bhandup Village Road",
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0078",
+  "road_name": "Road No 24 Sion",
+  "ward_code": "F/N",
+  "road_type": "Local",
+  "open_complaints": 5,
+  "complaint_ids": [
+   "BMC25-000156",
+   "BMC25-001991",
+   "BMC25-003169",
+   "BMC25-003967",
+   "BMC25-003966"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 56.3,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.51,
+   "flood": 0.56,
+   "traffic": 0.87,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Gandhi Market, Kings Circle",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0068",
+  "road_name": "Acharya Donde Marg",
+  "ward_code": "F/S",
+  "road_type": "Main",
+  "open_complaints": 6,
+  "complaint_ids": [
+   "BMC25-000852",
+   "BMC25-002245",
+   "BMC25-002242",
+   "BMC25-002244",
+   "BMC25-002665",
+   "BMC25-003573"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 56.1,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.63,
+   "flood": 0.68,
+   "traffic": 0.62,
+   "accidents": 0.13,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": "Hindmata Junction",
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0244",
+  "road_name": "RC Marg",
+  "ward_code": "M/W",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-002190",
+   "BMC25-005459"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 55.5,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.25,
+   "flood": 1.0,
+   "traffic": 0.47,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Chembur Shell Colony",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0219",
+  "road_name": "LBS Marg",
+  "ward_code": "L",
+  "road_type": "Arterial",
+  "open_complaints": 10,
+  "complaint_ids": [
+   "BMC25-002107",
+   "BMC25-002109",
+   "BMC25-002657",
+   "BMC25-003618",
+   "BMC25-004605",
+   "BMC25-005047",
+   "BMC25-004783",
+   "BMC25-005539",
+   "BMC25-005540",
+   "BMC25-006303"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 55.5,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 1.0,
+   "flood": 0,
+   "traffic": 0.5,
+   "accidents": 0.2,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0106",
+  "road_name": "Gokhale Road",
+  "ward_code": "F/N",
+  "road_type": "Main",
+  "open_complaints": 5,
+  "complaint_ids": [
+   "BMC25-001943",
+   "BMC25-003083",
+   "BMC25-004247",
+   "BMC25-006046",
+   "BMC25-006047"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 55.2,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.69,
+   "flood": 0.56,
+   "traffic": 0.96,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": "Gandhi Market, Kings Circle",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0136",
+  "road_name": "Western Express Highway",
+  "ward_code": "K/E",
+  "road_type": "Highway",
+  "open_complaints": 5,
+  "complaint_ids": [
+   "BMC25-000501",
+   "BMC25-002219",
+   "BMC25-003312",
+   "BMC25-003315",
+   "BMC25-004994"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 54.4,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.69,
+   "flood": 0.44,
+   "traffic": 0.31,
+   "accidents": 0.2,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Marol Naka",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0169",
+  "road_name": "Link Road",
+  "ward_code": "P/S",
+  "road_type": "Arterial",
+  "open_complaints": 5,
+  "complaint_ids": [
+   "BMC25-000806",
+   "BMC25-000804",
+   "BMC25-002135",
+   "BMC25-002505",
+   "BMC25-002504"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 54.4,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.73,
+   "flood": 0,
+   "traffic": 0.43,
+   "accidents": 0.27,
+   "emergency_access": 1.0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0049",
+  "road_name": "Maulana Azad Road",
+  "ward_code": "E",
+  "road_type": "Main",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-002584",
+   "BMC25-002763",
+   "BMC25-005130",
+   "BMC25-005913"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 54.2,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.52,
+   "flood": 0.68,
+   "traffic": 0.7,
+   "accidents": 0.2,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Byculla Station West",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0110",
+  "road_name": "Kalanagar Road",
+  "ward_code": "H/E",
+  "road_type": "Main",
+  "open_complaints": 17,
+  "complaint_ids": [
+   "BMC25-000010",
+   "BMC25-000011",
+   "BMC25-003390",
+   "BMC25-003389",
+   "BMC25-003447",
+   "BMC25-003873",
+   "BMC25-003875",
+   "BMC25-004376",
+   "BMC25-004758",
+   "BMC25-004759",
+   "BMC25-005178",
+   "BMC25-005175",
+   "BMC25-005208",
+   "BMC25-005305",
+   "BMC25-006038",
+   "BMC25-006126",
+   "BMC25-006125"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 53.9,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 1.0,
+   "flood": 0,
+   "traffic": 0.53,
+   "accidents": 0.07,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0238",
+  "road_name": "Deonar Village Road",
+  "ward_code": "M/E",
+  "road_type": "Local",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-000146",
+   "BMC25-005808"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 53.9,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.34,
+   "flood": 0,
+   "traffic": 0.63,
+   "accidents": 1.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0176",
+  "road_name": "SV Road",
+  "ward_code": "P/N",
+  "road_type": "Arterial",
+  "open_complaints": 10,
+  "complaint_ids": [
+   "BMC25-000375",
+   "BMC25-000374",
+   "BMC25-001197",
+   "BMC25-002754",
+   "BMC25-004418",
+   "BMC25-004417",
+   "BMC25-005360",
+   "BMC25-005353",
+   "BMC25-005352",
+   "BMC25-005734"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 53.8,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.92,
+   "flood": 0,
+   "traffic": 0.71,
+   "accidents": 0.2,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0133",
+  "road_name": "Andheri Kurla Road",
+  "ward_code": "K/E",
+  "road_type": "Arterial",
+  "open_complaints": 6,
+  "complaint_ids": [
+   "BMC25-000905",
+   "BMC25-001253",
+   "BMC25-003266",
+   "BMC25-003264",
+   "BMC25-003789",
+   "BMC25-003920"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 52.8,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 1.0,
+   "flood": 0.44,
+   "traffic": 0.53,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Marol Naka",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0071",
+  "road_name": "Sion Trombay Road",
+  "ward_code": "F/N",
+  "road_type": "Arterial",
+  "open_complaints": 5,
+  "complaint_ids": [
+   "BMC25-001242",
+   "BMC25-001944",
+   "BMC25-004367",
+   "BMC25-004991",
+   "BMC25-004992"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 52.5,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.47,
+   "flood": 0.56,
+   "traffic": 0.59,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": "Gandhi Market, Kings Circle",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0065",
+  "road_name": "G D Ambekar Marg",
+  "ward_code": "F/S",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-002317",
+   "BMC25-004733"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 52.2,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.13,
+   "flood": 0.64,
+   "traffic": 0.38,
+   "accidents": 0.2,
+   "emergency_access": 1.0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": "Lalbaug Flyover underpass",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0120",
+  "road_name": "Linking Road",
+  "ward_code": "H/W",
+  "road_type": "Arterial",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-004401",
+   "BMC25-004647",
+   "BMC25-004648"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 52.0,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.46,
+   "flood": 0,
+   "traffic": 0.65,
+   "accidents": 0.73,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0274",
+  "road_name": "Powai Adi Shankaracharya Marg",
+  "ward_code": "S",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-006290"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 51.8,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.18,
+   "flood": 0.88,
+   "traffic": 0.91,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": "Bhandup Village Road",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0190",
+  "road_name": "Charkop Road",
+  "ward_code": "R/S",
+  "road_type": "Main",
+  "open_complaints": 8,
+  "complaint_ids": [
+   "BMC25-002206",
+   "BMC25-002748",
+   "BMC25-002954",
+   "BMC25-002863",
+   "BMC25-005314",
+   "BMC25-005313",
+   "BMC25-005964",
+   "BMC25-005963"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 51.8,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.54,
+   "flood": 0,
+   "traffic": 0.43,
+   "accidents": 0.0,
+   "emergency_access": 1.0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0073",
+  "road_name": "Sion Trombay Road",
+  "ward_code": "F/N",
+  "road_type": "Arterial",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-000160",
+   "BMC25-001240",
+   "BMC25-004779"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 51.6,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.42,
+   "flood": 0.8,
+   "traffic": 0.74,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": "Wadala Bridge Bhakti Park",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0254",
+  "road_name": "LBS Marg",
+  "ward_code": "N",
+  "road_type": "Arterial",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-000262",
+   "BMC25-000264",
+   "BMC25-001284",
+   "BMC25-001283"
+  ],
+  "main_issue": "Choked drain / nullah overflow",
+  "risk_score": 51.4,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.69,
+   "flood": 0.64,
+   "traffic": 0.65,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Ghatkopar Andheri Link Road dip",
+  "recommended_method": "Desilting and garbage removal",
+  "method_reopen_pct": 23.3,
+  "est_cost_inr": 71362,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0247",
+  "road_name": "Eastern Express Highway",
+  "ward_code": "M/W",
+  "road_type": "Highway",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-000749",
+   "BMC25-004140"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 51.1,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.38,
+   "flood": 1.0,
+   "traffic": 0.58,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": "Govandi Station Road",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0245",
+  "road_name": "RC Marg",
+  "ward_code": "M/W",
+  "road_type": "Main",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-001269"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 51.1,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.15,
+   "flood": 1.0,
+   "traffic": 0.4,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": "Chembur Shell Colony",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0113",
+  "road_name": "Vakola Bridge Road",
+  "ward_code": "H/E",
+  "road_type": "Main",
+  "open_complaints": 8,
+  "complaint_ids": [
+   "BMC25-000083",
+   "BMC25-001411",
+   "BMC25-002867",
+   "BMC25-003203",
+   "BMC25-002868",
+   "BMC25-004756",
+   "BMC25-004979",
+   "BMC25-005166"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 50.9,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.93,
+   "flood": 0,
+   "traffic": 0.93,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0093",
+  "road_name": "Ganpatrao Kadam Marg",
+  "ward_code": "F/S",
+  "road_type": "Main",
+  "open_complaints": 6,
+  "complaint_ids": [
+   "BMC25-000267",
+   "BMC25-002120",
+   "BMC25-002121",
+   "BMC25-003580",
+   "BMC25-003581",
+   "BMC25-005044"
+  ],
+  "main_issue": "Choked drain / nullah overflow",
+  "risk_score": 50.8,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.65,
+   "flood": 0.56,
+   "traffic": 0.54,
+   "accidents": 0.2,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Parel TT",
+  "recommended_method": "Desilting and garbage removal",
+  "method_reopen_pct": 23.3,
+  "est_cost_inr": 71362,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0202",
+  "road_name": "LT Road",
+  "ward_code": "R/N",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-002382",
+   "BMC25-006094"
+  ],
+  "main_issue": "Choked drain / nullah overflow",
+  "risk_score": 50.6,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.13,
+   "flood": 0.88,
+   "traffic": 0.58,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Dahisar Subway",
+  "recommended_method": "Desilting and garbage removal",
+  "method_reopen_pct": 23.3,
+  "est_cost_inr": 71362,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0155",
+  "road_name": "Link Road",
+  "ward_code": "K/W",
+  "road_type": "Arterial",
+  "open_complaints": 11,
+  "complaint_ids": [
+   "BMC25-001324",
+   "BMC25-001325",
+   "BMC25-001326",
+   "BMC25-002008",
+   "BMC25-004275",
+   "BMC25-004810",
+   "BMC25-005157",
+   "BMC25-005458",
+   "BMC25-005364",
+   "BMC25-005567",
+   "BMC25-005699"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 50.5,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 1.0,
+   "flood": 0,
+   "traffic": 0.63,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0062",
+  "road_name": "Dr E Moses Road",
+  "ward_code": "F/S",
+  "road_type": "Main",
+  "open_complaints": 7,
+  "complaint_ids": [
+   "BMC25-001202",
+   "BMC25-003344",
+   "BMC25-003343",
+   "BMC25-003345",
+   "BMC25-003477",
+   "BMC25-003516",
+   "BMC25-005756"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 50.4,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.68,
+   "flood": 0.64,
+   "traffic": 0.43,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": "Lalbaug Flyover underpass",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0224",
+  "road_name": "CST Road",
+  "ward_code": "L",
+  "road_type": "Main",
+  "open_complaints": 12,
+  "complaint_ids": [
+   "BMC25-003375",
+   "BMC25-003376",
+   "BMC25-003582",
+   "BMC25-003583",
+   "BMC25-003808",
+   "BMC25-003807",
+   "BMC25-004294",
+   "BMC25-005302",
+   "BMC25-005303",
+   "BMC25-005594",
+   "BMC25-005715",
+   "BMC25-005714"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 50.4,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 1.0,
+   "flood": 0,
+   "traffic": 0.69,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0066",
+  "road_name": "G D Ambekar Marg",
+  "ward_code": "F/S",
+  "road_type": "Main",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-000752",
+   "BMC25-001313",
+   "BMC25-001860",
+   "BMC25-005845"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 50.0,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.45,
+   "flood": 0.64,
+   "traffic": 0.58,
+   "accidents": 0.2,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": "Lalbaug Flyover underpass",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0265",
+  "road_name": "LBS Marg",
+  "ward_code": "S",
+  "road_type": "Arterial",
+  "open_complaints": 8,
+  "complaint_ids": [
+   "BMC25-001187",
+   "BMC25-002546",
+   "BMC25-002941",
+   "BMC25-003285",
+   "BMC25-002943",
+   "BMC25-003533",
+   "BMC25-004503",
+   "BMC25-005378"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 49.9,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.78,
+   "flood": 0,
+   "traffic": 0.69,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0130",
+  "road_name": "Andheri Kurla Road",
+  "ward_code": "K/E",
+  "road_type": "Arterial",
+  "open_complaints": 6,
+  "complaint_ids": [
+   "BMC25-001155",
+   "BMC25-001156",
+   "BMC25-001486",
+   "BMC25-003427",
+   "BMC25-003921",
+   "BMC25-005070"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 49.5,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.63,
+   "flood": 0,
+   "traffic": 0.32,
+   "accidents": 0.93,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0184",
+  "road_name": "Link Road",
+  "ward_code": "R/S",
+  "road_type": "Arterial",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-003129",
+   "BMC25-003128",
+   "BMC25-003127"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 49.3,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.49,
+   "flood": 0,
+   "traffic": 0.98,
+   "accidents": 0.2,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0206",
+  "road_name": "Gorai Road",
+  "ward_code": "R/C",
+  "road_type": "Main",
+  "open_complaints": 6,
+  "complaint_ids": [
+   "BMC25-001105",
+   "BMC25-001104",
+   "BMC25-001103",
+   "BMC25-001108",
+   "BMC25-001415",
+   "BMC25-005624"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 49.2,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.72,
+   "flood": 0,
+   "traffic": 0.91,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0098",
+  "road_name": "Lady Jamshedji Road",
+  "ward_code": "G/N",
+  "road_type": "Main",
+  "open_complaints": 8,
+  "complaint_ids": [
+   "BMC25-001327",
+   "BMC25-001328",
+   "BMC25-001699",
+   "BMC25-003872",
+   "BMC25-004547",
+   "BMC25-004548",
+   "BMC25-005989",
+   "BMC25-006254"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 49.1,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 1.0,
+   "flood": 0,
+   "traffic": 0.83,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0291",
+  "road_name": "Devidayal Road",
+  "ward_code": "T",
+  "road_type": "Local",
+  "open_complaints": 6,
+  "complaint_ids": [
+   "BMC25-000906",
+   "BMC25-001276",
+   "BMC25-001961",
+   "BMC25-003171",
+   "BMC25-004516",
+   "BMC25-004515"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 49.0,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.65,
+   "flood": 0,
+   "traffic": 0.43,
+   "accidents": 0.0,
+   "emergency_access": 1.0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0211",
+  "road_name": "Western Express Highway",
+  "ward_code": "R/N",
+  "road_type": "Highway",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-002900",
+   "BMC25-005607"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 48.7,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.15,
+   "flood": 0.88,
+   "traffic": 0.44,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Dahisar Subway",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0063",
+  "road_name": "Dr E Moses Road",
+  "ward_code": "F/S",
+  "road_type": "Main",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-003478"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 48.7,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.11,
+   "flood": 0.64,
+   "traffic": 0.32,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Lalbaug Flyover underpass",
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0143",
+  "road_name": "SV Road",
+  "ward_code": "K/W",
+  "road_type": "Arterial",
+  "open_complaints": 6,
+  "complaint_ids": [
+   "BMC25-000049",
+   "BMC25-001452",
+   "BMC25-001450",
+   "BMC25-003590",
+   "BMC25-003592",
+   "BMC25-004619"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 48.7,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.43,
+   "flood": 0,
+   "traffic": 0.45,
+   "accidents": 0.4,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0059",
+  "road_name": "Dr Babasaheb Ambedkar Road",
+  "ward_code": "F/S",
+  "road_type": "Arterial",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-000751",
+   "BMC25-000755",
+   "BMC25-000754",
+   "BMC25-001445"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 48.5,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.71,
+   "flood": 0.68,
+   "traffic": 0.72,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": "Hindmata Junction",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0016",
+  "road_name": "P D'Mello Road",
+  "ward_code": "B",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-005511"
+  ],
+  "main_issue": "Choked drain / nullah overflow",
+  "risk_score": 48.4,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.07,
+   "flood": 0.64,
+   "traffic": 0.53,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Masjid Bunder East",
+  "recommended_method": "Desilting and garbage removal",
+  "method_reopen_pct": 23.3,
+  "est_cost_inr": 71362,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0261",
+  "road_name": "Andheri Ghatkopar Link Road",
+  "ward_code": "N",
+  "road_type": "Arterial",
+  "open_complaints": 5,
+  "complaint_ids": [
+   "BMC25-001512",
+   "BMC25-003335",
+   "BMC25-004944",
+   "BMC25-005469",
+   "BMC25-005470"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 48.1,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.61,
+   "flood": 0.64,
+   "traffic": 0.81,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": "Ghatkopar Andheri Link Road dip",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0145",
+  "road_name": "SV Road",
+  "ward_code": "K/W",
+  "road_type": "Arterial",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-003455",
+   "BMC25-004990"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 48.0,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.3,
+   "flood": 0.88,
+   "traffic": 0.59,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": "Andheri Subway",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0276",
+  "road_name": "Powai Adi Shankaracharya Marg",
+  "ward_code": "S",
+  "road_type": "Arterial",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-000068",
+   "BMC25-002757",
+   "BMC25-004811",
+   "BMC25-004812"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 47.9,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.51,
+   "flood": 0,
+   "traffic": 0.79,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0025",
+  "road_name": "Jagannath Shankarseth Road",
+  "ward_code": "C",
+  "road_type": "Main",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-005493"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 47.8,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.13,
+   "flood": 0.64,
+   "traffic": 0.89,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": "Masjid Bunder East",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0082",
+  "road_name": "Bhaudaji Road",
+  "ward_code": "F/N",
+  "road_type": "Main",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-002033",
+   "BMC25-003086",
+   "BMC25-004091"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 47.5,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.27,
+   "flood": 0.56,
+   "traffic": 0.53,
+   "accidents": 0.47,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": "Gandhi Market, Kings Circle",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0237",
+  "road_name": "Deonar Village Road",
+  "ward_code": "M/E",
+  "road_type": "Local",
+  "open_complaints": 8,
+  "complaint_ids": [
+   "BMC25-000145",
+   "BMC25-001600",
+   "BMC25-001599",
+   "BMC25-002029",
+   "BMC25-002674",
+   "BMC25-002673",
+   "BMC25-005868",
+   "BMC25-006292"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 47.4,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.97,
+   "flood": 0,
+   "traffic": 0.31,
+   "accidents": 0.13,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0229",
+  "road_name": "Ghatkopar Mankhurd Link Road",
+  "ward_code": "M/E",
+  "road_type": "Arterial",
+  "open_complaints": 5,
+  "complaint_ids": [
+   "BMC25-001709",
+   "BMC25-002445",
+   "BMC25-003853",
+   "BMC25-004617",
+   "BMC25-004322"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 47.3,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.33,
+   "flood": 0,
+   "traffic": 0.86,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0056",
+  "road_name": "Bellasis Road",
+  "ward_code": "E",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-005381",
+   "BMC25-005834"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 47.1,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.27,
+   "flood": 0.68,
+   "traffic": 0.7,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": "Byculla Station West",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0091",
+  "road_name": "Ganpatrao Kadam Marg",
+  "ward_code": "G/S",
+  "road_type": "Main",
+  "open_complaints": 5,
+  "complaint_ids": [
+   "BMC25-002116",
+   "BMC25-002562",
+   "BMC25-002561",
+   "BMC25-002564",
+   "BMC25-005186"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 47.1,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.52,
+   "flood": 0,
+   "traffic": 0.46,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0166",
+  "road_name": "MG Road Goregaon",
+  "ward_code": "P/S",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-002887",
+   "BMC25-003563"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 47.0,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.13,
+   "flood": 0.88,
+   "traffic": 0.47,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": "Goregaon MG Road",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0203",
+  "road_name": "Western Express Highway",
+  "ward_code": "R/C",
+  "road_type": "Highway",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-004351"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 46.7,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.13,
+   "flood": 0,
+   "traffic": 0.83,
+   "accidents": 0.2,
+   "emergency_access": 1.0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0204",
+  "road_name": "Western Express Highway",
+  "ward_code": "R/C",
+  "road_type": "Highway",
+  "open_complaints": 6,
+  "complaint_ids": [
+   "BMC25-000094",
+   "BMC25-004352",
+   "BMC25-004349",
+   "BMC25-004484",
+   "BMC25-005587",
+   "BMC25-005792"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 46.7,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.79,
+   "flood": 0,
+   "traffic": 0.63,
+   "accidents": 0.07,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0138",
+  "road_name": "Mahakali Caves Road",
+  "ward_code": "K/E",
+  "road_type": "Main",
+  "open_complaints": 5,
+  "complaint_ids": [
+   "BMC25-001501",
+   "BMC25-002368",
+   "BMC25-003623",
+   "BMC25-004205",
+   "BMC25-004204"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 46.4,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.84,
+   "flood": 0,
+   "traffic": 0.47,
+   "accidents": 0.07,
+   "emergency_access": 1.0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0088",
+  "road_name": "Dr Annie Besant Road",
+  "ward_code": "G/S",
+  "road_type": "Arterial",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-000140",
+   "BMC25-001627",
+   "BMC25-002103",
+   "BMC25-004168"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 46.1,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.58,
+   "flood": 0,
+   "traffic": 0.98,
+   "accidents": 0.13,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0107",
+  "road_name": "Western Express Highway",
+  "ward_code": "H/E",
+  "road_type": "Highway",
+  "open_complaints": 5,
+  "complaint_ids": [
+   "BMC25-004304",
+   "BMC25-005220",
+   "BMC25-005221",
+   "BMC25-005926",
+   "BMC25-005927"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 46.1,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.55,
+   "flood": 0,
+   "traffic": 0.44,
+   "accidents": 0.8,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0121",
+  "road_name": "Linking Road",
+  "ward_code": "H/W",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-000599"
+  ],
+  "main_issue": "Choked drain / nullah overflow",
+  "risk_score": 46.0,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.15,
+   "flood": 0,
+   "traffic": 0.83,
+   "accidents": 0.67,
+   "emergency_access": 1.0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Desilting and garbage removal",
+  "method_reopen_pct": 23.3,
+  "est_cost_inr": 71362,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0045",
+  "road_name": "Dr Babasaheb Ambedkar Road",
+  "ward_code": "E",
+  "road_type": "Arterial",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-003019",
+   "BMC25-005752"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 45.9,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.22,
+   "flood": 0,
+   "traffic": 0.84,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0255",
+  "road_name": "MG Road Ghatkopar",
+  "ward_code": "N",
+  "road_type": "Main",
+  "open_complaints": 10,
+  "complaint_ids": [
+   "BMC25-001274",
+   "BMC25-001273",
+   "BMC25-001908",
+   "BMC25-001906",
+   "BMC25-001905",
+   "BMC25-003337",
+   "BMC25-004452",
+   "BMC25-005104",
+   "BMC25-005257",
+   "BMC25-005258"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 45.6,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.82,
+   "flood": 0,
+   "traffic": 0.38,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0134",
+  "road_name": "Western Express Highway",
+  "ward_code": "K/E",
+  "road_type": "Highway",
+  "open_complaints": 10,
+  "complaint_ids": [
+   "BMC25-000221",
+   "BMC25-000502",
+   "BMC25-000831",
+   "BMC25-000503",
+   "BMC25-002969",
+   "BMC25-003316",
+   "BMC25-003797",
+   "BMC25-003796",
+   "BMC25-005736",
+   "BMC25-006381"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 45.2,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 1.0,
+   "flood": 0,
+   "traffic": 0.35,
+   "accidents": 0.27,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0222",
+  "road_name": "Kurla Andheri Road",
+  "ward_code": "L",
+  "road_type": "Arterial",
+  "open_complaints": 7,
+  "complaint_ids": [
+   "BMC25-000329",
+   "BMC25-001851",
+   "BMC25-001852",
+   "BMC25-002556",
+   "BMC25-003678",
+   "BMC25-004999",
+   "BMC25-005046"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 45.0,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.86,
+   "flood": 0,
+   "traffic": 0.56,
+   "accidents": 0.13,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0115",
+  "road_name": "Vakola Bridge Road",
+  "ward_code": "H/E",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-000516",
+   "BMC25-003716"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 44.9,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.27,
+   "flood": 0,
+   "traffic": 0.55,
+   "accidents": 0.2,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0269",
+  "road_name": "JVLR",
+  "ward_code": "S",
+  "road_type": "Arterial",
+  "open_complaints": 5,
+  "complaint_ids": [
+   "BMC25-001237",
+   "BMC25-002545",
+   "BMC25-003635",
+   "BMC25-003637",
+   "BMC25-004291"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 44.9,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.71,
+   "flood": 0,
+   "traffic": 0.32,
+   "accidents": 0.2,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0221",
+  "road_name": "Kurla Andheri Road",
+  "ward_code": "L",
+  "road_type": "Arterial",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-001997",
+   "BMC25-001996"
+  ],
+  "main_issue": "Broken paver blocks",
+  "risk_score": 44.6,
+  "risk_components": {
+   "severity": 0.4,
+   "citizen_signal": 0.41,
+   "flood": 0.88,
+   "traffic": 0.42,
+   "accidents": 0.13,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": "Kurla LBS Marg, Kamani Junction",
+  "recommended_method": "Paver blocks relaid",
+  "method_reopen_pct": 22.2,
+  "est_cost_inr": 58746,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0183",
+  "road_name": "Link Road",
+  "ward_code": "R/S",
+  "road_type": "Arterial",
+  "open_complaints": 7,
+  "complaint_ids": [
+   "BMC25-000708",
+   "BMC25-000707",
+   "BMC25-000709",
+   "BMC25-000706",
+   "BMC25-002416",
+   "BMC25-002978",
+   "BMC25-003983"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 44.2,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.79,
+   "flood": 0,
+   "traffic": 0.69,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0085",
+  "road_name": "Senapati Bapat Marg",
+  "ward_code": "G/S",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-000580"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 44.2,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.1,
+   "flood": 0.56,
+   "traffic": 0.62,
+   "accidents": 0.27,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": "Worli Naka",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0271",
+  "road_name": "JVLR",
+  "ward_code": "S",
+  "road_type": "Arterial",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-000738",
+   "BMC25-005022",
+   "BMC25-005544",
+   "BMC25-005543"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 43.6,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.69,
+   "flood": 0,
+   "traffic": 0.91,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0156",
+  "road_name": "Link Road",
+  "ward_code": "K/W",
+  "road_type": "Arterial",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-002226",
+   "BMC25-002225",
+   "BMC25-005816"
+  ],
+  "main_issue": "Choked drain / nullah overflow",
+  "risk_score": 43.0,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.52,
+   "flood": 0,
+   "traffic": 0.85,
+   "accidents": 0.2,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Desilting and garbage removal",
+  "method_reopen_pct": 23.3,
+  "est_cost_inr": 71362,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0252",
+  "road_name": "LBS Marg",
+  "ward_code": "N",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-005776"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 42.8,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.2,
+   "flood": 0.64,
+   "traffic": 0.58,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": "Ghatkopar Andheri Link Road dip",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0046",
+  "road_name": "Dr Babasaheb Ambedkar Road",
+  "ward_code": "E",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-005380"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 42.8,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.2,
+   "flood": 0,
+   "traffic": 0.94,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0253",
+  "road_name": "LBS Marg",
+  "ward_code": "N",
+  "road_type": "Arterial",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-003434",
+   "BMC25-004588"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 42.6,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.13,
+   "flood": 0.64,
+   "traffic": 0.56,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": "Ghatkopar Andheri Link Road dip",
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0196",
+  "road_name": "SV Road",
+  "ward_code": "R/C",
+  "road_type": "Arterial",
+  "open_complaints": 8,
+  "complaint_ids": [
+   "BMC25-000787",
+   "BMC25-000786",
+   "BMC25-001111",
+   "BMC25-002157",
+   "BMC25-002746",
+   "BMC25-002823",
+   "BMC25-002824",
+   "BMC25-004629"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 42.5,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.62,
+   "flood": 0,
+   "traffic": 0.86,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0032",
+  "road_name": "Nepean Sea Road",
+  "ward_code": "C",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-000617",
+   "BMC25-000616"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 42.5,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.24,
+   "flood": 0,
+   "traffic": 0.81,
+   "accidents": 0.07,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0081",
+  "road_name": "Bhaudaji Road",
+  "ward_code": "F/N",
+  "road_type": "Main",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-001738",
+   "BMC25-004191",
+   "BMC25-004681",
+   "BMC25-006165"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 42.4,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.56,
+   "flood": 0.56,
+   "traffic": 0.31,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": "Gandhi Market, Kings Circle",
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0163",
+  "road_name": "Aarey Road",
+  "ward_code": "P/S",
+  "road_type": "Main",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-002795",
+   "BMC25-003015",
+   "BMC25-003013",
+   "BMC25-003014"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 42.2,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.64,
+   "flood": 0,
+   "traffic": 0.65,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0235",
+  "road_name": "Sion Trombay Road",
+  "ward_code": "M/E",
+  "road_type": "Arterial",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-002055",
+   "BMC25-003196",
+   "BMC25-003842"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 42.0,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.3,
+   "flood": 0,
+   "traffic": 0.8,
+   "accidents": 0.33,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0084",
+  "road_name": "Senapati Bapat Marg",
+  "ward_code": "G/S",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-002276"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 42.0,
+  "risk_components": {
+   "severity": 0.2,
+   "citizen_signal": 0.13,
+   "flood": 0.56,
+   "traffic": 0.86,
+   "accidents": 0.07,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": "Worli Naka",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0053",
+  "road_name": "Clare Road",
+  "ward_code": "E",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-002981",
+   "BMC25-005835"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 41.6,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.18,
+   "flood": 0.68,
+   "traffic": 0.28,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": "Byculla Station West",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0250",
+  "road_name": "Shell Colony Road",
+  "ward_code": "M/W",
+  "road_type": "Local",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-000277",
+   "BMC25-001873",
+   "BMC25-004555"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 41.6,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.46,
+   "flood": 0,
+   "traffic": 0.91,
+   "accidents": 0.2,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0280",
+  "road_name": "LBS Marg",
+  "ward_code": "T",
+  "road_type": "Arterial",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-000765",
+   "BMC25-004391",
+   "BMC25-004392",
+   "BMC25-004558"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 41.4,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.64,
+   "flood": 0,
+   "traffic": 0.76,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0144",
+  "road_name": "SV Road",
+  "ward_code": "K/W",
+  "road_type": "Arterial",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-001499",
+   "BMC25-001498",
+   "BMC25-003593"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 41.1,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.5,
+   "flood": 0,
+   "traffic": 0.56,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0048",
+  "road_name": "Dr Babasaheb Ambedkar Road",
+  "ward_code": "F/S",
+  "road_type": "Arterial",
+  "open_complaints": 12,
+  "complaint_ids": [
+   "BMC25-000753",
+   "BMC25-000976",
+   "BMC25-000975",
+   "BMC25-001473",
+   "BMC25-001472",
+   "BMC25-002076",
+   "BMC25-002922",
+   "BMC25-002923",
+   "BMC25-003442",
+   "BMC25-003663",
+   "BMC25-005921",
+   "BMC25-006259"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 40.8,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 1.0,
+   "flood": 0,
+   "traffic": 0.36,
+   "accidents": 0.13,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0105",
+  "road_name": "Gokhale Road",
+  "ward_code": "G/N",
+  "road_type": "Main",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-005959"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 40.4,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.17,
+   "flood": 0,
+   "traffic": 0.25,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0152",
+  "road_name": "JP Road",
+  "ward_code": "K/W",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-002457",
+   "BMC25-005517"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 40.2,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.32,
+   "flood": 0,
+   "traffic": 0.84,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0283",
+  "road_name": "Eastern Express Highway",
+  "ward_code": "T",
+  "road_type": "Highway",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-001170",
+   "BMC25-001988"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 39.8,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.22,
+   "flood": 0,
+   "traffic": 0.88,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0154",
+  "road_name": "Andheri Subway",
+  "ward_code": "K/W",
+  "road_type": "Local",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-003846",
+   "BMC25-004171"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 39.7,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.24,
+   "flood": 0,
+   "traffic": 0.73,
+   "accidents": 0.07,
+   "emergency_access": 1.0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0233",
+  "road_name": "Sion Trombay Road",
+  "ward_code": "M/E",
+  "road_type": "Arterial",
+  "open_complaints": 9,
+  "complaint_ids": [
+   "BMC25-000127",
+   "BMC25-002910",
+   "BMC25-003689",
+   "BMC25-003841",
+   "BMC25-004713",
+   "BMC25-004715",
+   "BMC25-004702",
+   "BMC25-004703",
+   "BMC25-005740"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 39.6,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.84,
+   "flood": 0,
+   "traffic": 0.68,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0072",
+  "road_name": "Sion Trombay Road",
+  "ward_code": "F/N",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-004495"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 39.6,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.24,
+   "flood": 0.8,
+   "traffic": 0.61,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": "Wadala Bridge Bhakti Park",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0162",
+  "road_name": "SV Road",
+  "ward_code": "P/S",
+  "road_type": "Arterial",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-000867",
+   "BMC25-000864",
+   "BMC25-004342"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 39.3,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.41,
+   "flood": 0,
+   "traffic": 0.72,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0239",
+  "road_name": "Sion Trombay Road",
+  "ward_code": "M/W",
+  "road_type": "Arterial",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-000691",
+   "BMC25-002084",
+   "BMC25-006326"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 39.3,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.2,
+   "flood": 0,
+   "traffic": 0.51,
+   "accidents": 0.2,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0195",
+  "road_name": "Thakur Village Road",
+  "ward_code": "R/S",
+  "road_type": "Main",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-002124",
+   "BMC25-006134",
+   "BMC25-006135"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 39.2,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.53,
+   "flood": 0,
+   "traffic": 0.75,
+   "accidents": 0.27,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0023",
+  "road_name": "Kalbadevi Road",
+  "ward_code": "C",
+  "road_type": "Main",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-005106"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 39.0,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.17,
+   "flood": 0,
+   "traffic": 0.38,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0189",
+  "road_name": "SV Road",
+  "ward_code": "R/S",
+  "road_type": "Arterial",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-001300",
+   "BMC25-002783",
+   "BMC25-002782"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 39.0,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.31,
+   "flood": 0,
+   "traffic": 0.95,
+   "accidents": 0.2,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0258",
+  "road_name": "Eastern Express Highway",
+  "ward_code": "N",
+  "road_type": "Highway",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-005173",
+   "BMC25-005386",
+   "BMC25-005385"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 38.8,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.2,
+   "flood": 0,
+   "traffic": 0.68,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0096",
+  "road_name": "Senapati Bapat Marg",
+  "ward_code": "G/N",
+  "road_type": "Arterial",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-001341",
+   "BMC25-005194"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 38.7,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.34,
+   "flood": 0,
+   "traffic": 0.82,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0095",
+  "road_name": "Senapati Bapat Marg",
+  "ward_code": "G/N",
+  "road_type": "Arterial",
+  "open_complaints": 8,
+  "complaint_ids": [
+   "BMC25-001307",
+   "BMC25-001329",
+   "BMC25-001978",
+   "BMC25-001977",
+   "BMC25-002459",
+   "BMC25-002679",
+   "BMC25-004476",
+   "BMC25-004977"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 38.5,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.99,
+   "flood": 0,
+   "traffic": 0.51,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0208",
+  "road_name": "Gorai Road",
+  "ward_code": "R/C",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-005979",
+   "BMC25-005978"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 38.2,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.27,
+   "flood": 0,
+   "traffic": 0.37,
+   "accidents": 0.2,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0223",
+  "road_name": "Kurla Andheri Road",
+  "ward_code": "L",
+  "road_type": "Arterial",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-000418",
+   "BMC25-004187",
+   "BMC25-004706",
+   "BMC25-004705"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 38.1,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.53,
+   "flood": 0,
+   "traffic": 0.9,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0230",
+  "road_name": "Ghatkopar Mankhurd Link Road",
+  "ward_code": "M/E",
+  "road_type": "Arterial",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-003688",
+   "BMC25-006331"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 38.1,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.28,
+   "flood": 0,
+   "traffic": 0.88,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0200",
+  "road_name": "LT Road",
+  "ward_code": "R/C",
+  "road_type": "Main",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-002813",
+   "BMC25-002812",
+   "BMC25-003884"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 38.1,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.34,
+   "flood": 0,
+   "traffic": 0.52,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0228",
+  "road_name": "Kamani Junction Road",
+  "ward_code": "L",
+  "road_type": "Local",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-000213",
+   "BMC25-005793"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 38.0,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.32,
+   "flood": 0,
+   "traffic": 0.19,
+   "accidents": 0.4,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0186",
+  "road_name": "SV Road",
+  "ward_code": "R/S",
+  "road_type": "Arterial",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-002389",
+   "BMC25-004701"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 37.9,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.13,
+   "flood": 0,
+   "traffic": 0.64,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0087",
+  "road_name": "Dr Annie Besant Road",
+  "ward_code": "G/S",
+  "road_type": "Arterial",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-000139",
+   "BMC25-002719",
+   "BMC25-004587"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 37.8,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.39,
+   "flood": 0,
+   "traffic": 0.46,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0126",
+  "road_name": "Hill Road",
+  "ward_code": "H/W",
+  "road_type": "Main",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-005170"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 37.6,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.08,
+   "flood": 0.76,
+   "traffic": 0.37,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": "Kalanagar Junction",
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0119",
+  "road_name": "SV Road",
+  "ward_code": "H/W",
+  "road_type": "Arterial",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-000487",
+   "BMC25-000488",
+   "BMC25-001480"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 37.6,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.44,
+   "flood": 0,
+   "traffic": 0.48,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0127",
+  "road_name": "Milan Subway Road",
+  "ward_code": "H/W",
+  "road_type": "Main",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-004557"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 37.6,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.07,
+   "flood": 0,
+   "traffic": 0.35,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0197",
+  "road_name": "SV Road",
+  "ward_code": "R/C",
+  "road_type": "Arterial",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-000204",
+   "BMC25-002158",
+   "BMC25-005231",
+   "BMC25-005905"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 37.5,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.47,
+   "flood": 0,
+   "traffic": 0.43,
+   "accidents": 0.2,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0132",
+  "road_name": "Andheri Kurla Road",
+  "ward_code": "K/E",
+  "road_type": "Arterial",
+  "open_complaints": 5,
+  "complaint_ids": [
+   "BMC25-000807",
+   "BMC25-000808",
+   "BMC25-003982",
+   "BMC25-003981",
+   "BMC25-003980"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 37.4,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.7,
+   "flood": 0,
+   "traffic": 0.74,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0041",
+  "road_name": "Peddar Road",
+  "ward_code": "D",
+  "road_type": "Arterial",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-001122",
+   "BMC25-002035"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 37.1,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.13,
+   "flood": 0,
+   "traffic": 0.96,
+   "accidents": 0.07,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0159",
+  "road_name": "SV Road",
+  "ward_code": "P/S",
+  "road_type": "Arterial",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-000868",
+   "BMC25-001701",
+   "BMC25-004343"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 37.0,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.2,
+   "flood": 0,
+   "traffic": 0.78,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0026",
+  "road_name": "Jagannath Shankarseth Road",
+  "ward_code": "B",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-005491",
+   "BMC25-005642"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 36.9,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.2,
+   "flood": 0.64,
+   "traffic": 0.45,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": "Masjid Bunder East",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0236",
+  "road_name": "Sion Trombay Road",
+  "ward_code": "M/E",
+  "road_type": "Arterial",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-000556",
+   "BMC25-003964"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 36.8,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.31,
+   "flood": 0,
+   "traffic": 0.78,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0139",
+  "road_name": "Mahakali Caves Road",
+  "ward_code": "K/E",
+  "road_type": "Main",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-000962"
+  ],
+  "main_issue": "Choked drain / nullah overflow",
+  "risk_score": 36.4,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.25,
+   "flood": 0,
+   "traffic": 0.46,
+   "accidents": 0.33,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Desilting and garbage removal",
+  "method_reopen_pct": 23.3,
+  "est_cost_inr": 71362,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0140",
+  "road_name": "Marol Maroshi Road",
+  "ward_code": "K/E",
+  "road_type": "Main",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-003069",
+   "BMC25-003463",
+   "BMC25-003564"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 36.0,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.29,
+   "flood": 0,
+   "traffic": 0.47,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0263",
+  "road_name": "Andheri Ghatkopar Link Road",
+  "ward_code": "N",
+  "road_type": "Arterial",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-000929",
+   "BMC25-004945"
+  ],
+  "main_issue": "Choked drain / nullah overflow",
+  "risk_score": 36.0,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.34,
+   "flood": 0,
+   "traffic": 0.71,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Desilting and garbage removal",
+  "method_reopen_pct": 23.3,
+  "est_cost_inr": 71362,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0097",
+  "road_name": "Senapati Bapat Marg",
+  "ward_code": "G/N",
+  "road_type": "Arterial",
+  "open_complaints": 6,
+  "complaint_ids": [
+   "BMC25-002451",
+   "BMC25-003234",
+   "BMC25-003235",
+   "BMC25-003924",
+   "BMC25-003925",
+   "BMC25-005672"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 35.8,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.79,
+   "flood": 0,
+   "traffic": 0.39,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0008",
+  "road_name": "Veer Nariman Road",
+  "ward_code": "A",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-006026"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 35.6,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.07,
+   "flood": 0,
+   "traffic": 0.66,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0099",
+  "road_name": "Lady Jamshedji Road",
+  "ward_code": "G/N",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-005192",
+   "BMC25-005193"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 35.3,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.25,
+   "flood": 0,
+   "traffic": 0.72,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0009",
+  "road_name": "Colaba Causeway",
+  "ward_code": "A",
+  "road_type": "Main",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-001406",
+   "BMC25-006025",
+   "BMC25-006024"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 34.9,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.2,
+   "flood": 0,
+   "traffic": 0.5,
+   "accidents": 0.07,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0060",
+  "road_name": "Dr Babasaheb Ambedkar Road",
+  "ward_code": "F/S",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-002077"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 34.6,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.08,
+   "flood": 0,
+   "traffic": 0.85,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0103",
+  "road_name": "90 Feet Road Dharavi",
+  "ward_code": "F/N",
+  "road_type": "Main",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-002395"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 34.5,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.07,
+   "flood": 0.44,
+   "traffic": 0.36,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": "Dharavi 90 Feet Road",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0257",
+  "road_name": "MG Road Ghatkopar",
+  "ward_code": "N",
+  "road_type": "Main",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-001910",
+   "BMC25-001909",
+   "BMC25-005103"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 34.4,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.44,
+   "flood": 0,
+   "traffic": 0.49,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0286",
+  "road_name": "Mulund Goregaon Link Road",
+  "ward_code": "T",
+  "road_type": "Arterial",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-002899",
+   "BMC25-004364",
+   "BMC25-004363"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 34.3,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.2,
+   "flood": 0,
+   "traffic": 0.31,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0165",
+  "road_name": "Aarey Road",
+  "ward_code": "P/S",
+  "road_type": "Main",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-000056"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 34.2,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.2,
+   "flood": 0,
+   "traffic": 0.68,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0020",
+  "road_name": "Nishanpada Road",
+  "ward_code": "B",
+  "road_type": "Local",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-001220",
+   "BMC25-001219",
+   "BMC25-002288",
+   "BMC25-006020"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 34.2,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.49,
+   "flood": 0.64,
+   "traffic": 0.3,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": "Masjid Bunder East",
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0137",
+  "road_name": "Mahakali Caves Road",
+  "ward_code": "K/E",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-000607",
+   "BMC25-003625"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 34.0,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.27,
+   "flood": 0,
+   "traffic": 0.42,
+   "accidents": 0.2,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0050",
+  "road_name": "Maulana Azad Road",
+  "ward_code": "E",
+  "road_type": "Main",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-002197",
+   "BMC25-003425",
+   "BMC25-005915"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 33.7,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.49,
+   "flood": 0,
+   "traffic": 0.45,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0075",
+  "road_name": "Eastern Express Highway",
+  "ward_code": "F/N",
+  "road_type": "Highway",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-000407",
+   "BMC25-000915",
+   "BMC25-001660",
+   "BMC25-003417"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 33.6,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.27,
+   "flood": 0,
+   "traffic": 0.78,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0079",
+  "road_name": "Road No 24 Sion",
+  "ward_code": "F/N",
+  "road_type": "Local",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-001430",
+   "BMC25-003878",
+   "BMC25-004935",
+   "BMC25-005574"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 33.6,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.55,
+   "flood": 0,
+   "traffic": 0.32,
+   "accidents": 0.2,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0282",
+  "road_name": "LBS Marg",
+  "ward_code": "T",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-004142"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 33.3,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.07,
+   "flood": 0,
+   "traffic": 0.75,
+   "accidents": 0.07,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0279",
+  "road_name": "LBS Marg",
+  "ward_code": "T",
+  "road_type": "Arterial",
+  "open_complaints": 6,
+  "complaint_ids": [
+   "BMC25-001803",
+   "BMC25-001806",
+   "BMC25-001805",
+   "BMC25-001804",
+   "BMC25-004141",
+   "BMC25-004559"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 33.3,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.5,
+   "flood": 0,
+   "traffic": 0.82,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0131",
+  "road_name": "Andheri Kurla Road",
+  "ward_code": "K/E",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-004325"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 33.1,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.14,
+   "flood": 0,
+   "traffic": 0.47,
+   "accidents": 0.07,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0135",
+  "road_name": "Western Express Highway",
+  "ward_code": "K/E",
+  "road_type": "Highway",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-000889"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 32.6,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.11,
+   "flood": 0,
+   "traffic": 0.52,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0172",
+  "road_name": "Link Road",
+  "ward_code": "P/S",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-000805"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 32.6,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.16,
+   "flood": 0,
+   "traffic": 0.82,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0100",
+  "road_name": "Lady Jamshedji Road",
+  "ward_code": "G/N",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-001700",
+   "BMC25-005644"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 32.5,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.19,
+   "flood": 0,
+   "traffic": 0.2,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0112",
+  "road_name": "Kalanagar Road",
+  "ward_code": "H/E",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-000731",
+   "BMC25-002257"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 32.4,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.32,
+   "flood": 0,
+   "traffic": 0.41,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0227",
+  "road_name": "Kamani Junction Road",
+  "ward_code": "L",
+  "road_type": "Local",
+  "open_complaints": 4,
+  "complaint_ids": [
+   "BMC25-002514",
+   "BMC25-002515",
+   "BMC25-003587",
+   "BMC25-005499"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 32.0,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.58,
+   "flood": 0,
+   "traffic": 0.28,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0037",
+  "road_name": "Tardeo Road",
+  "ward_code": "D",
+  "road_type": "Arterial",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-000029",
+   "BMC25-003471"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 32.0,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.26,
+   "flood": 0,
+   "traffic": 0.6,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0185",
+  "road_name": "Link Road",
+  "ward_code": "R/S",
+  "road_type": "Arterial",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-002700",
+   "BMC25-003984"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 32.0,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.21,
+   "flood": 0,
+   "traffic": 0.64,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0111",
+  "road_name": "Kalanagar Road",
+  "ward_code": "H/E",
+  "road_type": "Main",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-002869",
+   "BMC25-002949",
+   "BMC25-003700"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 32.0,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.47,
+   "flood": 0,
+   "traffic": 0.46,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0191",
+  "road_name": "Charkop Road",
+  "ward_code": "R/S",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-002391",
+   "BMC25-002784"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 31.7,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.13,
+   "flood": 0,
+   "traffic": 0.29,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0001",
+  "road_name": "Shahid Bhagat Singh Marg",
+  "ward_code": "A",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-002893"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 31.6,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.07,
+   "flood": 0,
+   "traffic": 0.93,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0225",
+  "road_name": "CST Road",
+  "ward_code": "L",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-004369",
+   "BMC25-005595"
+  ],
+  "main_issue": "Choked drain / nullah overflow",
+  "risk_score": 31.5,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.22,
+   "flood": 0,
+   "traffic": 0.33,
+   "accidents": 0.6,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Desilting and garbage removal",
+  "method_reopen_pct": 23.3,
+  "est_cost_inr": 71362,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0153",
+  "road_name": "Andheri Subway",
+  "ward_code": "K/W",
+  "road_type": "Local",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-002652",
+   "BMC25-004172",
+   "BMC25-004538"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 31.4,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.28,
+   "flood": 0,
+   "traffic": 0.26,
+   "accidents": 0.07,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0182",
+  "road_name": "Link Road",
+  "ward_code": "P/N",
+  "road_type": "Arterial",
+  "open_complaints": 5,
+  "complaint_ids": [
+   "BMC25-002144",
+   "BMC25-004690",
+   "BMC25-004596",
+   "BMC25-006238",
+   "BMC25-006237"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 30.7,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.43,
+   "flood": 0,
+   "traffic": 0.52,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0270",
+  "road_name": "JVLR",
+  "ward_code": "S",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-004292"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 30.7,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.07,
+   "flood": 0,
+   "traffic": 0.98,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0246",
+  "road_name": "Eastern Express Highway",
+  "ward_code": "M/W",
+  "road_type": "Highway",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-000809"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 30.4,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.18,
+   "flood": 0,
+   "traffic": 0.91,
+   "accidents": 0.2,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0118",
+  "road_name": "SV Road",
+  "ward_code": "H/W",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-001508"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 30.3,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.07,
+   "flood": 0,
+   "traffic": 0.69,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0241",
+  "road_name": "Sion Trombay Road",
+  "ward_code": "M/W",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-002083"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 30.2,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.19,
+   "flood": 0,
+   "traffic": 0.8,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0285",
+  "road_name": "Eastern Express Highway",
+  "ward_code": "T",
+  "road_type": "Highway",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-003330"
+  ],
+  "main_issue": "Open or broken manhole",
+  "risk_score": 29.7,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.08,
+   "flood": 0,
+   "traffic": 0.6,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Manhole cover replaced + grating",
+  "method_reopen_pct": 17.8,
+  "est_cost_inr": 46760,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0281",
+  "road_name": "LBS Marg",
+  "ward_code": "T",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-003894"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 29.6,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.11,
+   "flood": 0,
+   "traffic": 0.81,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0114",
+  "road_name": "Vakola Bridge Road",
+  "ward_code": "H/E",
+  "road_type": "Main",
+  "open_complaints": 6,
+  "complaint_ids": [
+   "BMC25-000951",
+   "BMC25-002496",
+   "BMC25-003574",
+   "BMC25-004757",
+   "BMC25-005497",
+   "BMC25-006022"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 29.3,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.82,
+   "flood": 0,
+   "traffic": 0.38,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0061",
+  "road_name": "Dr Babasaheb Ambedkar Road",
+  "ward_code": "F/S",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-006284"
+  ],
+  "main_issue": "Choked drain / nullah overflow",
+  "risk_score": 29.2,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.15,
+   "flood": 0,
+   "traffic": 0.83,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Desilting and garbage removal",
+  "method_reopen_pct": 23.3,
+  "est_cost_inr": 71362,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0116",
+  "road_name": "SV Road",
+  "ward_code": "H/W",
+  "road_type": "Arterial",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-000050",
+   "BMC25-000489",
+   "BMC25-001507"
+  ],
+  "main_issue": "Waterlogging",
+  "risk_score": 29.0,
+  "risk_components": {
+   "severity": 0.8,
+   "citizen_signal": 0.33,
+   "flood": 0,
+   "traffic": 0.64,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Dewatering pump deployed",
+  "method_reopen_pct": 13.9,
+  "est_cost_inr": 63583,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0150",
+  "road_name": "JP Road",
+  "ward_code": "K/W",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-000377",
+   "BMC25-005363"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 29.0,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.2,
+   "flood": 0,
+   "traffic": 0.22,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0187",
+  "road_name": "SV Road",
+  "ward_code": "R/S",
+  "road_type": "Arterial",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-001749",
+   "BMC25-001748"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 28.9,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.3,
+   "flood": 0,
+   "traffic": 0.59,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0214",
+  "road_name": "Anand Nagar Road",
+  "ward_code": "R/N",
+  "road_type": "Local",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-001293",
+   "BMC25-001292"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 28.7,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.24,
+   "flood": 0,
+   "traffic": 0.55,
+   "accidents": 0.07,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0290",
+  "road_name": "Devidayal Road",
+  "ward_code": "T",
+  "road_type": "Local",
+  "open_complaints": 6,
+  "complaint_ids": [
+   "BMC25-000917",
+   "BMC25-002856",
+   "BMC25-003554",
+   "BMC25-003555",
+   "BMC25-005892",
+   "BMC25-005893"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 28.7,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.46,
+   "flood": 0,
+   "traffic": 0.8,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0178",
+  "road_name": "SV Road",
+  "ward_code": "P/S",
+  "road_type": "Arterial",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-006030",
+   "BMC25-006029"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 28.6,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.24,
+   "flood": 0,
+   "traffic": 0.95,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0167",
+  "road_name": "MG Road Goregaon",
+  "ward_code": "P/S",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-005957",
+   "BMC25-005956"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 28.5,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.29,
+   "flood": 0,
+   "traffic": 0.57,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0218",
+  "road_name": "LBS Marg",
+  "ward_code": "L",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-005137"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 28.5,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.13,
+   "flood": 0,
+   "traffic": 0.44,
+   "accidents": 0.13,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0217",
+  "road_name": "LBS Marg",
+  "ward_code": "L",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-001034"
+  ],
+  "main_issue": "Broken paver blocks",
+  "risk_score": 28.4,
+  "risk_components": {
+   "severity": 0.4,
+   "citizen_signal": 0.09,
+   "flood": 0,
+   "traffic": 0.57,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 1.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Paver blocks relaid",
+  "method_reopen_pct": 22.2,
+  "est_cost_inr": 58746,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0288",
+  "road_name": "Mulund Goregaon Link Road",
+  "ward_code": "T",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-004871"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 27.7,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.18,
+   "flood": 0,
+   "traffic": 0.7,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0051",
+  "road_name": "Maulana Azad Road",
+  "ward_code": "E",
+  "road_type": "Main",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-004289"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 27.4,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.26,
+   "flood": 0,
+   "traffic": 0.41,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0192",
+  "road_name": "Charkop Road",
+  "ward_code": "R/S",
+  "road_type": "Main",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-001725",
+   "BMC25-001902",
+   "BMC25-002749"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 26.5,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.44,
+   "flood": 0,
+   "traffic": 0.45,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0193",
+  "road_name": "Thakur Village Road",
+  "ward_code": "R/S",
+  "road_type": "Main",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-003802"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 26.2,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.13,
+   "flood": 0,
+   "traffic": 0.3,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0157",
+  "road_name": "Link Road",
+  "ward_code": "K/W",
+  "road_type": "Arterial",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-003896",
+   "BMC25-004729"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 26.0,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.3,
+   "flood": 0,
+   "traffic": 0.51,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0010",
+  "road_name": "Colaba Causeway",
+  "ward_code": "A",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-001407",
+   "BMC25-001408"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 25.7,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.27,
+   "flood": 0,
+   "traffic": 0.51,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0209",
+  "road_name": "Dahisar Subway Road",
+  "ward_code": "R/N",
+  "road_type": "Local",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-004853",
+   "BMC25-006096",
+   "BMC25-006325"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 25.7,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.29,
+   "flood": 0,
+   "traffic": 0.19,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 192128,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0277",
+  "road_name": "Village Road Bhandup",
+  "ward_code": "S",
+  "road_type": "Local",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-005184",
+   "BMC25-005601"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 25.6,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.23,
+   "flood": 0,
+   "traffic": 0.2,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0289",
+  "road_name": "Mulund Goregaon Link Road",
+  "ward_code": "T",
+  "road_type": "Arterial",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-001995",
+   "BMC25-001994"
+  ],
+  "main_issue": "Broken paver blocks",
+  "risk_score": 25.6,
+  "risk_components": {
+   "severity": 0.4,
+   "citizen_signal": 0.2,
+   "flood": 0,
+   "traffic": 0.82,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Paver blocks relaid",
+  "method_reopen_pct": 22.2,
+  "est_cost_inr": 58746,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0117",
+  "road_name": "SV Road",
+  "ward_code": "H/W",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-003711"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 25.3,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.27,
+   "flood": 0,
+   "traffic": 0.49,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0249",
+  "road_name": "Shell Colony Road",
+  "ward_code": "M/W",
+  "road_type": "Local",
+  "open_complaints": 3,
+  "complaint_ids": [
+   "BMC25-002821",
+   "BMC25-004663",
+   "BMC25-004566"
+  ],
+  "main_issue": "Road cave-in",
+  "risk_score": 25.2,
+  "risk_components": {
+   "severity": 1.0,
+   "citizen_signal": 0.23,
+   "flood": 0,
+   "traffic": 0.19,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Excavation, pipeline repair, PQC patch",
+  "method_reopen_pct": 22.8,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0141",
+  "road_name": "Marol Maroshi Road",
+  "ward_code": "K/E",
+  "road_type": "Main",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-002427"
+  ],
+  "main_issue": "Broken paver blocks",
+  "risk_score": 24.0,
+  "risk_components": {
+   "severity": 0.4,
+   "citizen_signal": 0.13,
+   "flood": 0,
+   "traffic": 0.69,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Paver blocks relaid",
+  "method_reopen_pct": 22.2,
+  "est_cost_inr": 58746,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0092",
+  "road_name": "Ganpatrao Kadam Marg",
+  "ward_code": "G/S",
+  "road_type": "Main",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-000063"
+  ],
+  "main_issue": "Broken paver blocks",
+  "risk_score": 23.9,
+  "risk_components": {
+   "severity": 0.4,
+   "citizen_signal": 0.23,
+   "flood": 0,
+   "traffic": 0.46,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.67
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Paver blocks relaid",
+  "method_reopen_pct": 22.2,
+  "est_cost_inr": 58746,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0164",
+  "road_name": "Aarey Road",
+  "ward_code": "P/S",
+  "road_type": "Main",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-005126"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 23.3,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.19,
+   "flood": 0,
+   "traffic": 0.56,
+   "accidents": 0.07,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0019",
+  "road_name": "P D'Mello Road",
+  "ward_code": "B",
+  "road_type": "Arterial",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-000821"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 22.9,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.11,
+   "flood": 0,
+   "traffic": 0.65,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0029",
+  "road_name": "Princess Street",
+  "ward_code": "C",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-000439",
+   "BMC25-004017"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 22.3,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.41,
+   "flood": 0,
+   "traffic": 0.41,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0030",
+  "road_name": "Princess Street",
+  "ward_code": "C",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-001410",
+   "BMC25-001409"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 22.2,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.23,
+   "flood": 0,
+   "traffic": 0.19,
+   "accidents": 0.0,
+   "emergency_access": 0.5,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0201",
+  "road_name": "LT Road",
+  "ward_code": "R/C",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-002223",
+   "BMC25-003883"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 22.0,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.24,
+   "flood": 0,
+   "traffic": 0.28,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0028",
+  "road_name": "Princess Street",
+  "ward_code": "C",
+  "road_type": "Main",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-004643"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 21.7,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.18,
+   "flood": 0,
+   "traffic": 0.31,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.33
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0022",
+  "road_name": "Kalbadevi Road",
+  "ward_code": "C",
+  "road_type": "Main",
+  "open_complaints": 1,
+  "complaint_ids": [
+   "BMC25-001023"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 20.9,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.07,
+   "flood": 0,
+   "traffic": 0.55,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0142",
+  "road_name": "Marol Maroshi Road",
+  "ward_code": "K/E",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-000964",
+   "BMC25-003565"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 20.4,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.17,
+   "flood": 0,
+   "traffic": 0.45,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 0,
+  "funding": "Original contractor under DLP (₹0 to BMC)"
+ },
+ {
+  "road_id": "RD0034",
+  "road_name": "Pandita Ramabai Road",
+  "ward_code": "D",
+  "road_type": "Main",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-004616",
+   "BMC25-006179"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 20.1,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.13,
+   "flood": 0,
+   "traffic": 0.45,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ },
+ {
+  "road_id": "RD0215",
+  "road_name": "Anand Nagar Road",
+  "ward_code": "R/N",
+  "road_type": "Local",
+  "open_complaints": 2,
+  "complaint_ids": [
+   "BMC25-001861",
+   "BMC25-005943"
+  ],
+  "main_issue": "Pothole",
+  "risk_score": 19.4,
+  "risk_components": {
+   "severity": 0.6,
+   "citizen_signal": 0.36,
+   "flood": 0,
+   "traffic": 0.26,
+   "accidents": 0.0,
+   "emergency_access": 0,
+   "repeat_failure": 0.0
+  },
+  "near_flood_hotspot": NaN,
+  "recommended_method": "Cold mix patch",
+  "method_reopen_pct": 31.7,
+  "est_cost_inr": 11810,
+  "funding": "Ward repair budget"
+ }
+]
