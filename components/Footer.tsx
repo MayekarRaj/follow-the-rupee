@@ -1,9 +1,13 @@
+"use client";
+
+import { usePrefs } from "@/lib/prefs";
+
 export default function Footer() {
+  const { t } = usePrefs();
   return (
-    <footer className="mt-12 border-t border-slate-200 bg-white">
-      <p className="mx-auto max-w-5xl px-4 py-4 text-xs text-slate-500">
-        Synthetic dataset, Claude Impact Lab Mumbai. Flags are evidence for
-        review, not verdicts.
+    <footer className="mt-12 border-t-4 border-double border-ink">
+      <p className="mx-auto max-w-7xl px-4 py-4 text-xs text-ink/80">
+        {t("footer")}
       </p>
     </footer>
   );

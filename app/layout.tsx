@@ -1,18 +1,26 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fraunces, Inter, Noto_Sans_Devanagari } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HowHost from "@/components/HowHost";
+import SkipLink from "@/components/SkipLink";
+import { PrefsProvider } from "@/lib/prefs";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+});
+
+const deva = Noto_Sans_Devanagari({
+  variable: "--font-deva",
+  subsets: ["devanagari", "latin"],
 });
 
 export const metadata: Metadata = {
@@ -25,18 +33,21 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
+      className={`${fraunces.variable} ${inter.variable} ${deva.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-slate-50 text-slate-900">
-        <Suspense
-          fallback={
-            <div className="h-[57px] border-b border-slate-200 bg-white" />
-          }
-        >
-          <Header />
-        </Suspense>
-        <div className="flex-1">{children}</div>
-        <Footer />
+      <body className="flex min-h-full flex-col bg-paper text-ink">
+        <PrefsProvider>
+          <SkipLink />
+          <Suspense
+            fallback={<div className="h-[86px] rule-double bg-paper" />}
+          >
+            <Header />
+          </Suspense>
+          <div className="flex-1">{children}</div>
+          <Footer />
+          <HowHost />
+        </PrefsProvider>
       </body>
     </html>
   );

@@ -62,7 +62,22 @@ export type NextRupee = Record<
   { remaining_budget_inr: number; planned_spend_inr: number; queue: QueueItem[] }
 >;
 
+export type Thresholds = {
+  overbill_ratio: number;
+  dup_window_days: number;
+  surface_work_types: string[];
+};
+
+export type Contractors = {
+  context_check: {
+    reopen_by_rain_quartile_pct: number[];
+    reopen_by_low_lying_band_pct: Record<string, number>;
+    note: string;
+  };
+};
+
 export type Summary = {
+  thresholds: Thresholds;
   total_spend_inr: number;
   work_orders: number;
   flagged_excess_inr: number;

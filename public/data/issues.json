@@ -395,7 +395,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -640,7 +640,7 @@
    "emergency_access": 1.0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 46760,
@@ -812,7 +812,7 @@
    "emergency_access": 1.0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 192128,
@@ -1208,7 +1208,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 46760,
@@ -1298,7 +1298,7 @@
    "emergency_access": 1.0,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 46760,
@@ -1369,7 +1369,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 46760,
@@ -1396,7 +1396,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -1431,7 +1431,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 0,
@@ -1547,7 +1547,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 46760,
@@ -1606,7 +1606,7 @@
    "emergency_access": 1.0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 46760,
@@ -1749,7 +1749,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 192128,
@@ -1843,7 +1843,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 0,
@@ -1912,7 +1912,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 46760,
@@ -1974,7 +1974,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 46760,
@@ -2005,7 +2005,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -2033,7 +2033,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 46760,
@@ -2064,7 +2064,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 192128,
@@ -2097,7 +2097,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 192128,
@@ -2128,7 +2128,7 @@
    "emergency_access": 1.0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -2212,7 +2212,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 46760,
@@ -2353,7 +2353,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 46760,
@@ -2440,7 +2440,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -2470,7 +2470,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -2527,7 +2527,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 46760,
@@ -2580,7 +2580,7 @@
    "emergency_access": 1.0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 192128,
@@ -2611,7 +2611,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 192128,
@@ -2641,7 +2641,7 @@
    "emergency_access": 1.0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 192128,
@@ -2670,7 +2670,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -2700,7 +2700,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 0,
@@ -2726,7 +2726,7 @@
    "emergency_access": 1.0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Desilting and garbage removal",
   "method_reopen_pct": 23.3,
   "est_cost_inr": 71362,
@@ -2753,7 +2753,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 192128,
@@ -2788,7 +2788,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 192128,
@@ -2823,7 +2823,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -2855,7 +2855,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -2882,7 +2882,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -2912,7 +2912,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 192128,
@@ -2971,7 +2971,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -3026,7 +3026,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 0,
@@ -3054,7 +3054,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Desilting and garbage removal",
   "method_reopen_pct": 23.3,
   "est_cost_inr": 71362,
@@ -3106,7 +3106,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 192128,
@@ -3166,7 +3166,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 0,
@@ -3193,7 +3193,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -3251,7 +3251,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -3279,7 +3279,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 0,
@@ -3360,7 +3360,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -3389,7 +3389,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 0,
@@ -3417,7 +3417,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 46760,
@@ -3454,7 +3454,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 0,
@@ -3480,7 +3480,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 192128,
@@ -3507,7 +3507,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 0,
@@ -3534,7 +3534,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -3561,7 +3561,7 @@
    "emergency_access": 1.0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -3595,7 +3595,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -3649,7 +3649,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 0,
@@ -3677,7 +3677,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 192128,
@@ -3705,7 +3705,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -3731,7 +3731,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 0,
@@ -3759,7 +3759,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -3787,7 +3787,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 192128,
@@ -3814,7 +3814,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -3847,7 +3847,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 192128,
@@ -3874,7 +3874,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -3903,7 +3903,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -3930,7 +3930,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -3958,7 +3958,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 0,
@@ -3985,7 +3985,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -4012,7 +4012,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -4040,7 +4040,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -4094,7 +4094,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 0,
@@ -4120,7 +4120,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 192128,
@@ -4149,7 +4149,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 0,
@@ -4179,7 +4179,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -4206,7 +4206,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -4234,7 +4234,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 0,
@@ -4288,7 +4288,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 0,
@@ -4314,7 +4314,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Desilting and garbage removal",
   "method_reopen_pct": 23.3,
   "est_cost_inr": 71362,
@@ -4342,7 +4342,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -4369,7 +4369,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Desilting and garbage removal",
   "method_reopen_pct": 23.3,
   "est_cost_inr": 71362,
@@ -4400,7 +4400,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -4426,7 +4426,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 192128,
@@ -4453,7 +4453,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 0,
@@ -4481,7 +4481,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -4507,7 +4507,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 46760,
@@ -4561,7 +4561,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -4589,7 +4589,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 192128,
@@ -4615,7 +4615,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -4671,7 +4671,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -4699,7 +4699,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 0,
@@ -4728,7 +4728,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 0,
@@ -4757,7 +4757,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -4783,7 +4783,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 0,
@@ -4814,7 +4814,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -4840,7 +4840,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -4866,7 +4866,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -4892,7 +4892,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -4919,7 +4919,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -4946,7 +4946,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -4975,7 +4975,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 0,
@@ -5002,7 +5002,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -5029,7 +5029,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -5057,7 +5057,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 0,
@@ -5084,7 +5084,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -5110,7 +5110,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -5137,7 +5137,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Desilting and garbage removal",
   "method_reopen_pct": 23.3,
   "est_cost_inr": 71362,
@@ -5165,7 +5165,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -5195,7 +5195,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -5221,7 +5221,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -5247,7 +5247,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -5273,7 +5273,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -5299,7 +5299,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -5325,7 +5325,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Manhole cover replaced + grating",
   "method_reopen_pct": 17.8,
   "est_cost_inr": 46760,
@@ -5351,7 +5351,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -5382,7 +5382,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -5408,7 +5408,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Desilting and garbage removal",
   "method_reopen_pct": 23.3,
   "est_cost_inr": 71362,
@@ -5436,7 +5436,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Dewatering pump deployed",
   "method_reopen_pct": 13.9,
   "est_cost_inr": 63583,
@@ -5463,7 +5463,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -5490,7 +5490,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -5517,7 +5517,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -5548,7 +5548,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -5575,7 +5575,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 0,
@@ -5602,7 +5602,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 0,
@@ -5628,7 +5628,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -5654,7 +5654,7 @@
    "emergency_access": 0,
    "repeat_failure": 1.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Paver blocks relaid",
   "method_reopen_pct": 22.2,
   "est_cost_inr": 58746,
@@ -5680,7 +5680,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -5706,7 +5706,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 0,
@@ -5734,7 +5734,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -5760,7 +5760,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 0,
@@ -5787,7 +5787,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -5814,7 +5814,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 0,
@@ -5842,7 +5842,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 192128,
@@ -5869,7 +5869,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -5896,7 +5896,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Paver blocks relaid",
   "method_reopen_pct": 22.2,
   "est_cost_inr": 58746,
@@ -5922,7 +5922,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 0,
@@ -5950,7 +5950,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Excavation, pipeline repair, PQC patch",
   "method_reopen_pct": 22.8,
   "est_cost_inr": 0,
@@ -5976,7 +5976,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Paver blocks relaid",
   "method_reopen_pct": 22.2,
   "est_cost_inr": 58746,
@@ -6002,7 +6002,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.67
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Paver blocks relaid",
   "method_reopen_pct": 22.2,
   "est_cost_inr": 58746,
@@ -6028,7 +6028,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -6054,7 +6054,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 0,
@@ -6081,7 +6081,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -6108,7 +6108,7 @@
    "emergency_access": 0.5,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -6135,7 +6135,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -6161,7 +6161,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.33
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -6187,7 +6187,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -6214,7 +6214,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 0,
@@ -6241,7 +6241,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,
@@ -6268,7 +6268,7 @@
    "emergency_access": 0,
    "repeat_failure": 0.0
   },
-  "near_flood_hotspot": NaN,
+  "near_flood_hotspot": null,
   "recommended_method": "Cold mix patch",
   "method_reopen_pct": 31.7,
   "est_cost_inr": 11810,

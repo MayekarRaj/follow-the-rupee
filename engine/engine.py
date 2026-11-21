@@ -78,6 +78,7 @@ for (_, _), g in wo.sort_values("assigned_at").groupby(["road_id", "repair_metho
                and abs(b.cost_inr - a.cost_inr) / a.cost_inr <= DUP_COST_TOL:
                 flags.append({**wo_evidence(b), "flag": "DUPLICATE_BILL", "severity": "high",
                               "excess_inr": int(b.cost_inr), "original_work_order": a.work_order_id,
+                              "original": wo_evidence(a),
                               "reason": f"Copy of {a.work_order_id} ({days:.0f} days earlier): same road, method, contractor and area; "
                                         f"no citizen complaint linked."})
                 dup_ids.add(b.work_order_id)
@@ -280,8 +281,18 @@ for w in ward_rows:
     plan[w["ward_code"]] = {"remaining_budget_inr": w["remaining_inr"], "planned_spend_inr": spent, "queue": picked}
 
 # ---------- write ----------
+def _clean(o):
+    if isinstance(o, float) and math.isnan(o):
+        return None
+    if isinstance(o, dict):
+        return {k: _clean(v) for k, v in o.items()}
+    if isinstance(o, list):
+        return [_clean(v) for v in o]
+    return o
+
 def dump(name, obj):
-    (OUT / name).write_text(json.dumps(obj, ensure_ascii=False, indent=1, default=lambda o: o.item() if hasattr(o, "item") else str(o)))
+    obj = _clean(json.loads(json.dumps(obj, default=lambda o: o.item() if hasattr(o, "item") else str(o))))
+    (OUT / name).write_text(json.dumps(obj, allow_nan=False, ensure_ascii=False, indent=1, default=lambda o: o.item() if hasattr(o, "item") else str(o)))
 
 dump("flags.json", flags_df.sort_values(["severity", "excess_inr"], ascending=[True, False]).to_dict("records"))
 dump("contractors.json", {"context_check": ctx, "contractors": contractors})

@@ -7,3 +7,4 @@
 - Claude API: only in app/api/explain/route.ts via @anthropic-ai/sdk, model claude-sonnet-5-5, key from process.env.ANTHROPIC_API_KEY.
 - Wording: never "fraud/corruption/theft"; flags are "needs review".
 - Workflow: one view per task → npm run dev → fix errors → stop and report. No new packages beyond @anthropic-ai/sdk and leaflet/react-leaflet (map, later).
+- Any non-trivial decision you make (UI, data, wording, scope): append it to DECISIONS.md as "D<n>. Decision. Why: reason." Never skip this.
