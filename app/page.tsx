@@ -3,15 +3,17 @@
 import { Suspense } from "react";
 import { useRole } from "@/components/Header";
 import WardView from "@/components/WardView";
+import CitizenView from "@/components/CitizenView";
 
 function Home() {
   const { role, ward } = useRole();
   if (role === "ward") return <WardView wardCode={ward} />;
+  if (role === "citizen") return <CitizenView />;
   return (
     <main id="main" tabIndex={-1} className="mx-auto max-w-7xl px-4 py-10 focus:outline-none">
       <p className="border border-ink/30 p-6 text-ink/80">
-        The {role} view is coming next. Switch to “Ward officer” to see the
-        first view.
+        The {role} view is coming next. Switch to “Ward officer” or “Citizen”
+        to see the built views.
       </p>
     </main>
   );

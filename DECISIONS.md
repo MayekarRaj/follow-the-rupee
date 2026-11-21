@@ -56,3 +56,48 @@ Every significant decision, with the reason for it. Format: **Decision**, then *
 
 **D17. Claude Code on Sonnet at medium effort, switching to Opus only if the same bug fails twice.**
 *Why:* SPEC.md already makes the design decisions, so building is clear implementation work. Sonnet is faster and stretches usage limits further.
+
+
+## Ward officer view
+**D18. The headline says "possibly paid twice", not "paid twice".**
+*Why:* The audit flag is "possible double billing": same road, method, contractor and area billed again within 10 days, with no citizen complaint linked. Citywide, only 6 of the 45 original bills appear in the flagged list, so we often can't see the earlier bill to confirm. The rubber stamp keeps the question mark ("PAID TWICE?"). The short labels on the queue tab and drawer title still read "Paid twice", but the headline and stamp carry the uncertainty. This follows D11.
+
+**D19. The headline and the "Flagged money" card use the ward's de-duplicated ₹ total, and count distinct work orders.**
+*Why:* One work order can carry two flags (for example overbilled and on a warranty road), and the engine counts its money once. For ward F/N the per-flag excess adds up to ₹14,45,571, but the de-duplicated total is ₹14,20,916 (₹14.2 L), across 44 work orders (the 46 flags include two work orders flagged twice). The per-tab ₹ totals are per flag type, so they can add up to more than the headline. We show the de-duplicated figure so we never overstate the money at stake.
+
+**D20. Only static labels are translated (English, मराठी, हिंदी). Data text stays in English and is marked `lang="en"`.**
+*Why:* The dictionary covers header and menu labels, KPI names, tab names, status names, buttons, drawer headings, the "How we flag" headings, the one-line disclaimer, the footer and the headline template. We do not translate road and contractor names, the engine's reason text, or the rule, threshold and next-step sentences, because a dictionary can't safely rewrite sentences about money. Marking the English text lets screen readers pronounce it correctly. Free-text translation belongs to the Claude "Explain" route (citizen view). The Marathi and Hindi wording was written by us and needs a native-speaker review before real use.
+
+**D21. Each flag's "What to do next" names an owner chain: the sub-engineer checks, then the Executive Engineer (EE) acts.**
+*Why:* The chains are: possibly paid twice, "Sub-engineer verifies on site → EE raises recovery"; billed above rate card, "Sub-engineer re-measures → EE raises recovery"; paid during warranty, "Sub-engineer confirms → EE sends back to original contractor"; drainage on a warranty road, "Sub-engineer checks on site → EE decides". *Basis:* BMC's Pothole Tracking System has the sub-engineer take the closing photo and reopen failed fixes (BMC tender document), so field verification by the sub-engineer is grounded in BMC's own process. *Assumption:* that the EE approves and raises recovery, sends work back to the original contractor, or makes the final call is ours, not sourced. Confirm both with BMC before presenting the chains as BMC's process. This follows D11's advice to define the next action for each flag.
+
+## Citizen view
+**D22. The complaint trail comes from a server route that returns one record; the 3.7 MB file never reaches the browser.**
+*Why:* `/api/complaint/[id]` fetches `/data/complaint_trail.json` from its own origin once, keeps it in module memory, and returns only the requested record (about 350 bytes to 1 KB). It rejects anything that isn't `BMC25-` plus six digits (400), and unknown IDs return 404 with a plain message.
+
+**D23. An ID typed anywhere in the text counts as an ID.**
+*Why:* People paste "my complaint BMC25-000726 is still open". SPEC says the input *matches* `BMC25-\d{6}`; we search for it inside the text, case-insensitively, so one paste works either way. Anything else goes to Claude's "find" mode.
+
+**D24. "Held up 30 days?" is worded as "Did the repair hold for 30 days?"**
+*Why:* In the engine, `held_up_30d` means the repair was *not* re-opened. A "yes" is good news, so we show Yes with a green tick and a sentence ("the road did not fail again within 30 days"). "No" shows a red cross and "the road failed again within 30 days". Icon and word, never colour alone.
+
+**D25. Rejected, forwarded, duplicate and no-work-order cases are stated plainly.**
+*Why:* "Forwarded to MMRDA/PWD" says it went there, is not a BMC repair and has no BMC bill. "Rejected" says whether BMC called it not a BMC road or not a road issue. "Closed - Duplicate" says it was closed as a duplicate of another complaint (the data doesn't say which one, so we don't guess) and that the repair job shown is the one linked to it. Open or in-progress complaints with a ranked road show "Still open: ranked #N of 217 risky roads citywide" plus the road name. The few open complaints with no road in the ranking say that instead.
+
+**D26. Free-text search: Claude extracts, the browser matches, and it still works if the API is down.**
+*Why:* We scored every issue on three things: ward match (3 points), road-name words found in Claude's locality or the raw text (2 points each, up to 2), and issue type (1 point), then showed the top 3 with their complaint IDs as tappable chips (first 4 each, "+N more"). Two additions to SPEC's find prompt: it lists the 24 ward codes with their areas so a locality like "Dharavi" resolves to G/N, and it asks for `issue_type` from our six fixed types so matching is exact. Because the raw text is matched too, an API failure only loses the ward guess.
+
+**D27. "Explain in my language" uses the app's language if it isn't English, otherwise the complaint's own language.**
+*Why:* A Marathi complaint opened in an English app still gets a Marathi explanation (the spec says "the record's/selected language"). Hinglish (`hi-en`) is explained in Hindi. If the AI is unavailable, the fallback is a plain English summary built from the record (billed vs rate card, flags), marked "the AI explanation was not available".
+
+**D28. `/api/explain` leaves out `temperature`, and allows 900 tokens for Marathi and Hindi.**
+*Why:* SPEC says temperature 0 and max_tokens 300. The installed `@anthropic-ai/sdk` no longer accepts `temperature` for `claude-sonnet-5-5` (TypeScript rejects it), so we don't send it; the in-memory cache keeps repeated answers identical. At 300 tokens a Marathi answer was cut off mid-word, since Devanagari costs roughly three times the tokens of English, so Marathi and Hindi get 900 and English stays at 300. Only successful answers are cached; any error returns the record's own text with `fallback: true`. Find mode, on error, returns empty fields so the client matches the raw text.
+
+**D29. "Complain with evidence" is a draft in English, with a copy button. Nothing is sent.**
+*Why:* Ward offices work in English paperwork, and a correct Marathi or Hindi complaint about money needs native review (see D20). The draft is addressed to the ward officer (with the ward's areas), states the complaint ID, work order, contractor, billed vs rate card with the ×, deadline and 30-day result, quotes each flag's reason and amount, and asks for a review. It says "needs review", never fraud (D11). A forwarded complaint has no ward, so it goes to "the Ward Officer, BMC". Rejected or forwarded complaints ask which office is now responsible.
+
+**D30. Flag stamps and the cost step open the same evidence drawer as the Ward view; `flags.json` loads only when the complaint has a flag.**
+*Why:* SPEC says every work-order number links to its evidence. Reusing `FlagDrawer` keeps one source of truth. Most complaints have no flags, so most lookups never download the 455 KB file.
+
+**D31. The citizen page's static labels are translated into Marathi and Hindi; the complaint text, status, contractor and road names stay as recorded.**
+*Why:* Same rule as D20. The complaint is shown in its own language with `lang` set (`mr`, `hi`, or `en` for Hinglish). The new Marathi and Hindi labels were written by us and need native-speaker review. The spec'd input label is kept as written, with "(English / मराठी / हिंदी)".
