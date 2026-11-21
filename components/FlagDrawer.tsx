@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { cleanName, inr } from "@/lib/format";
-import { useData, type Flag, type Summary } from "@/lib/data";
+import { useData, type Flag, type Summary, type WorkOrderEvidence } from "@/lib/data";
 import { NEXT_STEP, whyFlagged } from "@/lib/flagInfo";
 import { usePrefs } from "@/lib/prefs";
 import {
@@ -49,7 +49,7 @@ function Part({
 }) {
   return (
     <section className="mt-5 border-t-2 border-ink pt-3">
-      <h3 className="flex items-baseline gap-2 font-serif text-lg font-bold text-ink">
+      <h3 className="flex items-baseline gap-2 font-sans text-lg font-bold text-ink">
         <span
           aria-hidden="true"
           className="inline-flex h-6 w-6 items-center justify-center border border-ink text-xs"
@@ -82,7 +82,7 @@ function WorkOrderCard({
   id,
 }: {
   title: string;
-  f: Flag | null;
+  f: WorkOrderEvidence | null;
   id: string;
 }) {
   const { t } = usePrefs();
@@ -99,11 +99,23 @@ function WorkOrderCard({
           <Field k="Contractor" v={cleanName(f.contractor)} />
           <Field k="Method" v={f.method} />
           <Field k="Area" v={`${f.area_sqm} sq m`} />
+          <Field
+            k="Complaints"
+            v={
+              f.linked_complaints ? (
+                <span className="font-mono text-xs">
+                  {f.linked_complaints.split("|").join(", ")}
+                </span>
+              ) : (
+                "None"
+              )
+            }
+          />
           <Field k={t("billed")} v={inr(f.billed_inr)} money />
         </dl>
       ) : (
         <p className="mt-1 text-xs text-ink/70">
-          Not in the flagged list (it is the earlier, un-flagged bill).
+          Details of the earlier bill are not in the data.
         </p>
       )}
     </div>
@@ -250,8 +262,11 @@ export default function FlagDrawer({
     }
   }
 
-  const original = flag.original_work_order
-    ? (allFlags.find((x) => x.work_order_id === flag.original_work_order) ??
+  // flags.json carries the full original bill; look it up in the flag list
+  // only if an older file lacks it.
+  const original: WorkOrderEvidence | null = flag.original_work_order
+    ? (flag.original ??
+      allFlags.find((x) => x.work_order_id === flag.original_work_order) ??
       null)
     : null;
   const why = whyFlagged(flag, summary?.thresholds);
@@ -262,7 +277,7 @@ export default function FlagDrawer({
       <div className="mb-2 pl-1">
         <Stamp kind={stampFor(flag.flag)} animate />
       </div>
-      <h2 className="font-serif text-2xl font-bold leading-tight text-ink">
+      <h2 className="font-sans text-2xl font-bold leading-tight text-ink">
         {t(`tab.${flag.flag}`)}
       </h2>
       <p className="mt-1 flex flex-wrap items-center gap-2 text-sm text-ink/70">

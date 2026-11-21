@@ -142,3 +142,90 @@ Every significant decision, with the reason for it. Format: **Decision**, then *
 
 **D44. With no `?role=` in the address, the app opens on the Commissioner view.**
 *Why:* SPEC's demo path starts at the Commissioner. The default lives in `useRole()` (`components/Header.tsx`), so the View-as select shows "Commissioner" too. Links that carry `?role=` are unaffected.
+
+**D45. The Citizen view's title is "Track a road complaint" with "Civic Issue Kundali" as a small outlined tag above it. The old "Citizen" eyebrow was dropped.**
+*Why:* The request asked for plain wording with the old name kept only as a tag. The role is already shown in the header's View-as select, so the eyebrow repeated it. Marathi and Hindi versions of the title, subtitle and new search messages are my own and need a native speaker's review (see D20).
+
+**D46. Three example chips sit under the search box and run the search when tapped: BMC25-000726 (Marathi · still open), BMC25-000009 (billed 2.2×) and the Marathi sentence. Each chip has a small second line saying what it shows.**
+*Why:* They give a first-time visitor three different demo paths with one tap. The second line uses the wording from the request. The chip text is the exact search text, so what runs matches what is shown.
+
+**D47. "My ward" shows when there is no result on screen: a ward picker (default F/N), a plain-language report card, the top 5 open problems by risk, and the 5 latest fixes. Opening a trail or a search result hides it, and a "Back to my ward" button returns to it. The chosen ward is kept in the parent so it survives going back.**
+*Why:* It fills the empty state without competing with a result. Keeping it visible under a long trail would push the trail far down a phone screen. The section is marked `lang="en"` and its text is English only for now, as in D42.
+
+**D48. The report card says three things in sentences with a big serif ₹ figure each: spent against the budget (with "▲ ₹N over budget" only when over), "Needs review" (`flagged_excess_inr`, with the flag count and "These are items to check, not findings"), and "On failed repairs" (`failed_fix_spend_inr`, "road failed again within 30 days").**
+*Why:* Plain language for a citizen, with the project's wording rule ("needs review", never fraud or theft). Over-budget is shown with an icon, text and colour, never colour alone (D36).
+
+**D49. "Open problems near you" are `issues.json` rows for the ward, sorted by `risk_score`, top 5. Each has the road, the issue, a risk bar with "NN/100" printed beside it, and up to 3 complaint-ID chips plus "+N more". Chips open the trail.**
+*Why:* The printed score makes the bar usable without seeing colour. Three chips fit a 390 px row better than four. "+N more" is plain text because the trail view shows one complaint at a time.
+
+**D50. New route `GET /api/complaints?ward=F/N&limit=5` returns the latest resolved complaints in a ward, newest repair first (by `completed_at`). It sends only id, category, road, contractor, method, date, billed ₹, cost ratio, held-up flag and flag codes. The ward is a query parameter because ward codes contain a slash. Bad ward codes get a 400; limit is capped at 20.**
+*Why:* The 3.7 MB trail file stays on the server (CLAUDE.md). "Resolved" means status "Resolved" only, not "Closed - Duplicate", whose linked job belongs to another complaint. All 3,934 resolved complaints have a work order.
+
+**D51. The trail loader moved to `lib/trailServer.ts` and is shared by `/api/complaint/[id]` and `/api/complaints`. Behaviour of the old route is unchanged.**
+*Why:* Two routes would otherwise each download and parse the 3.7 MB file. The load happens once per server process and is retried after a failure.
+
+**D52. Each recent fix shows "Held 30 days" (green ✓) or "Failed within 30 days" (red ✕), the road, the repair date and the billed ₹, plus "⚑ Needs review" if the job has any flag.**
+*Why:* The held/failed status was requested. Icon and words together keep it readable without colour. The road code "(RD0077)" is hidden because it means nothing to a citizen.
+
+**D53. Search: Enter submits (Shift+Enter adds a line, and Enter is ignored while a Marathi/Hindi keyboard is composing text). The same code path serves the button, Enter and every chip. While a search runs the button reads "Finding…" and a status box appears under the form.**
+*Why:* Pressing Enter to confirm a Devanagari word on a phone keyboard must not submit half a sentence. One `run()` function means all entry points behave the same.
+
+**D54. If `/api/explain` fails (network error, non-200, or the route's own `fallback: true` answer), a visible amber notice says AI search is unavailable and results may be less exact. The search still runs on the raw text.**
+*Why:* The route answers 200 with `fallback: true` when the model call fails, so checking only the HTTP status would hide the failure. I tested by forcing the route to return 500: all three test searches still found sensible roads.
+
+**D55. Local matching was rewritten so it works without the model: it keeps 2-letter road names such as "SV" (matched as whole words), finds every ward whose locality appears in the text ("Andheri" gives both K/E and K/W), reads a ward code like "F/N", transliterates about 40 common Devanagari place names (धारावी → Dharavi), and picks the issue type from English, Marathi and Hindi words. It returns up to 5 matches, up from 3.**
+*Why:* The old code dropped words under 3 letters ("SV Road" matched nothing useful) and ignored Devanagari entirely, so the Marathi example had no offline fallback. The place list is short and hand-written, so unusual spellings still need the model.
+
+**D56. A search with no match, or a complaint ID that is not in the dataset, shows what was searched, a plain explanation and four tappable suggestions (SV Road, Andheri pothole, Eastern Express Highway, BMC25-000726).**
+*Why:* A dead end on a phone is worse than a wrong guess. The suggestions are real queries that return results.
+
+**D57. Checked at 390 px with a 390 px-wide frame of the page (Chrome would not shrink the window itself): no sideways scroll, chips wrap, report card and trail fit. Free-text tests on localhost: "Andheri pothole" (K/W and K/E Andheri roads), "SV Road" (only SV Road segments), and the Marathi example (G/N Dharavi roads), each both with the model and with `/api/explain` forced to fail.**
+*Why:* Records what was actually tested. Ports 3000 and 3001 were used by other projects on this machine, so this app was tested on 3002.
+
+**D58. App shell: a 240 px left sidebar on lg+ (brand "Follow the Rupee / Monsoon road-repair ledger", then Commissioner, Ward officer, Citizen, each with an icon and a one-line description, then "How we flag"). Below lg the same panel opens as a left drawer from a menu button. The active role is highlighted and set with `aria-current="page"`. The role is still the `?role=` URL parameter; the Ward link keeps the current `ward`. The old "View as" dropdown and the `Header` component were removed. `useRole` moved to `lib/role.ts`.**
+*Why:* Three roles with a one-line "what is this for" each are easier to choose from a list than from a dropdown. Plain links keep the URL shareable and work without JavaScript state. The drawer reuses the existing `Drawer` (focus trap, Esc, focus return) with a `side="left"` option.
+
+**D59. A compact top bar carries the page title on the left, a ward picker (Ward officer only) and two segmented controls on the right: text size (A− A A+) and language (EN · मर · हि). Every segment is at least 44 px, has a full accessible name ("English", "मराठी", "हिंदी") and `aria-pressed`. The ward picker is a native select with the arrow replaced by an inset icon. On phones the controls wrap under the title row.**
+*Why:* A native language select had its arrow touching the border and hid the options. Segments show all choices at once, in their own script. Keeping the ward picker was necessary because the ward view had no other way to change ward.
+
+**D60. Colour key at the bottom of the sidebar and inside the mobile drawer: stamp-red = needs review, road-yellow = budget / spend, ok-green = DLP · ₹0 to BMC / held up, ink = neutral data. Each has a swatch and a text label, translated into Marathi and Hindi.**
+*Why:* The palette carries meaning across all views. A permanent key teaches it once. The labels follow the wording rule (D-series: "needs review", never "fraud").
+
+**D61. Fonts: IBM Plex Sans for UI and headings, IBM Plex Sans Devanagari for Marathi and Hindi, IBM Plex Serif (600, 700) only for large ₹ figures and KPI numbers. Fraunces and Inter were removed. Headings, headline sentences, road names, ward codes and status text that used the serif were switched to Plex Sans.**
+*Why:* Following the brief. One family for reading text looks calmer, and the serif now signals "this is a money figure". Plex Sans Devanagari also includes Latin, so mixed text stays in one family. DESIGN.md's type line was updated to match.
+
+**D62. No chatbot. Explanations stay as a button on a specific record (scorecard row, flag, complaint) that sends only that record to `/api/explain`.**
+*Why:* A generic chat box invites questions the data cannot answer, and a model asked for numbers without a record in front of it can invent them. A button tied to one record means every ₹ figure in the answer comes from the JSON that was sent.
+
+**D63. Scorecard "Explain" opens the answer inline in a row directly under that contractor. The button has `aria-expanded` and `aria-controls`, reads "Hide" while open, and only one row is open at a time. Answers already fetched are kept, so reopening is instant. The text block stays pinned to the left edge while the wide table scrolls sideways. The button cell and rows got more vertical padding so the button clears the row border.**
+*Why:* The old panel appeared below the whole table, far from the row that was clicked. Pinning the text keeps it readable on a 390 px screen.
+
+**D64. `/api/explain`: `max_tokens` is 600 for English and 900 for Marathi/Hindi. The system prompt now says "complete sentences, at most 3, always finish the last sentence". If the model still stops at the token limit, the reply is cut back to its last full sentence (. ! ? । ॥) before it is returned.**
+*Why:* A sentence cut off mid-word in front of a commissioner is worse than a shorter answer. The server-side trim is a safety net for the rare case the model ignores the length hint.
+
+**D65. Checked with one screenshot per view at 1440 px, and at 390 px in a 390 px-wide frame (Chrome would not shrink the window, as in D57): Commissioner, Ward officer, Citizen, plus the mobile drawer. No sideways scroll (page width 388 of 388 px). The scorecard was tested at 1440 px by opening two rows in turn: only the second stayed open and its answer was three full sentences.**
+*Why:* Records what was actually tested. The Next dev server on port 3002 was already running for this project, so it was reused. Marathi and Hindi pages were not re-checked after the font change.
+
+**D66. Flag drawer, DUPLICATE_BILL: the "Original" card is built from `flag.original` (the full evidence object in flags.json). Only if that is missing does it fall back to looking the work order up in the flag list. Both cards now show the same seven fields (date, road, contractor, method, area, complaints, billed). A new `WorkOrderEvidence` type in `lib/data.ts` describes them.**
+*Why:* The original bill is usually not flagged, so the lookup found nothing and the "Original" card showed the copy's data. Identical fields side by side make the copy obvious: same road, method and area, different date and complaints (original has them, copy has "None").
+
+**D67. Citizen ward card, "Needs review" text now reads "flagged for review: billed above rate card, possibly paid twice, or paid during warranty (N flags)". A second line gives the count per type from `wards.json`: above rate card · possibly paid twice · paid in warranty · warranty to check. Checked on ward F/N: 6 + 3 + 20 + 17 = 46.**
+*Why:* "Paid above the rate card or possibly paid twice" left out the warranty flags, which are most of the count, so the number did not match the sentence. The extra line lets a citizen see where the total comes from. "Needs review" stays as the heading, and the "items to check, not findings" note stays.
+
+**D68. Commissioner Explain row: the cell spans every column (`SCORECARD_COLS`, next to the header it must match), and the text block is at most 80 characters wide with a 4 px road-yellow rule on its left edge. It still sticks to the left edge when the table scrolls sideways.**
+*Why:* 80 characters is a comfortable line length. Putting the rule on the text block instead of the full-width cell keeps it beside the words rather than the whole row.
+
+**D69. Sidebar can collapse to a 64 px icon rail with a button at the top (`aria-expanded`, label "Collapse sidebar" / "Expand sidebar", translated). In the rail every item shows only its icon, with `aria-label` and `title` carrying the name, and the colour key shows swatches only (names remain for screen readers and as titles). The state is kept in localStorage (`ftr.sidebar.v1`). The mobile drawer always stays full width.**
+*Why:* Wide tables and the two-column citizen view need the space. Native `title` tooltips were used because the sidebar scrolls and would clip a custom tooltip.
+
+**D70. Colour key: added hazard-orange = "Risk level", and renamed road-yellow from "Budget / spend" to "Budget / under-used" (EN, MR, HI). In tables, flagged ₹ values are ink. The ward table's flagged-₹ column was the one that was red. Red stays for stamps, over-budget markers (▲) and headline totals.**
+*Why:* Orange is already used for risk bars and ranks, so it needed a key entry. Yellow marks under-used budget, not spend in general. Red on every flagged cell made the table shout; it now means only the things that need action.
+
+**D71. Ward view: "Contractors in this ward" moved under the action queue in the left column. "Next rupee" is alone in the right column with no sticky position and no inner scroll; the page scrolls as a whole.**
+*Why:* The bars explain the flags in the queue, so they belong next to it. A scroll area inside a scrolling page traps the mouse wheel and hides the cards from keyboard users.
+
+**D72. Citizen on lg+: two columns. Title, search and money trail on the left (40 rem), "My ward" on the right with a ruled left edge. My ward is always visible on desktop, but on phones it is still hidden once a result is showing. For Open and In Progress complaints the status step has an "Open for N days" label, counted in whole days from `received_at` to today's date in the browser (BMC25-000010: 537 days).**
+*Why:* The ward card is useful next to a trail, and a long scroll past the trail was wasted space on a wide screen. The day count turns "still open" into something a citizen can quote when escalating. Counting to the browser's date means the number grows over time; the data has no fixed "as of" date.
+
+**D73. Checked with one screenshot per change at 1440 px: the Commissioner Explain row, the collapsed rail (width 64 px, persisted after reload of another view), the Ward view, the duplicate-bill drawer (original WO25-01977 against copy WO25-02462) and Citizen with a trail. Marathi and Hindi, 390 px and the Ward view's lower half were not re-checked. `tsc --noEmit` is clean.**
+*Why:* Records what was actually tested, per the "one screenshot per change" instruction.

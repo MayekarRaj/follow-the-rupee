@@ -14,10 +14,13 @@ export default function Drawer({
   label,
   onClose,
   children,
+  side = "right",
 }: {
   label: string;
   onClose: () => void;
   children: React.ReactNode;
+  /** "left" is the navigation drawer; "right" the evidence sheet. */
+  side?: "right" | "left";
 }) {
   const { t } = usePrefs();
   const ref = useRef<HTMLElement>(null);
@@ -62,7 +65,13 @@ export default function Drawer({
   }, []);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end justify-center sm:items-stretch sm:justify-end">
+    <div
+      className={`fixed inset-0 z-50 flex ${
+        side === "left"
+          ? "items-stretch justify-start"
+          : "items-end justify-center sm:items-stretch sm:justify-end"
+      }`}
+    >
       <button
         tabIndex={-1}
         aria-hidden="true"
@@ -75,7 +84,11 @@ export default function Drawer({
         role="dialog"
         aria-modal="true"
         aria-label={label}
-        className="relative max-h-[88vh] w-full overflow-y-auto border-t-[6px] border-road bg-paper p-4 focus:outline-none sm:max-h-none sm:w-[30rem] sm:border-l-4 sm:border-t-0 sm:border-ink"
+        className={`relative overflow-y-auto bg-paper p-4 focus:outline-none ${
+          side === "left"
+            ? "w-[min(20rem,88vw)] border-r-4 border-ink"
+            : "max-h-[88vh] w-full border-t-[6px] border-road sm:max-h-none sm:w-[30rem] sm:border-l-4 sm:border-t-0 sm:border-ink"
+        }`}
       >
         <div className="flex justify-end">
           <button

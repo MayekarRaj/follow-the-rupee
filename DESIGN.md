@@ -1,7 +1,7 @@
 # Design: "The audit ledger" (Mumbai monsoon x auditor's ledger)
 Use the frontend-design skill. Distinctive, not a generic dashboard.
 - Palette: paper #F6F1E7 bg, ink #1B2A41 text, road-yellow #F2B705, hazard-orange #E4572E, stamp-red #B3261E, ok-green #2E7D32. No other accents.
-- Type: headings + all ₹ figures in a serif (Fraunces via next/font); body Inter; Devanagari: Noto Sans Devanagari.
+- Type (next/font): IBM Plex Sans for UI + headings; IBM Plex Sans Devanagari for mr/hi; IBM Plex Serif only for large ₹ figures and KPI numbers.
 - Signature: flags render as rotated rubber-stamp badges (border 2px, uppercase, letter-spacing, -3deg): "NEEDS REVIEW", "PAID TWICE?", "DLP · ₹0 TO BMC".
 - Numbers are the hero: big serif ₹ amounts, tabular-nums.
 - Citizen view: vertical "money trail" timeline, rupee flowing down step by step.

@@ -1,7 +1,7 @@
 "use client";
 
 import { Suspense } from "react";
-import { useRole } from "@/components/Header";
+import { useRole } from "@/lib/role";
 import WardView from "@/components/WardView";
 import CitizenView from "@/components/CitizenView";
 import CommissionerView from "@/components/CommissionerView";

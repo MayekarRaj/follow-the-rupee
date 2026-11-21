@@ -114,11 +114,48 @@ export function fmtDate(s: string): string {
 
 const STOP = new Set([
   "road", "rd", "marg", "street", "st", "near", "the", "and", "link", "junction",
-  "east", "west", "north", "south", "nagar", "naka",
+  "east", "west", "north", "south", "nagar", "naka", "ward", "issue", "problem",
 ]);
 
-function tokens(s: string): string[] {
-  return (s.toLowerCase().match(/[a-z0-9]{3,}/g) ?? []).filter((t) => !STOP.has(t));
+/** Common Devanagari spellings of localities -> the Latin names the data uses. */
+const DEVA_PLACES: Record<string, string> = {
+  "धारावी": "dharavi", "अंधेरी": "andheri", "अंधेरि": "andheri", "दादर": "dadar",
+  "माहीम": "mahim", "माहिम": "mahim", "माटुंगा": "matunga", "सायन": "sion",
+  "वडाळा": "wadala", "कुर्ला": "kurla", "घाटकोपर": "ghatkopar", "चेंबूर": "chembur",
+  "बांद्रा": "bandra", "वांद्रे": "bandra", "खार": "khar", "जुहू": "juhu",
+  "गोरेगाव": "goregaon", "मालाड": "malad", "कांदिवली": "kandivali",
+  "बोरिवली": "borivali", "दहिसर": "dahisar", "मुलुंड": "mulund", "भांडुप": "bhandup",
+  "पवई": "powai", "विक्रोळी": "vikhroli", "परळ": "parel", "लालबाग": "lalbaug",
+  "वरळी": "worli", "कुलाबा": "colaba", "भायखळा": "byculla", "गोवंडी": "govandi",
+  "मानखुर्द": "mankhurd", "देवनार": "deonar", "जोगेश्वरी": "jogeshwari",
+  "सांताक्रूझ": "santacruz", "प्रभादेवी": "prabhadevi", "शिवडी": "sewri",
+  "हिंदमाता": "hindmata", "विलेपार्ले": "vile parle",
+};
+
+/** Words in the complaint that point to an issue type (English / Marathi / Hindi). */
+const ISSUE_WORDS: [RegExp, string][] = [
+  [/pothole|खड्डा|खड्डे|गड्ढा|गड्ढे/i, "Pothole"],
+  [/waterlog|water log|flood|पाणी साचले|पाणी साचल|पाणी भरले|पानी भर|जलभराव|साचलेले पाणी/i, "Waterlogging"],
+  [/cave|sinkhole|धंस|खचला|खचले|धँस/i, "Road cave-in"],
+  [/manhole|मॅनहोल|मैनहोल|ढक्कन|झाकण/i, "Open or broken manhole"],
+  [/drain|nullah|nala\b|नाला|नाले|गटार|नाली/i, "Choked drain / nullah overflow"],
+  [/paver|पेव्हर|पेवर/i, "Broken paver blocks"],
+];
+
+export function issueFromText(text: string): string | null {
+  return ISSUE_WORDS.find(([re]) => re.test(text))?.[1] ?? null;
+}
+
+/** Lower-case Latin text with Devanagari place names transliterated and appended. */
+function normalise(text: string): string {
+  const out = [text.toLowerCase()];
+  for (const [deva, latin] of Object.entries(DEVA_PLACES))
+    if (text.includes(deva)) out.push(latin);
+  return out.join(" ");
+}
+
+function words(s: string): string[] {
+  return (s.toLowerCase().match(/[a-z0-9]{2,}/g) ?? []).filter((t) => !STOP.has(t));
 }
 
 function normWard(w: string | null): string | null {
@@ -127,9 +164,30 @@ function normWard(w: string | null): string | null {
   return x || null;
 }
 
+/** "Andheri East, Vile Parle East" -> ["andheri", "vile parle"] */
+function localities(ward: Ward): string[] {
+  return ward.ward_name
+    .split(",")
+    .map((n) =>
+      n
+        .toLowerCase()
+        .replace(/\b(east|west|north|south)\b/g, "")
+        .trim(),
+    )
+    .filter((n) => n.length >= 4);
+}
+
+/** A short road name ("SV") has to match a whole word; longer ones may match inside one. */
+function tokenHitsRoad(tok: string, roadWords: string[]): boolean {
+  return tok.length <= 3
+    ? roadWords.includes(tok)
+    : roadWords.some((w) => w === tok || w.includes(tok));
+}
+
 /**
  * Top matches for a free-text complaint. Uses what Claude extracted, plus the
- * raw text itself, so it still works when the API is unavailable.
+ * raw text itself (including Devanagari place names), so it still works when
+ * the API is unavailable.
  */
 export function findIssues(
   issues: Issue[],
@@ -137,37 +195,36 @@ export function findIssues(
   ex: Extracted,
   text: string,
 ): Issue[] {
-  const lower = text.toLowerCase();
-  let ward = normWard(ex.ward);
-  if (!ward || !wards.some((w) => w.ward_code === ward)) {
-    // No usable ward from the model: look for a locality from the ward list.
-    ward = null;
-    for (const w of wards) {
-      if (
-        w.ward_name
-          .split(",")
-          .some((n) => n.trim().length > 3 && lower.includes(n.trim().toLowerCase()))
-      ) {
-        ward = w.ward_code;
-        break;
-      }
-    }
-  }
-  const place = tokens(`${ex.road_or_locality ?? ""} ${text}`);
-  const issue = (ex.issue_type ?? "").toLowerCase();
+  const hay = normalise(`${ex.road_or_locality ?? ""} ${text}`);
 
-  const scored = issues
+  // Every ward the text points to: the model's ward, a ward code, or a locality.
+  const hitWards = new Set<string>();
+  const w0 = normWard(ex.ward);
+  if (w0 && wards.some((w) => w.ward_code === w0)) hitWards.add(w0);
+  const code = hay.match(/\b([a-z])\s*\/\s*([nsewc])\b/);
+  if (code) {
+    const c = `${code[1]}/${code[2]}`.toUpperCase();
+    if (wards.some((w) => w.ward_code === c)) hitWards.add(c);
+  }
+  for (const w of wards)
+    if (localities(w).some((n) => hay.includes(n))) hitWards.add(w.ward_code);
+
+  const place = words(hay);
+  const issue = (ex.issue_type ?? issueFromText(text) ?? "").toLowerCase();
+
+  return issues
     .map((i) => {
-      const road = i.road_name.toLowerCase();
-      const hits = new Set(place.filter((t) => road.includes(t))).size;
-      const wardHit = ward != null && i.ward_code === ward;
+      const roadWords = words(i.road_name);
+      const hits = new Set(place.filter((t) => tokenHitsRoad(t, roadWords))).size;
+      const wardHit = hitWards.has(i.ward_code);
       const issueHit = issue !== "" && i.main_issue.toLowerCase() === issue;
       const score = (wardHit ? 3 : 0) + Math.min(hits, 2) * 2 + (issueHit ? 1 : 0);
       return { i, score, relevant: wardHit || hits > 0 };
     })
     .filter((x) => x.relevant)
-    .sort((a, b) => b.score - a.score || b.i.risk_score - a.i.risk_score);
-  return scored.slice(0, 3).map((x) => x.i);
+    .sort((a, b) => b.score - a.score || b.i.risk_score - a.i.risk_score)
+    .slice(0, 5)
+    .map((x) => x.i);
 }
 
 /* ---------- plain-English summaries ---------- */

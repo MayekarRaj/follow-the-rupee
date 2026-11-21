@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { Fragment, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { cleanName, inr, inrShort, pct } from "@/lib/format";
@@ -46,7 +46,7 @@ function Section({
   return (
     <section>
       <div className="rule-double mb-3 pb-1.5">
-        <h2 className="font-serif text-2xl font-bold text-ink">{title}</h2>
+        <h2 className="font-sans text-2xl font-bold text-ink">{title}</h2>
         {note && <p className="mt-0.5 text-sm text-ink/75">{note}</p>}
       </div>
       {children}
@@ -107,7 +107,7 @@ function Headline({
   worst: Contractor;
 }) {
   return (
-    <p className="mt-3 max-w-4xl font-serif text-xl font-semibold leading-snug text-ink sm:text-2xl">
+    <p className="mt-3 max-w-4xl font-sans text-xl font-semibold leading-snug text-ink sm:text-2xl">
       <span className="text-stamp">{inrShort(summary.flagged_excess_inr)}</span>{" "}
       flagged across {summary.flagged_work_orders.toLocaleString("en-IN")} work
       orders citywide. {overspent} {overspent === 1 ? "ward" : "wards"}{" "}
@@ -353,7 +353,7 @@ function WardTable({ wards }: { wards: Ward[] }) {
                   onClick={(e) => e.stopPropagation()}
                   className="flex min-h-11 flex-col justify-center px-3 py-1"
                 >
-                  <span className="font-serif text-lg font-bold leading-none text-ink underline underline-offset-4">
+                  <span className="font-sans text-lg font-bold leading-none text-ink underline underline-offset-4">
                     {w.ward_code}
                   </span>
                   <span className="mt-0.5 block max-w-[9.5rem] truncate text-xs text-ink/70">
@@ -367,7 +367,7 @@ function WardTable({ wards }: { wards: Ward[] }) {
               <td className={td}>
                 <UtilBar value={w.utilisation_pct} />
               </td>
-              <td className={`${money} ${w.flagged_excess_inr > 0 ? "text-stamp" : ""}`}>
+              <td className={money}>
                 {inrShort(w.flagged_excess_inr)}
               </td>
               <td className={money}>{inrShort(w.failed_fix_spend_inr)}</td>
@@ -409,7 +409,7 @@ function WardLine({ w, kind }: { w: Ward; kind: "over" | "under" }) {
       <span className="min-w-0">
         <Link
           href={wardHref(w.ward_code)}
-          className="inline-flex min-h-11 items-center font-serif text-lg font-bold text-ink underline underline-offset-4"
+          className="inline-flex min-h-11 items-center font-sans text-lg font-bold text-ink underline underline-offset-4"
         >
           {w.ward_code}
           <span className="sr-only">: open in Ward officer view</span>
@@ -457,7 +457,7 @@ function Reallocation({ wards }: { wards: Ward[] }) {
       </p>
       <h3
         id="realloc-h"
-        className="mt-1 font-serif text-xl font-bold leading-snug text-ink sm:text-2xl"
+        className="mt-1 font-sans text-xl font-bold leading-snug text-ink sm:text-2xl"
       >
         Consider reviewing a reallocation from{" "}
         <span className="whitespace-nowrap">{codes(under)}</span>{" "}
@@ -524,9 +524,10 @@ function Scorecard({
   contractors: Contractor[];
   context: Contractors["context_check"];
 }) {
-  const [ex, setEx] = useState<Explained | null>(null);
+  // One explanation open at a time; results are kept so re-opening is instant.
+  const [openId, setOpenId] = useState<string | null>(null);
+  const [results, setResults] = useState<Record<string, Explained>>({});
   const [busy, setBusy] = useState<string | null>(null);
-  const panel = useRef<HTMLDivElement>(null);
 
   const rows = useMemo(
     () =>
@@ -536,7 +537,7 @@ function Scorecard({
     [contractors],
   );
 
-  async function explain(c: Contractor, ratio: number) {
+  async function load(c: Contractor, ratio: number) {
     setBusy(c.contractor_id);
     const note = scorecardNote(c, ratio);
     let out: Explained = {
@@ -567,14 +568,22 @@ function Scorecard({
     } catch {
       /* the demo must never break: keep the summary built from the data */
     }
-    setEx(out);
-    setBusy(null);
-    requestAnimationFrame(() =>
-      panel.current?.scrollIntoView({ block: "nearest" }),
-    );
+    setResults((m) => ({ ...m, [c.contractor_id]: out }));
+    setBusy((b) => (b === c.contractor_id ? null : b));
   }
 
-  const td = "px-3 py-2 align-middle";
+  function toggle(c: Contractor, ratio: number) {
+    const id = c.contractor_id;
+    if (openId === id) {
+      setOpenId(null);
+      return;
+    }
+    setOpenId(id);
+    if (!results[id] && busy !== id) void load(c, ratio);
+  }
+
+  const SCORECARD_COLS = 9; // keep equal to the number of <th> in the header
+  const td = "px-3 py-3 align-middle";
   const num = `${td} whitespace-nowrap text-right font-serif text-base font-bold tabular-nums text-ink`;
   const th =
     "px-3 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.12em] text-ink/85";
@@ -609,8 +618,12 @@ function Scorecard({
           <tbody>
             {rows.map(({ c, ratio }) => {
               const flagged = ratio > REOPEN_FLAG_RATIO;
+              const id = c.contractor_id;
+              const isOpen = openId === id;
+              const res = results[id];
               return (
-                <tr key={c.contractor_id} className="border-b border-ink/20">
+                <Fragment key={id}>
+                <tr className={isOpen ? "" : "border-b border-ink/20"}>
                   <th
                     scope="row"
                     className="sticky left-0 z-10 border-r border-ink/15 bg-paper px-3 py-2 text-left font-semibold text-ink"
@@ -644,17 +657,50 @@ function Scorecard({
                   <td className={num}>{c.median_cost_ratio.toFixed(2)}×</td>
                   <td className={num}>{flagTotal(c)}</td>
                   <td className={num}>{inrShort(c.flagged_excess_inr)}</td>
-                  <td className={td}>
+                  <td className={`${td} pr-4`}>
                     <button
-                      onClick={() => explain(c, ratio)}
-                      disabled={busy !== null}
+                      type="button"
+                      onClick={() => toggle(c, ratio)}
+                      aria-expanded={isOpen}
+                      aria-controls={`explain-${id}`}
                       aria-label={`Explain scorecard for ${cleanName(c.name)}`}
-                      className="min-h-11 min-w-[5.5rem] border border-ink bg-ink px-3 text-sm font-semibold text-paper hover:bg-ink/90 disabled:opacity-60"
+                      className={`min-h-11 min-w-[5.5rem] border border-ink px-3 text-sm font-semibold ${
+                        isOpen ? "bg-paper text-ink hover:bg-road/25" : "bg-ink text-paper hover:bg-ink/90"
+                      }`}
                     >
-                      {busy === c.contractor_id ? "Explaining…" : "Explain"}
+                      {isOpen ? "Hide" : "Explain"}
                     </button>
                   </td>
                 </tr>
+                {isOpen && (
+                  <tr className="border-b border-ink/20">
+                    <td colSpan={SCORECARD_COLS} className="p-0">
+                      {/* Stays in view while the wide table scrolls sideways. */}
+                      <div
+                        id={`explain-${id}`}
+                        role="region"
+                        aria-label={`Explanation for ${cleanName(c.name)}`}
+                        aria-live="polite"
+                        className="sticky left-0 my-2 ml-3 max-w-[min(80ch,calc(100vw-2rem))] border-l-4 border-road py-1 pl-4 pr-3"
+                      >
+                        {res ? (
+                          <>
+                            <p className="text-sm leading-relaxed text-ink">{res.text}</p>
+                            {res.fallback && (
+                              <p className="mt-1 text-xs text-ink/70">
+                                Showing a summary built from the data (AI explanation
+                                unavailable).
+                              </p>
+                            )}
+                          </>
+                        ) : (
+                          <p className="text-sm text-ink/80">Explaining…</p>
+                        )}
+                      </div>
+                    </td>
+                  </tr>
+                )}
+                </Fragment>
               );
             })}
           </tbody>
@@ -666,22 +712,6 @@ function Scorecard({
         for review above {REOPEN_FLAG_RATIO}× expected. Flags can overlap on one
         work order.
       </p>
-      <div ref={panel} aria-live="polite">
-        {ex && (
-          <div className="mt-3 border border-ink/40 p-3">
-            <p className="text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-ink/70">
-              Explanation · {ex.name}
-            </p>
-            <p className="mt-1 text-sm text-ink">{ex.text}</p>
-            {ex.fallback && (
-              <p className="mt-1 text-xs text-ink/70">
-                Showing a summary built from the data (AI explanation
-                unavailable).
-              </p>
-            )}
-          </div>
-        )}
-      </div>
     </div>
   );
 }
@@ -790,7 +820,7 @@ function Fairness({
       </p>
       <h3
         id="fair-h"
-        className="mt-1 font-serif text-xl font-bold leading-snug text-ink"
+        className="mt-1 font-sans text-xl font-bold leading-snug text-ink"
       >
         Does rain or flooding explain re-opens?
       </h3>
@@ -875,7 +905,7 @@ export default function CommissionerView() {
       <p className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink/70">
         Commissioner view
       </p>
-      <h1 className="font-serif text-4xl font-bold leading-tight text-ink">
+      <h1 className="font-sans text-4xl font-bold leading-tight text-ink">
         Mumbai, citywide
       </h1>
 

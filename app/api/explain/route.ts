@@ -10,7 +10,7 @@ type Mode = "find" | "citizen" | "flag" | "scorecard";
 type Lang = "en" | "mr" | "hi";
 
 const SYSTEM_EXPLAIN =
-  "You explain Mumbai monsoon road-repair audit evidence to a ward officer or citizen. Use only the JSON given. Plain language, 2-3 sentences, mention the rupee amounts and the comparison (e.g. billed vs rate card). Never say fraud, corruption or theft; say 'needs review'. If lang is mr or hi, answer in that language and script.";
+  "You explain Mumbai monsoon road-repair audit evidence to a ward officer or citizen. Use only the JSON given. Plain language. Answer in complete sentences, at most 3, and always finish the last sentence. Mention the rupee amounts and the comparison (e.g. billed vs rate card). Never say fraud, corruption or theft; say 'needs review'. If lang is mr or hi, answer in that language and script.";
 
 // The ward list is static (24 BMC wards), so it lives here rather than being
 // read from public/data at request time.
@@ -38,10 +38,19 @@ function api(): Anthropic {
   return (client ??= new Anthropic());
 }
 
+/** Cut a reply that hit the token limit back to its last full sentence. */
+function trimToSentence(text: string): string {
+  const end = Math.max(
+    ...[".", "!", "?", "।", "॥"].map((m) => text.lastIndexOf(m)),
+  );
+  return end > 0 ? text.slice(0, end + 1).trim() : text;
+}
+
 async function ask(
   system: string,
   user: string,
   maxTokens = 300,
+  sentences = false,
 ): Promise<string> {
   const res = await api().messages.create({
     model: MODEL,
@@ -50,10 +59,11 @@ async function ask(
     system,
     messages: [{ role: "user", content: user }],
   });
-  const text = res.content
+  let text = res.content
     .map((b) => (b.type === "text" ? b.text : ""))
     .join("")
     .trim();
+  if (sentences && res.stop_reason === "max_tokens") text = trimToSentence(text);
   if (!text) throw new Error("empty model reply");
   return text;
 }
@@ -131,8 +141,9 @@ export async function POST(req: Request) {
       const text = await ask(
         SYSTEM_EXPLAIN,
         `lang: ${lang}\nrecord: ${json}`,
-        // Devanagari needs ~3x the tokens of English for the same 2-3 sentences.
-        lang === "en" ? 300 : 900,
+        // Devanagari needs more tokens than English for the same sentences.
+        lang === "en" ? 600 : 900,
+        true,
       );
       const out = { text, fallback: false };
       cache.set(key, out);

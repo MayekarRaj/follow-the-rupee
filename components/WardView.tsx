@@ -48,7 +48,7 @@ function Headline({ ward, flags }: { ward: Ward; flags: Flag[] }) {
 
   if (!start || workOrders === 0)
     return (
-      <p className="mt-3 font-serif text-xl text-ink">{t("head.none")}</p>
+      <p className="mt-3 font-sans text-xl text-ink">{t("head.none")}</p>
     );
 
   const a = t(workOrders === 1 ? "head.a1" : "head.a", {
@@ -65,7 +65,7 @@ function Headline({ ward, flags }: { ward: Ward; flags: Flag[] }) {
           y,
         });
   return (
-    <p className="mt-3 max-w-3xl font-serif text-xl font-semibold leading-snug text-ink sm:text-2xl">
+    <p className="mt-3 max-w-3xl font-sans text-xl font-semibold leading-snug text-ink sm:text-2xl">
       {a} <span className="whitespace-nowrap text-stamp">{t("head.start")}</span>{" "}
       {tail}.
     </p>
@@ -344,7 +344,7 @@ function Section({
   return (
     <section>
       <div className="rule-double mb-3 flex flex-wrap items-baseline justify-between gap-2 pb-1.5">
-        <h2 className="font-serif text-2xl font-bold text-ink">{title}</h2>
+        <h2 className="font-sans text-2xl font-bold text-ink">{title}</h2>
         {right}
       </div>
       {children}
@@ -386,7 +386,7 @@ function NextRupeeSection({ data }: { data: NextRupee[string] | undefined }) {
           >
             <div className="flex items-start justify-between gap-3">
               <div lang={dataLang} className="min-w-0">
-                <p className="font-serif text-base font-bold leading-tight text-ink">
+                <p className="font-sans text-base font-bold leading-tight text-ink">
                   {q.road_name}
                 </p>
                 <p className="text-xs text-ink/70">
@@ -502,7 +502,7 @@ export default function WardView({ wardCode }: { wardCode: string }) {
       <p className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink/70">
         {t("wardView")}
       </p>
-      <h1 className="font-serif text-4xl font-bold leading-tight text-ink">
+      <h1 className="font-sans text-4xl font-bold leading-tight text-ink">
         {t("ward")} {ward.ward_code}
         <span lang="en" className="block text-xl font-normal text-ink/70 sm:inline sm:text-4xl">
           <span className="hidden sm:inline"> · </span>
@@ -514,37 +514,37 @@ export default function WardView({ wardCode }: { wardCode: string }) {
       <KpiRow ward={ward} flagCount={new Set(wardFlags.map((f) => f.work_order_id)).size} />
 
       <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-start">
-        <Section title={t("sec.queue")}>
-          <FlagTabs
-            key={wardCode}
-            flags={wardFlags}
-            statuses={statuses}
-            onOpen={setSelected}
-          />
-        </Section>
-
-        <div className="space-y-8 lg:sticky lg:top-[calc(var(--header-h,6rem)+1rem)] lg:max-h-[calc(100vh-var(--header-h,6rem)-2rem)] lg:overflow-y-auto lg:pr-1">
-          <Section
-            title={t("sec.next")}
-            right={
-              nr && (
-                <p
-                  className={`text-sm font-semibold ${nr.remaining_budget_inr < 0 ? "text-stamp" : "text-ink"}`}
-                >
-                  {t("remaining")}{" "}
-                  <span className="font-serif text-lg font-bold tabular-nums">
-                    {inr(nr.remaining_budget_inr)}
-                  </span>
-                </p>
-              )
-            }
-          >
-            <NextRupeeSection data={nr} />
+        <div className="space-y-8">
+          <Section title={t("sec.queue")}>
+            <FlagTabs
+              key={wardCode}
+              flags={wardFlags}
+              statuses={statuses}
+              onOpen={setSelected}
+            />
           </Section>
           <Section title={t("sec.contractors")}>
             <ContractorBars ward={ward} />
           </Section>
         </div>
+
+        <Section
+          title={t("sec.next")}
+          right={
+            nr && (
+              <p
+                className={`text-sm font-semibold ${nr.remaining_budget_inr < 0 ? "text-stamp" : "text-ink"}`}
+              >
+                {t("remaining")}{" "}
+                <span className="font-serif text-lg font-bold tabular-nums">
+                  {inr(nr.remaining_budget_inr)}
+                </span>
+              </p>
+            )
+          }
+        >
+          <NextRupeeSection data={nr} />
+        </Section>
       </div>
 
       {selected && (

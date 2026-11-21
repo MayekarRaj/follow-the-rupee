@@ -43,8 +43,27 @@ export type Flag = {
   completed_at: string;
   linked_complaints: string | null;
   original_work_order: string | null;
+  /** Full evidence for the earlier bill, present on DUPLICATE_BILL flags. */
+  original?: WorkOrderEvidence | null;
   road_resurfaced_on: string | null;
 };
+
+/** The fields shown on a work-order card (a flag or its original bill). */
+export type WorkOrderEvidence = Pick<
+  Flag,
+  | "work_order_id"
+  | "ward"
+  | "road"
+  | "contractor"
+  | "method"
+  | "work_type"
+  | "area_sqm"
+  | "billed_inr"
+  | "rate_card_inr"
+  | "cost_ratio"
+  | "completed_at"
+  | "linked_complaints"
+>;
 
 export type QueueItem = {
   road_id: string;

@@ -33,7 +33,7 @@ function Bars({ rows, unit }: { rows: { label: string; v: number }[]; unit: stri
 
 function H({ children }: { children: React.ReactNode }) {
   return (
-    <h3 className="mt-6 border-b border-ink font-serif text-lg font-bold text-ink">
+    <h3 className="mt-6 border-b border-ink font-sans text-lg font-bold text-ink">
       {children}
     </h3>
   );
@@ -52,7 +52,7 @@ export default function HowWeFlag({ onClose }: { onClose: () => void }) {
 
   return (
     <Drawer label={t("how.title")} onClose={onClose}>
-      <h2 className="font-serif text-2xl font-bold leading-tight text-ink">
+      <h2 className="font-sans text-2xl font-bold leading-tight text-ink">
         {t("how.title")}
       </h2>
       <p className="mt-2 border-l-4 border-road bg-road/20 p-3 text-sm font-semibold text-ink">

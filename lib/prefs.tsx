@@ -41,6 +41,8 @@ function useStored() {
 type Ctx = {
   howOpen: boolean;
   setHowOpen: (v: boolean) => void;
+  navOpen: boolean;
+  setNavOpen: (v: boolean) => void;
 };
 
 const UiCtx = createContext<Ctx | null>(null);
@@ -48,6 +50,7 @@ const UiCtx = createContext<Ctx | null>(null);
 export function PrefsProvider({ children }: { children: React.ReactNode }) {
   const { lang, scale } = useStored();
   const [howOpen, setHowOpen] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
 
   // Effects only run after hydration, so touching <html> here is safe.
   useEffect(() => {
@@ -55,7 +58,10 @@ export function PrefsProvider({ children }: { children: React.ReactNode }) {
     document.documentElement.style.fontSize = `${scale}%`;
   }, [lang, scale]);
 
-  const value = useMemo(() => ({ howOpen, setHowOpen }), [howOpen]);
+  const value = useMemo(
+    () => ({ howOpen, setHowOpen, navOpen, setNavOpen }),
+    [howOpen, navOpen],
+  );
   return <UiCtx.Provider value={value}>{children}</UiCtx.Provider>;
 }
 
@@ -84,5 +90,7 @@ export function usePrefs() {
     t,
     howOpen: ui.howOpen,
     setHowOpen: ui.setHowOpen,
+    navOpen: ui.navOpen,
+    setNavOpen: ui.setNavOpen,
   };
 }
