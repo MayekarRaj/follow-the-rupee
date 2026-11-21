@@ -316,3 +316,30 @@ Every significant decision, with the reason for it. Format: **Decision**, then *
 
 **D102. Checked in Chrome on port 3002: one screenshot of change 1 (WO25-02366, P/N, escalation note, Ground 3 ticked and the new action). No screenshot for change 2, as the data has no office field. `tsc --noEmit` and eslint are clean. Not checked: the local fallback template, the Marathi note, a DLP_PAID flag without a utility cause after this change, 390 px.**
 *Why:* Records what was actually tested.
+
+**D103. Writes are now visible across roles through the existing localStorage store. `lib/store.ts` fires a window custom event (`ftr:store`, with the key) on every write, and each subscriber listens to it as well as to the browser's `storage` event. Before this, only subscribers created through the same store instance were told.**
+*Why:* The brief asked for a window event so open views refresh. The `storage` event only reaches other tabs; the custom event covers the same tab. No new package.
+
+**D104. `lib/status.ts` gets `getStatus(woId)`, `listStatuses()`, `statusForWo()`, `addFollowUp()`, `listFollowUps()` and `useFollowUps()`. Every status record now also has `updatedAt` (same value as `at`, kept so old saved records still read). A work order's status is the most recently changed flag status that is not "new", because statuses are saved per flag (`WO|FLAG`) and one work order can carry several.**
+*Why:* The brief asks for a status per work order, but the store keys by flag. "Most recent" is the simplest rule that shows the officer's latest action. Two flags on one job with different statuses show only the newer one in the citizen trail.
+
+**D105. Follow-ups live under their own key, `ftr.followUps.v1` (a list). A ref is "FU-" plus 4 characters from A–Z and 2–9 without 0, O, 1, I, so it can be read out or copied without mix-ups; a ref already in use is never reused. A follow-up stores complaint id, work-order id (or null), text, `at` and `updatedAt`.**
+*Why:* Keeping them apart from flag statuses means neither can overwrite the other.
+
+**D106. Citizen trail: after the last job step, a step "Ward office action: <status> · <relative time>" appears when the work order has a status past "new". Dismissed shows "Reason: …", Contested shows "Contractor's reason: …"; the other statuses repeat the status word as the body. Each follow-up for the complaint then adds "Your follow-up: <ref>" with its text and time. A one-line demo note closes the list. Relative time is "just now / N min ago / N h ago / N days ago" (English only, from `timeAgo`).**
+*Why:* The status and the follow-up are both things that happened after the repair, so they come last. The body for statuses without a reason repeats the title; that is plain but nothing else is in the data. The step is hidden when there is no linked work order.
+
+**D107. "Submit follow-up" sits inside the "Complain with evidence" panel, under an optional 300-character note. If the note is empty the saved text is "Please review complaint <id> (work order <id>) and tell me what action is being taken." After saving, the panel says "Follow-up recorded · ref FU-xxxx" and the note box clears. The draft text itself is not saved.**
+*Why:* The draft is a long letter to copy; the ward drawer needs a short line to list. The note keeps the citizen in control of what is sent.
+
+**D108. Ward drawer: a "Citizen follow-ups (N)" box (always shown, "No follow-ups yet." at 0) lists each follow-up's text, ref, complaint id and time. It matches on the work-order id only. Queue rows show a small bordered "N follow-ups" badge ("1 follow-up" for one) next to the contractor name. The same drawer opens in the citizen view, so a citizen sees follow-ups there too.**
+*Why:* Always showing the box makes the feature findable before anyone has used it. Matching on work order only means a follow-up on a complaint with no work order never reaches a ward drawer (it still counts for the commissioner).
+
+**D109. Commissioner "Actions taken" card under the KPI row: Under review, Contested, Recovered, Dismissed, "₹ recovered" and "Citizen follow-ups". The four counts are per flag, not per work order, and the card says so. ₹ recovered sums `excess_inr` from flags.json for each flag marked Recovered; it shows "…" until flags.json has loaded and 0 for a status that matches no flag. English only, like the rest of this view.**
+*Why:* The saved status is per flag, so counting per work order would need a rule from D104 that hides data. Showing "per flag" is more honest.
+
+**D110. The note "Demo: saved in this browser. In production: written to BMC's system." (`demoNote`) is shown in the citizen trail and the follow-up panel, the ward queue, the drawer's follow-up box and the commissioner card. Marathi and Hindi versions are my own translation and need native review (see D20).**
+*Why:* Asked for in each place. The ward queue got its own copy as well as the drawer, so the badges are not read as live data.
+
+**D111. Checked in Chrome on port 3002, one pass per step: set WO25-00003 (M/W) to Under review in the drawer; its trail for BMC25-000009 showed "Ward office action: Under review · just now"; submitted a follow-up (ref shown, "Your follow-up" step appeared); the queue row showed "1 follow-up" and the drawer listed it; after Mark recovered the commissioner card showed Recovered 1, ₹12,675, follow-ups 1. `tsc --noEmit` and eslint are clean; no console errors. The two storage keys were cleared afterwards. Not checked: 390 px, Marathi/Hindi, Dismissed and Contested in the trail, two flags with different statuses on one work order, a second browser tab, storage blocked.**
+*Why:* Records what was actually tested.

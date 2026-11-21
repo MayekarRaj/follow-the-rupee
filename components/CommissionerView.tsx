@@ -8,9 +8,12 @@ import {
   useData,
   type Contractor,
   type Contractors,
+  type Flag,
   type Summary,
   type Ward,
 } from "@/lib/data";
+import { DICT } from "@/lib/i18n";
+import { statusRows, useFollowUps, useStatuses, type Status } from "@/lib/status";
 import Stamp from "./Stamp";
 
 /* Labels in this view are English only for now (see DECISIONS.md), so the
@@ -865,6 +868,64 @@ function Fairness({
   );
 }
 
+/* ---------- actions taken (read from the ward office's saved statuses) ---------- */
+
+const ACTION_ROWS: { status: Status; label: string }[] = [
+  { status: "review", label: "Under review" },
+  { status: "contested", label: "Contested" },
+  { status: "recovered", label: "Recovered" },
+  { status: "dismissed", label: "Dismissed" },
+];
+
+function ActionsTaken() {
+  const statuses = useStatuses();
+  const followUps = useFollowUps();
+  const flags = useData<Flag[]>("flags.json");
+  const rows = useMemo(() => statusRows(statuses), [statuses]);
+  const count = (st: Status) => rows.filter((r) => r.status === st).length;
+  // A saved status is keyed "work order|flag type"; ₹ comes from that flag's excess.
+  const recovered = useMemo(() => {
+    if (!flags.data) return null;
+    const excess = new Map(flags.data.map((f) => [`${f.work_order_id}|${f.flag}`, f.excess_inr]));
+    return rows
+      .filter((r) => r.status === "recovered")
+      .reduce((sum, r) => sum + (excess.get(r.key) ?? 0), 0);
+  }, [rows, flags.data]);
+
+  return (
+    <section aria-labelledby="actions-h" className="mt-8 border border-ink/40 bg-paper p-3 sm:p-4">
+      <h2 id="actions-h" className="font-sans text-2xl font-bold text-ink">
+        Actions taken
+      </h2>
+      <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-3 sm:grid-cols-3 lg:grid-cols-6">
+        {ACTION_ROWS.map((a) => (
+          <div key={a.status}>
+            <dt className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-ink/70">
+              {a.label}
+            </dt>
+            <dd className={`${BIG} text-3xl`}>{count(a.status)}</dd>
+          </div>
+        ))}
+        <div>
+          <dt className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-ink/70">
+            ₹ recovered
+          </dt>
+          <dd className={`${BIG} text-3xl`}>{recovered == null ? "…" : inr(recovered)}</dd>
+        </div>
+        <div>
+          <dt className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-ink/70">
+            Citizen follow-ups
+          </dt>
+          <dd className={`${BIG} text-3xl`}>{followUps.length}</dd>
+        </div>
+      </dl>
+      <p className="mt-3 text-xs text-ink/70">
+        Counts are per flag, as the ward office saves them. {DICT.demoNote.en}
+      </p>
+    </section>
+  );
+}
+
 /* ---------- view ---------- */
 
 export default function CommissionerView() {
@@ -911,6 +972,7 @@ export default function CommissionerView() {
 
       <Headline summary={summary.data} overspent={over.length} worst={worst} />
       <KpiRow summary={summary.data} wards={w} over={over} under={under} />
+      <ActionsTaken />
 
       <div className="mt-8">
         <Section

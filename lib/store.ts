@@ -4,8 +4,9 @@
  * Tiny localStorage-backed external store for useSyncExternalStore.
  * Falls back to memory if storage is blocked, so the UI still works.
  */
+export const STORE_EVENT = "ftr:store";
+
 export function createStore(key: string) {
-  const listeners = new Set<() => void>();
   let mem: string | null = null;
 
   const get = (): string => {
@@ -18,17 +19,21 @@ export function createStore(key: string) {
   };
 
   const subscribe = (cb: () => void) => {
-    listeners.add(cb);
     const onStorage = (e: StorageEvent) => {
       if (e.key === key) {
         mem = null;
         cb();
       }
     };
+    // Same-tab writes: every open view hears this, whichever role it shows.
+    const onLocal = (e: Event) => {
+      if ((e as CustomEvent<{ key: string }>).detail?.key === key) cb();
+    };
     window.addEventListener("storage", onStorage);
+    window.addEventListener(STORE_EVENT, onLocal);
     return () => {
-      listeners.delete(cb);
       window.removeEventListener("storage", onStorage);
+      window.removeEventListener(STORE_EVENT, onLocal);
     };
   };
 
@@ -39,7 +44,7 @@ export function createStore(key: string) {
     } catch {
       /* storage blocked: memory copy keeps this tab working */
     }
-    listeners.forEach((l) => l());
+    window.dispatchEvent(new CustomEvent(STORE_EVENT, { detail: { key } }));
   };
 
   return { get, set, subscribe };

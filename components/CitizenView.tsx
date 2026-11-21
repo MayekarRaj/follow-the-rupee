@@ -21,6 +21,14 @@ import {
   type Extracted,
   type Issue,
 } from "@/lib/citizen";
+import {
+  addFollowUp,
+  followUpsFor,
+  statusForWo,
+  timeAgo,
+  useFollowUps,
+  useStatuses,
+} from "@/lib/status";
 import FlagDrawer from "./FlagDrawer";
 import SourceTag from "./SourceTag";
 import Stamp, { stampFor } from "./Stamp";
@@ -115,6 +123,8 @@ function Trail({
   const kind = statusKind(c.status);
   const daysOpen = daysSince(c.received_at);
   const wardOffice = wards?.find((x) => x.ward_code === c.ward)?.assistant_commissioner_office;
+  const statuses = useStatuses();
+  const allFollowUps = useFollowUps();
   const steps: ReactNode[] = [];
   let n = 0;
   const step = (
@@ -325,6 +335,41 @@ function Trail({
     );
   }
 
+  // What the ward office did with this job, and what the citizen sent back.
+  const action = w ? statusForWo(statuses, w.id) : null;
+  if (action)
+    step(
+      `${t("cz.s.ward")}: ${t(`status.${action.status}` as Key)} · ${timeAgo(action.updatedAt)}`,
+      action.reason ? (
+        <p lang={dataLang} className="text-base">
+          <span className="font-semibold">
+            {t(action.status === "contested" ? "contestedReason" : "reasonShown")}:
+          </span>{" "}
+          {action.reason}
+        </p>
+      ) : (
+        <p lang={dataLang} className="text-base text-ink/80">
+          {t(`status.${action.status}` as Key)}
+        </p>
+      ),
+    );
+  for (const fu of [...followUpsFor(allFollowUps, id)].reverse())
+    step(
+      `${t("cz.s.followup")}: ${fu.ref}`,
+      <>
+        <p lang={textLang(c)} className="text-base">
+          {fu.text}
+        </p>
+        <p className="mt-1 text-sm text-ink/70">{timeAgo(fu.updatedAt)}</p>
+      </>,
+    );
+  if (action || allFollowUps.some((f) => f.complaintId === id))
+    steps.push(
+      <li key="demo" className="pb-2 pl-14 text-xs text-ink/70">
+        {t("demoNote")}
+      </li>,
+    );
+
   return (
     <ol aria-label={t("cz.trail", { id })} className="mt-4">
       {steps}
@@ -353,6 +398,8 @@ function Actions({
   const [busy, setBusy] = useState(false);
   const [draft, setDraft] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [followNote, setFollowNote] = useState("");
+  const [sent, setSent] = useState<{ id: string; ref: string } | null>(null);
 
   const complaint = useMemo(
     () => buildComplaintText(id, c, { wards, flags, roadName }),
@@ -383,6 +430,15 @@ function Actions({
     } finally {
       setBusy(false);
     }
+  }
+
+  function submitFollowUp() {
+    const w = c.work_order;
+    const text =
+      followNote.trim() ||
+      `Please review complaint ${id}${w ? ` (work order ${w.id})` : ""} and tell me what action is being taken.`;
+    setSent({ id, ref: addFollowUp(id, w?.id ?? null, text) });
+    setFollowNote("");
   }
 
   async function copy() {
@@ -443,6 +499,28 @@ function Actions({
             <span aria-live="polite" className="text-base font-bold text-ok">
               {copied && `✓ ${t("cz.copied")}`}
             </span>
+          </div>
+          <div className="mt-4 border-t border-ink/30 pt-3">
+            <label htmlFor="fu-note" className="block text-base font-semibold">
+              {t("cz.followNote")}
+            </label>
+            <textarea
+              id="fu-note"
+              maxLength={300}
+              rows={2}
+              value={followNote}
+              onChange={(e) => setFollowNote(e.target.value)}
+              className="mt-1 w-full border-2 border-ink bg-paper p-2 text-base"
+            />
+            <div className="mt-2 flex flex-wrap items-center gap-3">
+              <button onClick={submitFollowUp} className={`${btn} bg-road`}>
+                {t("cz.submitFollowUp")}
+              </button>
+              <span aria-live="polite" className="text-base font-bold text-ok">
+                {sent?.id === id && `✓ ${t("cz.followRecorded", { ref: sent.ref })}`}
+              </span>
+            </div>
+            <p className="mt-2 text-xs text-ink/70">{t("demoNote")}</p>
           </div>
         </div>
       )}

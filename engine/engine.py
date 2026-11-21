@@ -146,7 +146,9 @@ for w in wards.itertuples():
     f = flags_df[flags_df.ward == w.ward_code]
     spend = int(g.cost_inr.sum())
     ward_rows.append({
-        "ward_code": w.ward_code, "ward_name": w.ward_name, "budget_inr": int(w.monsoon_repair_budget_inr_2025),
+        "ward_code": w.ward_code, "ward_name": w.ward_name,
+        "assistant_commissioner_office": w.assistant_commissioner_office, "engineering_crews": int(w.engineering_crews),
+        "budget_inr": int(w.monsoon_repair_budget_inr_2025),
         "spend_inr": spend, "utilisation_pct": round(100 * spend / w.monsoon_repair_budget_inr_2025, 1),
         "remaining_inr": int(w.monsoon_repair_budget_inr_2025 - spend), "jobs": len(g),
         "low_lying_index": w.low_lying_index,

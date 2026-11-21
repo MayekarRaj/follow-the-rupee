@@ -2,6 +2,8 @@
  {
   "ward_code": "A",
   "ward_name": "Colaba, Fort, Churchgate",
+  "assistant_commissioner_office": "A Ward Office (synthetic)",
+  "engineering_crews": 9,
   "budget_inr": 1600000,
   "spend_inr": 1655330,
   "utilisation_pct": 103.5,
@@ -42,6 +44,8 @@
  {
   "ward_code": "B",
   "ward_name": "Dongri, Masjid Bunder",
+  "assistant_commissioner_office": "B Ward Office (synthetic)",
+  "engineering_crews": 5,
   "budget_inr": 4300000,
   "spend_inr": 3507952,
   "utilisation_pct": 81.6,
@@ -82,6 +86,8 @@
  {
   "ward_code": "C",
   "ward_name": "Kalbadevi, Bhuleshwar, Marine Lines",
+  "assistant_commissioner_office": "C Ward Office (synthetic)",
+  "engineering_crews": 11,
   "budget_inr": 900000,
   "spend_inr": 796803,
   "utilisation_pct": 88.5,
@@ -118,6 +124,8 @@
  {
   "ward_code": "D",
   "ward_name": "Grant Road, Malabar Hill, Tardeo",
+  "assistant_commissioner_office": "D Ward Office (synthetic)",
+  "engineering_crews": 9,
   "budget_inr": 1600000,
   "spend_inr": 1272300,
   "utilisation_pct": 79.5,
@@ -157,6 +165,8 @@
  {
   "ward_code": "E",
   "ward_name": "Byculla, Agripada, Mumbai Central",
+  "assistant_commissioner_office": "E Ward Office (synthetic)",
+  "engineering_crews": 12,
   "budget_inr": 5300000,
   "spend_inr": 6322991,
   "utilisation_pct": 119.3,
@@ -198,6 +208,8 @@
  {
   "ward_code": "F/S",
   "ward_name": "Parel, Lalbaug, Sewri",
+  "assistant_commissioner_office": "F/S Ward Office (synthetic)",
+  "engineering_crews": 7,
   "budget_inr": 9800000,
   "spend_inr": 8026151,
   "utilisation_pct": 81.9,
@@ -239,6 +251,8 @@
  {
   "ward_code": "F/N",
   "ward_name": "Matunga, Sion, Wadala",
+  "assistant_commissioner_office": "F/N Ward Office (synthetic)",
+  "engineering_crews": 6,
   "budget_inr": 10500000,
   "spend_inr": 9412574,
   "utilisation_pct": 89.6,
@@ -280,6 +294,8 @@
  {
   "ward_code": "G/S",
   "ward_name": "Worli, Lower Parel, Prabhadevi",
+  "assistant_commissioner_office": "G/S Ward Office (synthetic)",
+  "engineering_crews": 11,
   "budget_inr": 3200000,
   "spend_inr": 2821986,
   "utilisation_pct": 88.2,
@@ -318,6 +334,8 @@
  {
   "ward_code": "G/N",
   "ward_name": "Dadar West, Mahim, Dharavi",
+  "assistant_commissioner_office": "G/N Ward Office (synthetic)",
+  "engineering_crews": 9,
   "budget_inr": 8400000,
   "spend_inr": 6755738,
   "utilisation_pct": 80.4,
@@ -359,6 +377,8 @@
  {
   "ward_code": "H/E",
   "ward_name": "Bandra East, Santacruz East, Khar East",
+  "assistant_commissioner_office": "H/E Ward Office (synthetic)",
+  "engineering_crews": 10,
   "budget_inr": 8200000,
   "spend_inr": 6145533,
   "utilisation_pct": 74.9,
@@ -400,6 +420,8 @@
  {
   "ward_code": "H/W",
   "ward_name": "Bandra West, Khar West, Santacruz West",
+  "assistant_commissioner_office": "H/W Ward Office (synthetic)",
+  "engineering_crews": 12,
   "budget_inr": 4300000,
   "spend_inr": 4245242,
   "utilisation_pct": 98.7,
@@ -441,6 +463,8 @@
  {
   "ward_code": "K/E",
   "ward_name": "Andheri East, Vile Parle East, Jogeshwari East",
+  "assistant_commissioner_office": "K/E Ward Office (synthetic)",
+  "engineering_crews": 6,
   "budget_inr": 9100000,
   "spend_inr": 8264048,
   "utilisation_pct": 90.8,
@@ -482,6 +506,8 @@
  {
   "ward_code": "K/W",
   "ward_name": "Andheri West, Juhu, Vile Parle West",
+  "assistant_commissioner_office": "K/W Ward Office (synthetic)",
+  "engineering_crews": 11,
   "budget_inr": 8900000,
   "spend_inr": 7845240,
   "utilisation_pct": 88.1,
@@ -523,6 +549,8 @@
  {
   "ward_code": "P/S",
   "ward_name": "Goregaon",
+  "assistant_commissioner_office": "P/S Ward Office (synthetic)",
+  "engineering_crews": 9,
   "budget_inr": 4800000,
   "spend_inr": 4349997,
   "utilisation_pct": 90.6,
@@ -564,6 +592,8 @@
  {
   "ward_code": "P/N",
   "ward_name": "Malad",
+  "assistant_commissioner_office": "P/N Ward Office (synthetic)",
+  "engineering_crews": 11,
   "budget_inr": 7700000,
   "spend_inr": 7006462,
   "utilisation_pct": 91.0,
@@ -605,6 +635,8 @@
  {
   "ward_code": "R/S",
   "ward_name": "Kandivali",
+  "assistant_commissioner_office": "R/S Ward Office (synthetic)",
+  "engineering_crews": 10,
   "budget_inr": 6600000,
   "spend_inr": 6642234,
   "utilisation_pct": 100.6,
@@ -645,6 +677,8 @@
  {
   "ward_code": "R/C",
   "ward_name": "Borivali",
+  "assistant_commissioner_office": "R/C Ward Office (synthetic)",
+  "engineering_crews": 11,
   "budget_inr": 2900000,
   "spend_inr": 3312447,
   "utilisation_pct": 114.2,
@@ -685,6 +719,8 @@
  {
   "ward_code": "R/N",
   "ward_name": "Dahisar",
+  "assistant_commissioner_office": "R/N Ward Office (synthetic)",
+  "engineering_crews": 11,
   "budget_inr": 4800000,
   "spend_inr": 3533838,
   "utilisation_pct": 73.6,
@@ -724,6 +760,8 @@
  {
   "ward_code": "L",
   "ward_name": "Kurla",
+  "assistant_commissioner_office": "L Ward Office (synthetic)",
+  "engineering_crews": 6,
   "budget_inr": 11900000,
   "spend_inr": 13043418,
   "utilisation_pct": 109.6,
@@ -765,6 +803,8 @@
  {
   "ward_code": "M/E",
   "ward_name": "Govandi, Mankhurd, Deonar",
+  "assistant_commissioner_office": "M/E Ward Office (synthetic)",
+  "engineering_crews": 7,
   "budget_inr": 9100000,
   "spend_inr": 7235685,
   "utilisation_pct": 79.5,
@@ -806,6 +846,8 @@
  {
   "ward_code": "M/W",
   "ward_name": "Chembur",
+  "assistant_commissioner_office": "M/W Ward Office (synthetic)",
+  "engineering_crews": 11,
   "budget_inr": 4400000,
   "spend_inr": 4689823,
   "utilisation_pct": 106.6,
@@ -846,6 +888,8 @@
  {
   "ward_code": "N",
   "ward_name": "Ghatkopar, Vikhroli",
+  "assistant_commissioner_office": "N Ward Office (synthetic)",
+  "engineering_crews": 6,
   "budget_inr": 6200000,
   "spend_inr": 5999557,
   "utilisation_pct": 96.8,
@@ -887,6 +931,8 @@
  {
   "ward_code": "S",
   "ward_name": "Bhandup, Powai, Kanjurmarg",
+  "assistant_commissioner_office": "S Ward Office (synthetic)",
+  "engineering_crews": 4,
   "budget_inr": 9500000,
   "spend_inr": 7489270,
   "utilisation_pct": 78.8,
@@ -928,6 +974,8 @@
  {
   "ward_code": "T",
   "ward_name": "Mulund",
+  "assistant_commissioner_office": "T Ward Office (synthetic)",
+  "engineering_crews": 6,
   "budget_inr": 5100000,
   "spend_inr": 3953564,
   "utilisation_pct": 77.5,

@@ -7,8 +7,11 @@ import { NEXT_STEP, UTILITY_NEXT_STEP, whyFlagged } from "@/lib/flagInfo";
 import { usePrefs } from "@/lib/prefs";
 import {
   flagKey,
+  followUpsFor,
   setStatus,
   statusOf,
+  timeAgo,
+  useFollowUps,
   useStatuses,
 } from "@/lib/status";
 import Drawer from "./Drawer";
@@ -318,6 +321,36 @@ function StatusPanel({ flag }: { flag: Flag }) {
   );
 }
 
+function FollowUps({ woId }: { woId: string }) {
+  const { t, dataLang } = usePrefs();
+  const list = followUpsFor(useFollowUps(), woId);
+  return (
+    <section aria-labelledby="fu-h" className="mt-4 border border-ink/40 p-3">
+      <h3 id="fu-h" className="font-sans text-sm font-bold text-ink">
+        {t("fu.title", { n: list.length })}
+      </h3>
+      {list.length === 0 ? (
+        <p className="mt-1 text-sm text-ink/70">{t("fu.none")}</p>
+      ) : (
+        <ul className="mt-2 space-y-2">
+          {list.map((f) => (
+            <li key={f.ref} className="border-t border-ink/30 pt-2 first:border-t-0 first:pt-0">
+              <p lang={dataLang} className="text-sm text-ink">
+                {f.text}
+              </p>
+              <p className="mt-0.5 text-xs text-ink/70">
+                <span className="font-mono font-semibold">{f.ref}</span> · {f.complaintId} ·{" "}
+                {timeAgo(f.updatedAt)}
+              </p>
+            </li>
+          ))}
+        </ul>
+      )}
+      <p className="mt-2 text-xs text-ink/70">{t("demoNote")}</p>
+    </section>
+  );
+}
+
 export default function FlagDrawer({
   flag,
   allFlags,
@@ -543,6 +576,8 @@ export default function FlagDrawer({
           {t("esc.draft")}
         </button>
       </Part>
+
+      <FollowUps woId={flag.work_order_id} />
 
       <button
         onClick={runExplain}

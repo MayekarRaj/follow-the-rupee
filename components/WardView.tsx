@@ -11,7 +11,7 @@ import {
   type Ward,
 } from "@/lib/data";
 import { usePrefs } from "@/lib/prefs";
-import { flagKey, statusOf, useStatuses, type StatusMap } from "@/lib/status";
+import { flagKey, statusOf, useFollowUps, useStatuses, type StatusMap } from "@/lib/status";
 import type { Key } from "@/lib/i18n";
 import FlagDrawer from "./FlagDrawer";
 import Stamp, { stampFor } from "./Stamp";
@@ -177,13 +177,15 @@ function KpiRow({ ward, flagCount }: { ward: Ward; flagCount: number }) {
 function FlagRow({
   f,
   statuses,
+  followUps,
   onOpen,
 }: {
   f: Flag;
   statuses: StatusMap;
+  followUps: number;
   onOpen: () => void;
 }) {
-  const { dataLang } = usePrefs();
+  const { t, dataLang } = usePrefs();
   const rec = statusOf(statuses, flagKey(f));
   return (
     <button
@@ -205,8 +207,13 @@ function FlagRow({
           <span className="font-mono">{f.work_order_id}</span>
           <span className="font-normal text-ink/70"> · {f.road}</span>
         </span>
-        <span className="block truncate text-xs text-ink/70">
-          {cleanName(f.contractor)}
+        <span className="flex items-center gap-2 text-xs text-ink/70">
+          <span className="truncate">{cleanName(f.contractor)}</span>
+          {followUps > 0 && (
+            <span className="shrink-0 border border-ink px-1 font-semibold text-ink">
+              {followUps === 1 ? t("fu.one") : t("fu.many", { n: followUps })}
+            </span>
+          )}
         </span>
       </span>
     </button>
@@ -216,10 +223,12 @@ function FlagRow({
 function FlagTabs({
   flags,
   statuses,
+  followCounts,
   onOpen,
 }: {
   flags: Flag[];
   statuses: StatusMap;
+  followCounts: Record<string, number>;
   onOpen: (f: Flag) => void;
 }) {
   const { t } = usePrefs();
@@ -311,7 +320,11 @@ function FlagTabs({
           <ul className="divide-y divide-ink/20">
             {shown.map((f) => (
               <li key={`${f.work_order_id}|${f.flag}`}>
-                <FlagRow f={f} statuses={statuses} onOpen={() => onOpen(f)} />
+                <FlagRow
+                  f={f}
+                  statuses={statuses}
+                  followUps={followCounts[f.work_order_id] ?? 0}
+                  onOpen={() => onOpen(f)} />
               </li>
             ))}
           </ul>
@@ -462,6 +475,12 @@ export default function WardView({ wardCode }: { wardCode: string }) {
   const flags = useData<Flag[]>("flags.json");
   const next = useData<NextRupee>("next_rupee.json");
   const statuses = useStatuses();
+  const followUps = useFollowUps();
+  const followCounts = useMemo(() => {
+    const m: Record<string, number> = {};
+    for (const f of followUps) if (f.woId) m[f.woId] = (m[f.woId] ?? 0) + 1;
+    return m;
+  }, [followUps]);
   const [selected, setSelected] = useState<Flag | null>(null);
 
   const error = wards.error || flags.error || next.error;
@@ -520,8 +539,10 @@ export default function WardView({ wardCode }: { wardCode: string }) {
               key={wardCode}
               flags={wardFlags}
               statuses={statuses}
+              followCounts={followCounts}
               onOpen={setSelected}
             />
+            <p className="mt-2 text-xs text-ink/70">{t("demoNote")}</p>
           </Section>
           <Section title={t("sec.contractors")}>
             <ContractorBars ward={ward} />
