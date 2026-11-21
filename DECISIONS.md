@@ -101,3 +101,44 @@ Every significant decision, with the reason for it. Format: **Decision**, then *
 
 **D31. The citizen page's static labels are translated into Marathi and Hindi; the complaint text, status, contractor and road names stay as recorded.**
 *Why:* Same rule as D20. The complaint is shown in its own language with `lang` set (`mr`, `hi`, or `en` for Hinglish). The new Marathi and Hindi labels were written by us and need native-speaker review. The spec'd input label is kept as written, with "(English / मराठी / हिंदी)".
+
+## Commissioner view
+**D32. The headline names the contractor with the highest re-open rate: Western Coast Asphalt Co (38.8% vs 24.6% expected), not Mahalaxmi (37.6%).**
+*Why:* The headline is computed from `contractors.json` (highest `reopen_pct`, ties broken by the ratio to expected). The "37.6% vs 24.7%" in SPEC was only an example of the format. Western Coast is also the highest by ratio (1.58×), so both ways of ranking agree.
+
+**D33. The review mark for a contractor is "re-open rate above 1.3× expected" (3 of 8: Western Coast 1.58×, Mahalaxmi 1.52×, Arabian Sea 1.31×). It shows a "▲ 1.58× expected" line and a "Needs review" stamp.**
+*Why:* The threshold comes from the request. Arabian Sea is only just over (1.31×), so the ratio is always printed next to the percentages and the reader can judge. Wording stays "needs review" (D11). The scorecard is sorted by this ratio, worst first, so the marked rows sit together at the top.
+
+**D34. The reallocation callout ranks wards by utilisation %, then shows ₹ amounts: E, R/C, L (over budget by ₹10.2 L, ₹4.1 L, ₹11.4 L = ₹25.8 L) and R/N, H/E, T (unspent ₹12.7 L, ₹20.5 L, ₹11.5 L = ₹44.7 L).**
+*Why:* Ranking by % reproduces the SPEC's example ("R/N, H/E, T → E, R/C, L"). By ₹ alone, L would outrank E. The callout is titled "Suggestion for review" and says the data can't show which unspent money is already committed, so it can't read as an instruction. Whether the unspent total covers the overspend is computed, not assumed.
+
+**D35. Wards are "overspent" above 100% utilisation (6 wards, R/S included at 100.6%) and "under-utilised" below 80% (6 wards).**
+*Why:* Both follow the request. Boundaries are strict (> 100, < 80), using the engine's `utilisation_pct`. No ward sits on either boundary (nearest: 100.6% and 79.5%), so rounding doesn't change the counts.
+
+**D36. Ward-table utilisation bars run 0–125% with a tick at 100%. Over 100% is stamp-red with "▲ over budget"; under 80% is road-yellow with "▼ under 80%".**
+*Why:* A 100% scale would clip E (119.3%). The percentage is always printed beside the bar and the bar itself is hidden from screen readers, so colour is never the only signal. The "under 80%" note was added so the KPI count can be found in the table; the request only asked for the over-budget text.
+
+**D37. The table is a real `<table>`. Column headers are buttons with `aria-sort`. The ward code is a link, and the whole row is also clickable.**
+*Why:* A link in the first cell makes the row reachable by keyboard (Tab, Enter), and the row click is a mouse convenience that goes to the same address (`/?role=ward&ward=X`). Default sort is utilisation, highest first, so over-budget wards open the table. A totals row (double rule) closes it, like a ledger.
+
+**D38. On phones both tables scroll sideways inside their own box (keyboard-focusable, labelled), with the ward or contractor name pinned on the left. The page itself never scrolls sideways.**
+*Why:* Seven or nine numeric columns can't fit in 390 px, and hiding columns would hide data. The first KPI cards stack: flagged money first, then total spend, then the two ward counts side by side. *Found while testing:* screen-reader-only text inside a scroll box widened the whole page until the box was made `position: relative`.
+*Test note:* Chrome's smallest window is 614 px wide, so I checked at 614 (same layout rules as 390, below the 640 px breakpoint), not at exactly 390.
+
+**D39. The fairness box shows each group as a pair of bars: the group's re-open rate (ink) and the all-jobs average (yellow, 24.4%). Both charts share one 0–40% scale starting at zero.**
+*Why:* "Bar pairs" is read as group vs. citywide average, which makes "roughly flat" visible. The average is the jobs-weighted mean of the contractors' re-open rates (2,499 jobs, matching `summary.json`). One scale and a zero baseline keep the flatness honest. Text equivalents: every row prints its percentage and difference in points, and each chart ends with a "Text version" sentence (range and spread). A short list adds the contractor spread (29.7 pts) next to rain (2.4 pts) and low-lying (3.7 pts).
+
+**D40. The fairness caption is only shown if both spreads are within 5 percentage points; otherwise a more cautious sentence replaces it.**
+*Why:* The caption "Re-open differences are not explained by heavy rain or flood-prone wards" is a claim about the data, so it's tied to the data. With today's numbers it shows, as in SPEC.
+
+**D41. Per-contractor "Explain" posts the contractor record plus the ratio, the threshold and the rain / low-lying context to `/api/explain` (mode `scorecard`). The answer appears in one panel under the table. If the call fails, a summary built from the same numbers is shown, marked as such.**
+*Why:* The route is unchanged. It falls back to `record.note`, so the client sends a plain-language `note` it also uses when the request itself fails. A single panel (rather than a row inside the table) stays visible when the table is scrolled sideways on a phone. The contractor name is sent without "(synthetic)" so the answer reads naturally.
+
+**D42. The view's labels are English only for now; the view is marked `lang="en"`. `lib/i18n.ts` is untouched.**
+*Why:* The new wording (headline, callout, fairness text) would need Marathi and Hindi that a native speaker reviews (see D20). Marking the view as English keeps screen readers correct when the app language is set to Marathi or Hindi. The header's "Commissioner" label is already translated.
+
+**D43. `CommissionerView` has its own small Section and KPI card instead of sharing WardView's.**
+*Why:* Those helpers live inside WardView.tsx, and the request was not to change the Ward or Citizen views. They can be moved to a shared file later. `lib/data.ts` only gained a `Contractor` type, and `app/page.tsx` now renders the Commissioner view where the placeholder was.
+
+**D44. With no `?role=` in the address, the app opens on the Commissioner view.**
+*Why:* SPEC's demo path starts at the Commissioner. The default lives in `useRole()` (`components/Header.tsx`), so the View-as select shows "Commissioner" too. Links that carry `?role=` are unaffected.

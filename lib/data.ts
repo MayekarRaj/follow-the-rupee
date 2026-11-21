@@ -68,7 +68,24 @@ export type Thresholds = {
   surface_work_types: string[];
 };
 
+export type Contractor = {
+  contractor_id: string;
+  name: string;
+  jobs: number;
+  billed_inr: number;
+  sla_met_pct: number;
+  reopen_pct: number;
+  expected_reopen_pct_for_method_mix: number;
+  median_cost_ratio: number;
+  avg_rain_7d_after_mm: number;
+  avg_ward_low_lying_index: number;
+  flags: Record<string, number>;
+  flagged_excess_inr: number;
+  failed_fix_spend_inr: number;
+};
+
 export type Contractors = {
+  contractors: Contractor[];
   context_check: {
     reopen_by_rain_quartile_pct: number[];
     reopen_by_low_lying_band_pct: Record<string, number>;

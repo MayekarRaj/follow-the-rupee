@@ -10,7 +10,7 @@ export function useRole(): { role: Role; ward: string } {
   const sp = useSearchParams();
   const r = sp.get("role");
   const role: Role =
-    r === "commissioner" || r === "citizen" || r === "ward" ? r : "ward";
+    r === "commissioner" || r === "citizen" || r === "ward" ? r : "commissioner";
   return { role, ward: sp.get("ward") || DEFAULT_WARD };
 }
 
