@@ -61,6 +61,7 @@ export default function TopBar() {
   const pathname = usePathname();
   const sp = useSearchParams();
   const { role, ward } = useRole();
+  const onFits = pathname === "/fits-bmc";
   const { data: wards } = useData<Ward[]>("wards.json");
   const { t, lang, setLang, scale, setScale, setNavOpen } = usePrefs();
   const ref = useRef<HTMLElement>(null);
@@ -101,9 +102,9 @@ export default function TopBar() {
             <IconMenu />
           </button>
           <p className="min-w-0 truncate text-lg font-bold leading-tight text-ink">
-            {t(`role.${role}`)}
+            {onFits ? t("fits.name") : t(`role.${role}`)}
           </p>
-          {role === "ward" && (
+          {!onFits && role === "ward" && (
             <label className="ml-auto flex items-center gap-2 text-sm text-ink/80 sm:ml-3">
               <span>{t("ward")}</span>
               <span className="relative inline-flex">

@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { usePrefs } from "@/lib/prefs";
 import { useRole } from "@/lib/role";
 import { createStore } from "@/lib/store";
 import type { Role } from "@/lib/data";
 import Drawer from "./Drawer";
-import { IconCity, IconFlag, IconHelp, IconSearch, IconSidebar } from "./icons";
+import { IconCity, IconFlag, IconFlow, IconHelp, IconSearch, IconSidebar } from "./icons";
 import { useSyncExternalStore } from "react";
 
 const ITEMS: { role: Role; icon: React.ReactNode }[] = [
@@ -53,6 +54,7 @@ function NavBody({
 }) {
   const { t, setHowOpen } = usePrefs();
   const { role, ward } = useRole();
+  const onFits = usePathname() === "/fits-bmc";
 
   const href = (r: Role) =>
     r === "ward" ? `/?role=ward&ward=${encodeURIComponent(ward)}` : `/?role=${r}`;
@@ -64,10 +66,13 @@ function NavBody({
       >
         {!collapsed && (
           <div className="min-w-0 flex-1 pt-1">
-            <p className="font-sans text-xl font-bold leading-tight tracking-tight text-ink">
-              Follow the Rupee
+            <p className="font-sans text-lg font-bold leading-tight tracking-tight text-ink">
+              <span className="whitespace-nowrap">Follow the Rupee ·</span>{" "}
+              <span lang="mr" className="whitespace-nowrap">
+                {t("brand.mr")}
+              </span>
             </p>
-            <p className="mt-0.5 text-xs leading-snug text-ink/75">{t("ledger")}</p>
+            <p className="mt-1 text-xs leading-snug text-ink/75">{t("brand.line")}</p>
           </div>
         )}
         {onToggle && (
@@ -87,7 +92,7 @@ function NavBody({
       <nav aria-label={t("nav.label")} className="mt-1 border-t border-ink/30 py-2">
         <ul>
           {ITEMS.map(({ role: r, icon }) => {
-            const active = r === role;
+            const active = !onFits && r === role;
             return (
               <li key={r}>
                 <Link
@@ -112,6 +117,28 @@ function NavBody({
             );
           })}
           <li className="mt-1 border-t border-ink/20 pt-1">
+            <Link
+              href="/fits-bmc"
+              onClick={onNavigate}
+              aria-current={onFits ? "page" : undefined}
+              aria-label={collapsed ? t("fits.name") : undefined}
+              title={collapsed ? t("fits.name") : undefined}
+              className={`${itemBase} ${collapsed ? itemRail : ""} ${onFits ? itemActive : itemIdle}`}
+            >
+              <span className={collapsed ? "shrink-0" : "mt-0.5 shrink-0"}>
+                <IconFlow />
+              </span>
+              <span className={collapsed ? "hidden" : ""}>
+                <span className="block text-sm font-semibold leading-tight">
+                  {t("fits.name")}
+                </span>
+                <span className="mt-0.5 block text-xs leading-snug text-ink/75">
+                  {t("nav.fits")}
+                </span>
+              </span>
+            </Link>
+          </li>
+          <li>
             <button
               type="button"
               onClick={() => {

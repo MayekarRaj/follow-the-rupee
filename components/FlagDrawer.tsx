@@ -13,20 +13,34 @@ import {
 } from "@/lib/status";
 import Drawer from "./Drawer";
 import Stamp, { stampFor } from "./Stamp";
+import SourceTag from "./SourceTag";
 import StatusTag from "./StatusTag";
+import type { SOURCE } from "@/lib/sources";
+
+type Src = keyof typeof SOURCE;
 
 function Field({
   k,
   v,
   money = false,
+  src,
 }: {
   k: string;
   v: React.ReactNode;
   money?: boolean;
+  src?: Src;
 }) {
   return (
     <div className="flex justify-between gap-4 border-b border-dotted border-ink/40 py-1.5 text-sm">
-      <dt className="text-ink/70">{k}</dt>
+      <dt className="text-ink/70">
+        {k}
+        {src && (
+          <>
+            {" "}
+            <SourceTag of={src} />
+          </>
+        )}
+      </dt>
       <dd
         className={`min-w-0 break-words text-right font-semibold tabular-nums text-ink ${
           money ? "font-serif text-base font-bold" : ""
@@ -63,7 +77,15 @@ function Part({
   );
 }
 
-function Stat({ label, value }: { label: string; value: string }) {
+function Stat({
+  label,
+  value,
+  src,
+}: {
+  label: string;
+  value: string;
+  src?: Src;
+}) {
   return (
     <div className="border border-ink/40 p-2">
       <p className="text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-ink/70">
@@ -72,6 +94,11 @@ function Stat({ label, value }: { label: string; value: string }) {
       <p className="font-serif text-xl font-bold tabular-nums text-ink">
         {value}
       </p>
+      {src && (
+        <p className="mt-1">
+          <SourceTag of={src} />
+        </p>
+      )}
     </div>
   );
 }
@@ -91,7 +118,10 @@ function WorkOrderCard({
       <p className="mb-1 text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-ink/70">
         {title}
       </p>
-      <p className="font-mono text-sm font-semibold">{id}</p>
+      <p className="flex flex-wrap items-center gap-x-2 gap-y-1">
+        <span className="font-mono text-sm font-semibold">{id}</span>
+        <SourceTag of="workOrders" />
+      </p>
       {f ? (
         <dl className="mt-1">
           <Field k="Date" v={f.completed_at} />
@@ -101,6 +131,7 @@ function WorkOrderCard({
           <Field k="Area" v={`${f.area_sqm} sq m`} />
           <Field
             k="Complaints"
+            src="complaints"
             v={
               f.linked_complaints ? (
                 <span className="font-mono text-xs">
@@ -288,8 +319,8 @@ export default function FlagDrawer({
 
       <Part n={1} title={t("part.wrong")}>
         <div className="grid grid-cols-2 gap-2">
-          <Stat label={t("billed")} value={inr(flag.billed_inr)} />
-          <Stat label={t("rateCard")} value={inr(flag.rate_card_inr)} />
+          <Stat label={t("billed")} value={inr(flag.billed_inr)} src="workOrders" />
+          <Stat label={t("rateCard")} value={inr(flag.rate_card_inr)} src="rates" />
           <Stat label={t("ratio")} value={`${flag.cost_ratio.toFixed(2)}×`} />
           <Stat label={t("excess")} value={inr(flag.excess_inr)} />
         </div>
@@ -310,7 +341,8 @@ export default function FlagDrawer({
         )}
         {flag.flag === "DLP_PAID" && flag.road_resurfaced_on && (
           <p lang={dataLang} className="mt-3 border-l-4 border-ok bg-ok/10 p-3 text-sm text-ink">
-            Road resurfaced on {flag.road_resurfaced_on}; still in warranty.
+            Road resurfaced on {flag.road_resurfaced_on}; still in warranty.{" "}
+            <SourceTag of="fixes" />
           </p>
         )}
 
@@ -319,7 +351,7 @@ export default function FlagDrawer({
             {t("allFields")}
           </summary>
           <dl lang={dataLang}>
-            <Field k="Work order" v={<span className="font-mono">{flag.work_order_id}</span>} />
+            <Field k="Work order" src="workOrders" v={<span className="font-mono">{flag.work_order_id}</span>} />
             <Field k="Ward" v={flag.ward} />
             <Field k="Road" v={flag.road} />
             <Field k="Contractor" v={cleanName(flag.contractor)} />
@@ -329,7 +361,7 @@ export default function FlagDrawer({
             <Field k="Completed" v={flag.completed_at} />
             <Field k="Severity" v={flag.severity} />
             {flag.road_resurfaced_on && (
-              <Field k="Road resurfaced on" v={flag.road_resurfaced_on} />
+              <Field k="Road resurfaced on" src="fixes" v={flag.road_resurfaced_on} />
             )}
             {flag.original_work_order && (
               <Field
@@ -339,6 +371,7 @@ export default function FlagDrawer({
             )}
             <Field
               k="Linked complaints"
+              src="complaints"
               v={
                 flag.linked_complaints ? (
                   <span className="font-mono text-xs">

@@ -10,6 +10,11 @@ export const DICT = {
   "nav.commissioner": { en: "City overview", mr: "शहराचा आढावा", hi: "शहर का अवलोकन" },
   "nav.ward": { en: "Act on flags", mr: "फ्लॅगवर कृती करा", hi: "फ़्लैग पर कार्रवाई करें" },
   "nav.citizen": { en: "Track a complaint", mr: "तक्रारीचा मागोवा घ्या", hi: "शिकायत ट्रैक करें" },
+  "nav.fits": { en: "How it plugs into BMC systems", mr: "BMC च्या प्रणालींशी कसे जोडले जाते", hi: "BMC की प्रणालियों से कैसे जुड़ता है" },
+  "fits.name": { en: "Fits BMC", mr: "BMC मध्ये कसे बसते", hi: "BMC में कैसे फिट" },
+  "brand.mr": { en: "रुपयाचा मागोवा" },
+  "brand.line": { en: "Proposed audit layer for BMC's Roads Department · Prototype on synthetic data · Not an official BMC service", mr: "BMC च्या रस्ते विभागासाठी प्रस्तावित लेखापरीक्षण स्तर · कृत्रिम डेटावरील प्रोटोटाइप · अधिकृत BMC सेवा नाही", hi: "BMC के सड़क विभाग के लिए प्रस्तावित ऑडिट परत · सिंथेटिक डेटा पर प्रोटोटाइप · आधिकारिक BMC सेवा नहीं" },
+  "src.label": { en: "Source:", mr: "स्रोत:", hi: "स्रोत:" },
   "nav.how": { en: "What the flags mean", mr: "फ्लॅगचा अर्थ काय", hi: "फ़्लैग का मतलब" },
   "key.title": { en: "Colour key", mr: "रंगसंकेत", hi: "रंग-संकेत" },
   "key.red": { en: "Needs review", mr: "आढावा आवश्यक", hi: "समीक्षा आवश्यक" },
@@ -146,7 +151,7 @@ export const DICT = {
   "cz.copy": { en: "Copy text", mr: "मजकूर कॉपी करा", hi: "पाठ कॉपी करें" },
   "cz.copied": { en: "Copied", mr: "कॉपी झाले", hi: "कॉपी हो गया" },
 
-  footer: { en: "Synthetic dataset, Claude Impact Lab Mumbai. Flags are evidence for review, not verdicts.", mr: "सिंथेटिक डेटासेट, Claude Impact Lab मुंबई. फ्लॅग हे आढाव्यासाठीचे पुरावे आहेत, निवाडा नाही.", hi: "सिंथेटिक डेटासेट, Claude Impact Lab मुंबई। फ़्लैग समीक्षा के लिए साक्ष्य हैं, निर्णय नहीं।" },
+  footer: { en: "Synthetic dataset, Claude Impact Lab Mumbai. Flags are evidence for review, not verdicts. Not an official BMC service.", mr: "सिंथेटिक डेटासेट, Claude Impact Lab मुंबई. फ्लॅग हे आढाव्यासाठीचे पुरावे आहेत, निवाडा नाही. अधिकृत BMC सेवा नाही.", hi: "सिंथेटिक डेटासेट, Claude Impact Lab मुंबई। फ़्लैग समीक्षा के लिए साक्ष्य हैं, निर्णय नहीं। आधिकारिक BMC सेवा नहीं।" },
 } satisfies Record<string, Entry>;
 
 export type Key = keyof typeof DICT;

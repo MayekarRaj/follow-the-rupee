@@ -22,6 +22,7 @@ import {
   type Issue,
 } from "@/lib/citizen";
 import FlagDrawer from "./FlagDrawer";
+import SourceTag from "./SourceTag";
 import Stamp, { stampFor } from "./Stamp";
 
 const serif = "font-serif font-bold tabular-nums";
@@ -37,12 +38,14 @@ function Step({
   title,
   mark,
   last,
+  source,
   children,
 }: {
   n: number;
   title: string;
   mark?: string;
   last?: boolean;
+  source?: ReactNode;
   children: ReactNode;
 }) {
   return (
@@ -63,6 +66,9 @@ function Step({
       </span>
       <h3 className="min-h-10 pt-2 text-sm font-bold uppercase tracking-[0.12em] text-ink/80">
         {title}
+        {source && (
+          <span className="ml-2 align-middle normal-case tracking-normal">{source}</span>
+        )}
       </h3>
       <div className="mt-1 text-lg leading-snug text-ink">{children}</div>
     </li>
@@ -112,10 +118,11 @@ function Trail({
     title: string,
     body: ReactNode,
     mark?: string,
+    source?: ReactNode,
   ) => {
     n += 1;
     steps.push(
-      <Step key={n} n={n} title={title} mark={mark}>
+      <Step key={n} n={n} title={title} mark={mark} source={source}>
         {body}
       </Step>,
     );
@@ -133,6 +140,8 @@ function Trail({
         <span lang={dataLang}>{c.category}</span>
       </p>
     </>,
+      undefined,
+      <SourceTag of="complaints" />,
   );
 
   const bad = kind === "rejected" || kind === "forwarded";
@@ -155,6 +164,8 @@ function Trail({
         </p>
       )}
     </>,
+      undefined,
+      <SourceTag of="complaints" />,
   );
 
   if (w) {
@@ -176,6 +187,8 @@ function Trail({
           </div>
         </dl>
       </>,
+      undefined,
+      <SourceTag of="workOrders" />,
     );
 
     const high = w.cost_ratio >= 1.5;
@@ -212,6 +225,7 @@ function Trail({
         )}
       </>,
       "₹",
+      <SourceTag of="workOrders" extra="rates" />,
     );
 
     const took = hoursBetween(c.received_at, w.completed_at);
@@ -224,6 +238,8 @@ function Trail({
           {took != null ? `; finished in ${took} hours` : ""}.
         </p>
       </>,
+      undefined,
+      <SourceTag of="fixes" />,
     );
 
     step(
@@ -236,6 +252,8 @@ function Trail({
             : "The road failed again within 30 days of the repair."}
         </p>
       </>,
+      undefined,
+      <SourceTag of="fixes" />,
     );
 
     if (w.flags.length > 0)
