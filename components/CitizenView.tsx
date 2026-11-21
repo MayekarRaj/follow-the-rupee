@@ -99,12 +99,14 @@ function Trail({
   id,
   c,
   flags,
+  wards,
   roadName,
   onOpen,
 }: {
   id: string;
   c: Complaint;
   flags: Flag[] | null;
+  wards: Ward[] | null;
   roadName?: string;
   onOpen: (f: Flag) => void;
 }) {
@@ -112,6 +114,7 @@ function Trail({
   const w = c.work_order;
   const kind = statusKind(c.status);
   const daysOpen = daysSince(c.received_at);
+  const wardOffice = wards?.find((x) => x.ward_code === c.ward)?.assistant_commissioner_office;
   const steps: ReactNode[] = [];
   let n = 0;
   const step = (
@@ -178,6 +181,15 @@ function Trail({
             <dt className="inline text-ink/70">{t("cz.contractor")}: </dt>
             <dd className="inline font-semibold">{cleanName(w.contractor)}</dd>
           </div>
+          {wardOffice && (
+            <div>
+              <dt className="inline text-ink/70">{t("wardOffice")}: </dt>
+              <dd className="inline font-semibold">{wardOffice}</dd>{" "}
+              <span className="border border-ink px-1 text-xs font-semibold uppercase tracking-wide">
+                {t("accountable")}
+              </span>
+            </div>
+          )}
           <div>
             <dt className="inline text-ink/70">{t("cz.method")}: </dt>
             <dd className="inline font-semibold">{w.method}</dd>
@@ -461,7 +473,7 @@ function RecordBody({
       <h2 id="trail-h" className={`${serif} text-2xl sm:text-3xl`}>
         {t("cz.trail", { id: rec.id })}
       </h2>
-      <Trail id={rec.id} c={rec.c} flags={flags} roadName={roadName} onOpen={setOpen} />
+      <Trail id={rec.id} c={rec.c} flags={flags} wards={wards} roadName={roadName} onOpen={setOpen} />
       <Actions id={rec.id} c={rec.c} flags={flags} wards={wards} roadName={roadName} />
       {open && flags && (
         <FlagDrawer flag={open} allFlags={flags} onClose={() => setOpen(null)} />

@@ -17,6 +17,8 @@ export type Ward = {
   flagged_excess_inr: number;
   flags: Record<string, number>;
   sla_met_pct: number;
+  /** Not in wards.json yet; the UI shows it only when the engine emits it (see D101). */
+  assistant_commissioner_office?: string;
 };
 
 export type FlagType =

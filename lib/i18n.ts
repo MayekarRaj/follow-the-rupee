@@ -157,6 +157,8 @@ export const DICT = {
   "cz.s.flags": { en: "Needs review", mr: "आढावा आवश्यक", hi: "समीक्षा आवश्यक" },
   "cz.s.open": { en: "Still open", mr: "अजून खुली", hi: "अभी खुली" },
   "cz.ward": { en: "Ward {w}", mr: "वॉर्ड {w}", hi: "वार्ड {w}" },
+  wardOffice: { en: "Ward office", mr: "वॉर्ड कार्यालय", hi: "वार्ड कार्यालय" },
+  accountable: { en: "Accountable", mr: "जबाबदार", hi: "जवाबदेह" },
   "cz.contractor": { en: "Contractor", mr: "कंत्राटदार", hi: "ठेकेदार" },
   "cz.method": { en: "Method", mr: "पद्धत", hi: "तरीका" },
   "cz.done": { en: "Finished", mr: "पूर्ण", hi: "पूरा हुआ" },

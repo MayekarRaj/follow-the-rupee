@@ -104,14 +104,34 @@ function Stat({
   );
 }
 
+function WardOfficeField({ office }: { office?: string }) {
+  const { t } = usePrefs();
+  if (!office) return null;
+  return (
+    <Field
+      k={t("wardOffice")}
+      v={
+        <>
+          {office}{" "}
+          <span className="border border-ink px-1 text-xs font-semibold uppercase tracking-wide">
+            {t("accountable")}
+          </span>
+        </>
+      }
+    />
+  );
+}
+
 function WorkOrderCard({
   title,
   f,
   id,
+  wardOffice,
 }: {
   title: string;
   f: WorkOrderEvidence | null;
   id: string;
+  wardOffice?: string;
 }) {
   const { t } = usePrefs();
   return (
@@ -128,6 +148,7 @@ function WorkOrderCard({
           <Field k="Date" v={f.completed_at} />
           <Field k="Road" v={f.road} />
           <Field k="Contractor" v={cleanName(f.contractor)} />
+          <WardOfficeField office={wardOffice} />
           <Field k="Method" v={f.method} />
           <Field k="Area" v={`${f.area_sqm} sq m`} />
           <Field
@@ -347,6 +368,7 @@ export default function FlagDrawer({
     : null;
   const why = whyFlagged(flag, summary?.thresholds);
   const other = flag.possible_other_cause ?? null;
+  const wardOffice = wards?.find((w) => w.ward_code === flag.ward)?.assistant_commissioner_office;
   const next = other ? UTILITY_NEXT_STEP : NEXT_STEP[flag.flag];
   const isDlp = flag.flag === "DLP_PAID" || flag.flag === "DLP_REVIEW";
 
@@ -438,11 +460,13 @@ export default function FlagDrawer({
               title="Original"
               f={original}
               id={flag.original_work_order}
+              wardOffice={wardOffice}
             />
             <WorkOrderCard
               title="Flagged copy"
               f={flag}
               id={flag.work_order_id}
+              wardOffice={wardOffice}
             />
           </div>
         )}
@@ -462,6 +486,7 @@ export default function FlagDrawer({
             <Field k="Ward" v={flag.ward} />
             <Field k="Road" v={flag.road} />
             <Field k="Contractor" v={cleanName(flag.contractor)} />
+            <WardOfficeField office={wardOffice} />
             <Field k="Method" v={flag.method} />
             <Field k="Work type" v={flag.work_type} />
             <Field k="Area" v={`${flag.area_sqm} sq m`} />

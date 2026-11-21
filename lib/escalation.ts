@@ -30,6 +30,20 @@ export const GROUND_OF: Record<FlagType, 2 | 4> = {
   DLP_PAID: 4,
 };
 
+/** Utility-trench cause on the record: Ground 3 instead of Ground 4 (see D100). */
+export function groundFor(f: Flag): 2 | 3 | 4 {
+  return f.flag === "DLP_PAID" && f.possible_other_cause ? 3 : GROUND_OF[f.flag];
+}
+
+/** English "Action requested" step; utility-trench cases name the permit and the utility agency. */
+export const UTILITY_ACTION =
+  "Verify trench permit; recover reinstatement charges from the utility agency";
+export function stepFor(f: Flag): string {
+  return f.flag === "DLP_PAID" && f.possible_other_cause
+    ? UTILITY_ACTION
+    : NEXT_STEP[f.flag].action;
+}
+
 const GROUND_TITLES: Record<NoteLang, string[]> = {
   en: [
     "Contractor delay / non-performance",
@@ -80,7 +94,7 @@ export function figures(f: NoteFlag) {
 /** What the model is told the ground text must say, per flag. */
 export function groundBrief(f: NoteFlag): string {
   const x = figures(f);
-  return `${groundBriefCore(f, x)} Do not begin with the words "Ground ${GROUND_OF[f.flag]}"; the heading is printed separately.`;
+  return `${groundBriefCore(f, x)} Do not begin with the words "Ground ${groundFor(f)}"; the heading is printed separately.`;
 }
 
 function groundBriefCore(f: NoteFlag, x: ReturnType<typeof figures>): string {
@@ -90,6 +104,8 @@ function groundBriefCore(f: NoteFlag, x: ReturnType<typeof figures>): string {
     case "DUPLICATE_BILL":
       return `State that the same road, method, contractor and area appear in the earlier work order ${f.original_work_order ?? "[original WO]"} (${x.original_billed ?? "[amount]"}, completed ${x.original_date ?? "[DD/MM/YYYY]"}) and again in ${f.work_order_id} (${x.billed}); the second bill of ${x.billed} is put forward for verification and recovery if confirmed. Cite both work orders and both amounts.`;
     case "DLP_PAID":
+      if (f.possible_other_cause)
+        return `State that the road was resurfaced on ${x.resurfaced} and is within its Defects Liability Period, that BMC paid ${x.billed} for surface repair under ${f.work_order_id}, and that the engineer's remark notes a utility (MTNL/MGL) trench on this road, so the damage may come from the utility cut and not from the resurfacing. Put forward for verification of the trench permit and recovery of reinstatement charges from the utility agency if confirmed. Cite the resurfaced date. Do not allege anything.`;
       return `State that the road was resurfaced on ${x.resurfaced} and is still within its Defects Liability Period, yet BMC paid ${x.billed} for surface repair under ${f.work_order_id}; propose risk and cost action against the original contractor and recovery of the amount if confirmed. Cite the resurfaced date.`;
     default:
       return `State that ${f.work_order_id} is drainage or utility work (${x.billed}) on a road resurfaced on ${x.resurfaced}; request verification whether this work is linked to the resurfacing. Do not allege anything.`;
@@ -142,7 +158,11 @@ export function localNote(f: NoteFlag, w: NoteWard, lang: NoteLang): NoteText {
         : `The same road, method, contractor and area appear in the earlier work order ${f.original_work_order ?? "[original WO]"} (${x.original_billed ?? "[amount]"}, completed ${x.original_date ?? "[DD/MM/YYYY]"}) and again in ${wo} (${x.billed}). The second bill of ${x.billed} is placed for verification and recovery if confirmed.`;
       break;
     case "DLP_PAID":
-      ground = mr
+      ground = f.possible_other_cause
+        ? mr
+          ? `रस्त्याचे पुनर्पृष्ठीकरण ${x.resurfaced} रोजी झाले असून तो अद्याप दोष दायित्व कालावधीत आहे. ${wo} अंतर्गत पृष्ठभाग दुरुस्तीसाठी मनपाने ${x.billed} दिले. अभियंत्याच्या शेऱ्यानुसार या रस्त्यावर सेवावाहिनी (MTNL/MGL) चर आहे, त्यामुळे नुकसान पुनर्पृष्ठीकरणामुळे नव्हे तर सेवावाहिनीच्या खोदकामामुळे असू शकते. चर परवान्याच्या पडताळणीसाठी व पुष्टी झाल्यास सेवावाहिनी संस्थेकडून पुनर्स्थापना शुल्काच्या वसुलीसाठी सादर.`
+          : `The road was resurfaced on ${x.resurfaced} and is within its Defects Liability Period, and BMC paid ${x.billed} for surface repair under ${wo}. The engineer's remark notes a utility (MTNL/MGL) trench on this road, so the damage may come from the utility cut and not from the resurfacing. Placed for verification of the trench permit, and recovery of reinstatement charges from the utility agency if confirmed.`
+        : mr
         ? `रस्त्याचे पुनर्पृष्ठीकरण ${x.resurfaced} रोजी झाले असून तो अद्याप दोष दायित्व कालावधीत आहे. तरीही ${wo} अंतर्गत पृष्ठभाग दुरुस्तीसाठी मनपाने ${x.billed} दिले. मूळ कंत्राटदारावर जोखीम व खर्च कारवाई आणि पुष्टी झाल्यास रकमेच्या वसुलीसाठी सादर.`
         : `The road was resurfaced on ${x.resurfaced} and is still within its Defects Liability Period, yet BMC paid ${x.billed} for surface repair under ${wo}. Placed for risk and cost action against the original contractor, and recovery if confirmed.`;
       break;
@@ -152,17 +172,19 @@ export function localNote(f: NoteFlag, w: NoteWard, lang: NoteLang): NoteText {
         : `${wo} is drainage or utility work (${x.billed}) on a road resurfaced on ${x.resurfaced}. Kindly verify whether this work is linked to the resurfacing.`;
   }
 
-  const step = NEXT_STEP[f.flag].action;
+  const step = stepFor(f);
   const action = mr
-    ? `वरील बाब पडताळणीसाठी सादर केली आहे. सुचवलेली कृती: ${localAction(f.flag)} पुष्टी झाल्यास वसुलीसाठी आपले निर्देश मिळावेत ही विनंती.`
+    ? `वरील बाब पडताळणीसाठी सादर केली आहे. सुचवलेली कृती: ${localAction(f)} पुष्टी झाल्यास वसुलीसाठी आपले निर्देश मिळावेत ही विनंती.`
     : `${step} Matter is escalated for verification and recovery if confirmed; your necessary directions are requested.`;
 
   return { subject, ref, intro, ground, action };
 }
 
 /** Marathi rendering of the drawer's next step (used only by the local template). */
-function localAction(flag: FlagType): string {
-  switch (flag) {
+function localAction(f: Flag): string {
+  if (f.flag === "DLP_PAID" && f.possible_other_cause)
+    return "चर परवान्याची पडताळणी करणे; सेवावाहिनी संस्थेकडून पुनर्स्थापना शुल्काची वसुली करणे.";
+  switch (f.flag) {
     case "DUPLICATE_BILL":
       return "प्रत्यक्ष जागेवर फक्त एकच काम झाले याची खात्री करणे; तसे असल्यास दुसऱ्या देयकाची वसुली करणे.";
     case "OVERBILLED":
@@ -308,7 +330,7 @@ export function buildSheet(
 ): Sheet {
   const l = L[lang];
   const x = figures(f);
-  const g = GROUND_OF[f.flag];
+  const g = groundFor(f);
   const area = lang === "mr" ? "चौ. मी." : "sq m";
   const vals = [
     f.work_order_id,
