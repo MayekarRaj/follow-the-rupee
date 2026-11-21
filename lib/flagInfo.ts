@@ -63,3 +63,9 @@ export const NEXT_STEP: Record<FlagType, { action: string; owner: string }> = {
     owner: "Sub-engineer checks on site → EE decides",
   },
 };
+
+/** Replaces the normal next step when the engineer's remark points to a utility trench. */
+export const UTILITY_NEXT_STEP = {
+  action: "Check trench permit; recover reinstatement from the utility agency",
+  owner: "Sub-engineer → AE (with utility agency)",
+};

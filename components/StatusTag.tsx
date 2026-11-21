@@ -6,6 +6,7 @@ import { usePrefs } from "@/lib/prefs";
 const STYLE: Record<Status, { cls: string; icon: string }> = {
   new: { cls: "border-ink text-ink", icon: "○" },
   review: { cls: "border-ink bg-road text-ink", icon: "◐" },
+  contested: { cls: "border-hazard bg-hazard/10 text-ink", icon: "⚑" },
   recovered: { cls: "border-ok bg-ok/10 text-ok", icon: "✓" },
   dismissed: { cls: "border-ink/60 text-ink/70", icon: "✕" },
 };

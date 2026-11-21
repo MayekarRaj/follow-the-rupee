@@ -46,6 +46,10 @@ export type Flag = {
   /** Full evidence for the earlier bill, present on DUPLICATE_BILL flags. */
   original?: WorkOrderEvidence | null;
   road_resurfaced_on: string | null;
+  /** Free-text remark from the engineer who closed the job. */
+  engineer_remark?: string | null;
+  /** Set on DLP flags where the remark points at a utility trench. */
+  possible_other_cause?: string | null;
 };
 
 /** The fields shown on a work-order card (a flag or its original bill). */
@@ -119,6 +123,18 @@ export type Summary = {
   flagged_excess_inr: number;
   flagged_work_orders: number;
   flag_counts: Record<string, number>;
+  robustness?: Robustness;
+};
+
+export type Robustness = {
+  overbill_count_by_threshold: Record<string, number>;
+  duplicate_count: Record<string, number>;
+  unlinked_work_orders_total: number;
+  dlp_paid_with_utility_remark: number;
+  reopen_pct_by_road_type: Record<string, number>;
+  contractor_reopen_pct_by_road_type: Record<string, Record<string, number>>;
+  contractor_road_type_mix_pct: Record<string, Record<string, number>>;
+  notes: string[];
 };
 
 const cache = new Map<string, Promise<unknown>>();

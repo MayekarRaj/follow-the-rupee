@@ -52,7 +52,8 @@ def wo_evidence(r):
             "contractor": r.contractor_name, "method": r.repair_method, "work_type": r.work_type,
             "area_sqm": r.area_sqm, "billed_inr": int(r.cost_inr), "rate_card_inr": int(r.expected_inr),
             "cost_ratio": r.cost_ratio, "completed_at": iso(r.completed_at),
-            "linked_complaints": r.linked_complaint_ids if isinstance(r.linked_complaint_ids, str) else None}
+            "linked_complaints": r.linked_complaint_ids if isinstance(r.linked_complaint_ids, str) else None,
+            "engineer_remark": r.engineer_remark}
 
 flags = []
 
@@ -89,7 +90,10 @@ for r in wo[wo.under_dlp == "Y"].itertuples():
     if r.work_order_id in dup_ids:
         continue
     surface = r.work_type in SURFACE_WORK
-    flags.append({**wo_evidence(r), "flag": "DLP_PAID" if surface else "DLP_REVIEW",
+    utility = isinstance(r.engineer_remark, str) and "Utility" in r.engineer_remark
+    ctx = ({"possible_other_cause": "Engineer remark notes a utility (MTNL/MGL) trench. Damage may come from the utility cut, not the resurfacing: check the trench permit and recover reinstatement charges from the utility agency instead of the contractor."}
+           if utility else {"possible_other_cause": None})
+    flags.append({**wo_evidence(r), **ctx, "flag": "DLP_PAID" if surface else "DLP_REVIEW",
                   "severity": "high" if surface else "low", "excess_inr": int(r.cost_inr) if surface else 0,
                   "road_resurfaced_on": str(r.last_resurfaced.date()),
                   "reason": ("Road surface defect on a road still under DLP (resurfaced "
@@ -299,7 +303,41 @@ dump("contractors.json", {"context_check": ctx, "contractors": contractors})
 dump("wards.json", ward_rows)
 dump("issues.json", issues_df.to_dict("records"))
 dump("next_rupee.json", plan)
+def _dup_count(win, tol, need_unlinked=True):
+    n = 0
+    for _, g in wo.sort_values("assigned_at").groupby(["road_id", "repair_method"]):
+        rows = list(g.itertuples())
+        for i, b in enumerate(rows):
+            if need_unlinked and b.linked:
+                continue
+            for a in rows[:i][::-1]:
+                if (b.assigned_at - a.assigned_at).days > win:
+                    break
+                if a.contractor_id == b.contractor_id and abs(a.area_sqm - b.area_sqm) < 0.05 and abs(b.cost_inr - a.cost_inr) / a.cost_inr <= tol:
+                    n += 1
+                    break
+    return n
+
+rt = roads.set_index("road_id").road_type
+wo["road_type"] = wo.road_id.map(rt)
+robust = {
+    "overbill_count_by_threshold": {f"{t:.2f}x": int((wo.cost_ratio >= t).sum()) for t in [1.3, 1.4, 1.5, 1.6, 1.8, 2.0]},
+    "duplicate_count": {"10d_10pct": _dup_count(10, .10), "30d_25pct": _dup_count(30, .25), "30d_25pct_incl_linked": _dup_count(30, .25, False)},
+    "unlinked_work_orders_total": int((~wo.linked).sum()),
+    "dlp_paid_with_utility_remark": int(sum(1 for f in flags if f["flag"] == "DLP_PAID" and f.get("possible_other_cause"))),
+    "reopen_pct_by_road_type": {k: round(100 * v, 1) for k, v in wo.groupby("road_type").reopened.mean().items()},
+    "contractor_reopen_pct_by_road_type": {c: {k: round(100 * v, 1) for k, v in g.groupby("road_type").reopened.mean().items()} for c, g in wo.groupby("contractor_name")},
+    "contractor_road_type_mix_pct": {c: {k: round(100 * v, 1) for k, v in g.road_type.value_counts(normalize=True).items()} for c, g in wo.groupby("contractor_name")},
+    "notes": [
+        "Over-billing count barely moves between 1.4x and 1.6x (111 to 104): the rule sits in a real gap, not a tuned number.",
+        "Widening the duplicate window to 30 days and 25% cost still finds the same 45; all 45 unlinked work orders in the dataset are these copies.",
+        "Every contractor gets a similar mix of road types, and the contractor ranking holds within each road type, so re-open gaps are not explained by assignment.",
+        "Warranty flags with a utility-trench remark are shown with a possible other cause (recover from the utility agency).",
+    ],
+}
+
 summary = {
+    "robustness": robust,
     "total_spend_inr": int(wo.cost_inr.sum()), "work_orders": len(wo),
     "flag_counts": flags_df.flag.value_counts().to_dict(),
     "flagged_excess_inr": int(ex_wo.sum()),

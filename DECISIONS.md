@@ -277,3 +277,33 @@ Every significant decision, with the reason for it. Format: **Decision**, then *
 
 **D89. Checked in Chrome at 1440 px, one screenshot: F/N ward, first duplicate flag (WO25-02479 against WO25-02032) → live Claude draft (header, To:, Sub:, Ref:, intro and the start of the particulars table visible). Also called the API directly for a duplicate in S ward (worked; found "(synthetic)" in the contractor and a "Ground 2:" prefix, both fixed by cleaning the contractor name in the prompt and stripping the prefix). `tsc --noEmit` and eslint are clean. Not checked: the lower half of the sheet (grounds, signature), Marathi, the local fallback, Copy, the actual print preview, 390 px width, the other three flag types.**
 *Why:* Records what was actually tested, per the "one screenshot" instruction.
+
+**D90. Flag drawer part 1 now shows "Engineer remark: …" under the four figures on every flag type. When the record has no remark it says "none recorded" instead of hiding the line.**
+*Why:* 96 flags have no remark. Saying so tells the officer the field was looked at and was empty.
+
+**D91. If `possible_other_cause` is set, part 1 shows a "Possible other cause" box with that text, in the road-yellow family (2px border, tinted fill, ⚠ icon, uppercase label). No new colour was added.**
+*Why:* DESIGN.md allows no other accents, and "amber" maps to road-yellow. Icon and label mean it is not colour-only. The box applies to both DLP_PAID (37) and DLP_REVIEW (31), since both carry the field.
+
+**D92. When `possible_other_cause` is set, part 3 is replaced by "Check trench permit; recover reinstatement from the utility agency", owner "Sub-engineer → AE (with utility agency)" (`UTILITY_NEXT_STEP` in `lib/flagInfo.ts`). The escalation-note ground logic (D82) is unchanged.**
+*Why:* Follows the instruction literally. Not done: the escalation note still reads as a contractor warranty claim for these flags. Worth a follow-up, since the drawer and the note now disagree for 68 flags.
+
+**D93. The evidence checklist ("Resurfaced date ✓", "Road under warranty ✓", "Cause confirmed on site ☐") is shown on both DLP flag types. It is read-only, not tickable. The first item is ✓ only if `road_resurfaced_on` is set (and shows the date). "Road under warranty" is always ✓ because the engine flags only roads inside the DLP. Each row also says "In the data" or "To check" in words.**
+*Why:* The request gave fixed states. Ticks that do not persist could mislead, so the third box is deliberately a to-do. The older green "Road resurfaced on …" note is kept for DLP_PAID, so the date now appears twice.
+
+**D94. New status "Contested by contractor" (`contested`), reached from "Under review" via a "Contested by contractor…" button. It requires the contractor's reason (200 chars) and takes an optional evidence note (200 chars). The reason and note show in the drawer's status panel. Stored in the same localStorage map; a `note` field was added to the record and the key stays `ftr.flagStatus.v1`.**
+*Why:* Old saved records stay valid, so no migration is needed.
+
+**D95. From Contested the officer can Mark recovered, Dismiss… (reason required, replaces the contractor's reason on the record) or "Back to review". "Contested by contractor…" is not offered again while already contested.**
+*Why:* "Between Under review and Recovered/Dismissed" implies a step in the middle, not a dead end. Back to review covers a contest that turns out to be withdrawn. Dismissing replaces the stored contractor reason; that history is not kept.
+
+**D96. The tag uses a ⚑ icon, a hazard-orange border and ink text on a pale fill. It is the longest tag, so it makes the status column in the action queue wider on narrow rows. No counts or filters by status exist yet.**
+*Why:* Hazard-orange text on paper would fail AA contrast; the border carries the colour and the words carry the meaning.
+
+**D97. "How we flag" gets a new last section, "Robustness checks", from `summary.robustness`. It holds: a table of bills flagged at 1.3×–2.0× with the 1.5× row marked "rule used"; a table of the duplicate rule (10 days / 10% cost; widened to 30 days / 25%; widened and also counting jobs with a linked complaint = 46) plus the 45 unlinked work orders; re-open % by road type next to each contractor's share of jobs on that road type (lowest–highest across 8 contractors); the count of warranty flags with a utility remark ("37 of 270", 270 from `flag_counts.DLP_PAID`); then the four `robustness.notes` as a plain-words list.**
+*Why:* All values come from the data, none are typed in. The row with 46 is shown, not left out, because it is in the data and a reader may ask what happens if linked jobs count. The "10% cost" wording is read from `_dup_count` in the engine (cost within `tol`). The per-contractor re-open table is not shown, only its summary via the notes, because the note's claim that the contractor ranking holds within road types is the engine's, not re-checked in the UI.
+
+**D98. Section heading translated (mr/hi); table text and notes are English only, like the rest of the section.**
+*Why:* Consistent with the other How-we-flag sections, which also render data-driven English text.
+
+**D99. Checked in Chrome at 1440 px on port 3002, one screenshot per change: (1) WO25-02366 in P/N, parts 1 and 3 (remark, amber box, checklist, new next step); (2) the same flag moved Start review → Contested with a reason and a note, tag showing in the queue and the drawer; (3) How we flag, Robustness section (threshold and duplicate tables, start of road-type table). `tsc --noEmit` and eslint are clean; no console errors. Test status was cleared from localStorage afterwards. Not checked: 390 px, Marathi/Hindi, a DLP flag without a utility cause, a non-DLP drawer, the lower half of the Robustness section, keyboard use of the contest form.**
+*Why:* Records what was actually tested.

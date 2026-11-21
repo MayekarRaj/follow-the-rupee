@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { cleanName, inr } from "@/lib/format";
 import { useData, type Flag, type Summary, type Ward, type WorkOrderEvidence } from "@/lib/data";
-import { NEXT_STEP, whyFlagged } from "@/lib/flagInfo";
+import { NEXT_STEP, UTILITY_NEXT_STEP, whyFlagged } from "@/lib/flagInfo";
 import { usePrefs } from "@/lib/prefs";
 import {
   flagKey,
@@ -159,13 +159,20 @@ function StatusPanel({ flag }: { flag: Flag }) {
   const statuses = useStatuses();
   const key = flagKey(flag);
   const rec = statusOf(statuses, key);
-  const [dismissing, setDismissing] = useState(false);
+  const [form, setForm] = useState<null | "dismiss" | "contest">(null);
   const [reason, setReason] = useState("");
+  const [note, setNote] = useState("");
 
   const btn =
     "min-h-11 border border-ink px-3 text-sm font-semibold text-ink hover:bg-road/25";
   const primary =
     "min-h-11 border border-ink bg-ink px-3 text-sm font-semibold text-paper hover:bg-ink/90 disabled:opacity-50";
+
+  function closeForm() {
+    setForm(null);
+    setReason("");
+    setNote("");
+  }
 
   return (
     <div className="mt-3 border border-ink/40 p-3">
@@ -181,15 +188,29 @@ function StatusPanel({ flag }: { flag: Flag }) {
           {rec.reason}
         </p>
       )}
+      {rec.status === "contested" && rec.reason && (
+        <div lang={dataLang} className="mt-2 space-y-1 text-sm text-ink">
+          <p>
+            <span className="font-semibold">{t("contestedReason")}:</span>{" "}
+            {rec.reason}
+          </p>
+          {rec.note && (
+            <p>
+              <span className="font-semibold">{t("contestedNote")}:</span>{" "}
+              {rec.note}
+            </p>
+          )}
+        </div>
+      )}
 
-      {!dismissing && (
+      {!form && (
         <div className="mt-3 flex flex-wrap gap-2">
           {rec.status === "new" && (
             <button className={primary} onClick={() => setStatus(key, "review")}>
               {t("startReview")}
             </button>
           )}
-          {rec.status === "review" && (
+          {(rec.status === "review" || rec.status === "contested") && (
             <>
               <button
                 className={primary}
@@ -197,9 +218,19 @@ function StatusPanel({ flag }: { flag: Flag }) {
               >
                 {t("markRecovered")}
               </button>
-              <button className={btn} onClick={() => setDismissing(true)}>
+              {rec.status === "review" && (
+                <button className={btn} onClick={() => setForm("contest")}>
+                  {t("markContested")}
+                </button>
+              )}
+              <button className={btn} onClick={() => setForm("dismiss")}>
                 {t("dismiss")}
               </button>
+              {rec.status === "contested" && (
+                <button className={btn} onClick={() => setStatus(key, "review")}>
+                  {t("backToReview")}
+                </button>
+              )}
             </>
           )}
           {(rec.status === "recovered" || rec.status === "dismissed") && (
@@ -210,23 +241,26 @@ function StatusPanel({ flag }: { flag: Flag }) {
         </div>
       )}
 
-      {dismissing && (
+      {form && (
         <form
           className="mt-3"
           onSubmit={(e) => {
             e.preventDefault();
             const r = reason.trim();
             if (!r) return;
-            setStatus(key, "dismissed", r);
-            setDismissing(false);
-            setReason("");
+            if (form === "contest") {
+              setStatus(key, "contested", r, note.trim() || undefined);
+            } else {
+              setStatus(key, "dismissed", r);
+            }
+            closeForm();
           }}
         >
-          <label className="block text-sm font-semibold text-ink" htmlFor="dismiss-reason">
-            {t("dismissReason")}
+          <label className="block text-sm font-semibold text-ink" htmlFor="status-reason">
+            {form === "contest" ? t("contestReason") : t("dismissReason")}
           </label>
           <textarea
-            id="dismiss-reason"
+            id="status-reason"
             required
             maxLength={200}
             rows={2}
@@ -234,18 +268,26 @@ function StatusPanel({ flag }: { flag: Flag }) {
             onChange={(e) => setReason(e.target.value)}
             className="mt-1 w-full border border-ink bg-paper p-2 text-sm text-ink"
           />
+          {form === "contest" && (
+            <>
+              <label className="mt-2 block text-sm font-semibold text-ink" htmlFor="status-note">
+                {t("contestNote")}
+              </label>
+              <textarea
+                id="status-note"
+                maxLength={200}
+                rows={2}
+                value={note}
+                onChange={(e) => setNote(e.target.value)}
+                className="mt-1 w-full border border-ink bg-paper p-2 text-sm text-ink"
+              />
+            </>
+          )}
           <div className="mt-2 flex flex-wrap gap-2">
             <button type="submit" className={primary} disabled={!reason.trim()}>
-              {t("confirmDismiss")}
+              {form === "contest" ? t("confirmContest") : t("confirmDismiss")}
             </button>
-            <button
-              type="button"
-              className={btn}
-              onClick={() => {
-                setDismissing(false);
-                setReason("");
-              }}
-            >
+            <button type="button" className={btn} onClick={closeForm}>
               {t("cancel")}
             </button>
           </div>
@@ -304,7 +346,9 @@ export default function FlagDrawer({
       null)
     : null;
   const why = whyFlagged(flag, summary?.thresholds);
-  const next = NEXT_STEP[flag.flag];
+  const other = flag.possible_other_cause ?? null;
+  const next = other ? UTILITY_NEXT_STEP : NEXT_STEP[flag.flag];
+  const isDlp = flag.flag === "DLP_PAID" || flag.flag === "DLP_REVIEW";
 
   return (
     <Drawer label={`${t(`tab.${flag.flag}`)} · ${flag.work_order_id}`} onClose={onClose}>
@@ -327,6 +371,66 @@ export default function FlagDrawer({
           <Stat label={t("ratio")} value={`${flag.cost_ratio.toFixed(2)}×`} />
           <Stat label={t("excess")} value={inr(flag.excess_inr)} />
         </div>
+
+        <p lang={dataLang} className="mt-3 text-sm text-ink">
+          <span className="font-semibold">{t("engRemark")}:</span>{" "}
+          {flag.engineer_remark ? (
+            flag.engineer_remark
+          ) : (
+            <span className="text-ink/70">{t("engRemarkNone")}</span>
+          )}
+        </p>
+        {other && (
+          <div
+            lang={dataLang}
+            className="mt-3 border-2 border-road bg-road/20 p-3 text-sm text-ink"
+          >
+            <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em]">
+              <span aria-hidden="true">⚠</span>
+              {t("otherCause")}
+            </p>
+            <p className="mt-1">{other}</p>
+          </div>
+        )}
+        {isDlp && (
+          <div lang={dataLang} className="mt-3 border border-ink/40 p-3">
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-ink/70">
+              {t("evidence")}
+            </p>
+            <ul className="mt-1 text-sm text-ink">
+              {[
+                {
+                  done: !!flag.road_resurfaced_on,
+                  label: "Resurfaced date",
+                  extra: flag.road_resurfaced_on ?? undefined,
+                },
+                { done: true, label: "Road under warranty" },
+                { done: false, label: "Cause confirmed on site" },
+              ].map((c) => (
+                <li
+                  key={c.label}
+                  className="flex items-baseline gap-2 border-b border-dotted border-ink/40 py-1.5 last:border-b-0"
+                >
+                  <span
+                    aria-hidden="true"
+                    className={`w-5 shrink-0 text-base font-bold ${c.done ? "text-ok" : "text-ink"}`}
+                  >
+                    {c.done ? "✓" : "☐"}
+                  </span>
+                  <span>
+                    {c.label}
+                    {c.extra && (
+                      <span className="tabular-nums text-ink/70"> · {c.extra}</span>
+                    )}
+                  </span>
+                  <span className="ml-auto text-xs text-ink/70">
+                    {c.done ? t("done") : t("toCheck")}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {flag.flag === "DUPLICATE_BILL" && flag.original_work_order && (
           <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">

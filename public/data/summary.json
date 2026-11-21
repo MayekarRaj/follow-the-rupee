@@ -1,4 +1,133 @@
 {
+ "robustness": {
+  "overbill_count_by_threshold": {
+   "1.30x": 118,
+   "1.40x": 111,
+   "1.50x": 109,
+   "1.60x": 104,
+   "1.80x": 82,
+   "2.00x": 64
+  },
+  "duplicate_count": {
+   "10d_10pct": 45,
+   "30d_25pct": 45,
+   "30d_25pct_incl_linked": 46
+  },
+  "unlinked_work_orders_total": 45,
+  "dlp_paid_with_utility_remark": 37,
+  "reopen_pct_by_road_type": {
+   "Arterial": 23.7,
+   "Highway": 28.1,
+   "Local": 24.2,
+   "Main": 24.5
+  },
+  "contractor_reopen_pct_by_road_type": {
+   "Arabian Sea Engineering (synthetic)": {
+    "Arterial": 28.6,
+    "Highway": 43.6,
+    "Local": 18.5,
+    "Main": 36.1
+   },
+   "Deccan Paving Solutions (synthetic)": {
+    "Arterial": 10.3,
+    "Highway": 23.8,
+    "Local": 6.1,
+    "Main": 5.6
+   },
+   "Konkan Roadcon Pvt Ltd (synthetic)": {
+    "Arterial": 27.5,
+    "Highway": 36.0,
+    "Local": 34.4,
+    "Main": 21.7
+   },
+   "Mahalaxmi Civil Contractors (synthetic)": {
+    "Arterial": 36.2,
+    "Highway": 28.0,
+    "Local": 27.3,
+    "Main": 45.2
+   },
+   "Mithi Infra Projects (synthetic)": {
+    "Arterial": 9.1,
+    "Highway": 25.0,
+    "Local": 15.4,
+    "Main": 10.8
+   },
+   "Sahyadri Infra Works (synthetic)": {
+    "Arterial": 14.8,
+    "Highway": 5.7,
+    "Local": 20.8,
+    "Main": 13.2
+   },
+   "Shivneri Construction (synthetic)": {
+    "Arterial": 24.8,
+    "Highway": 36.7,
+    "Local": 24.1,
+    "Main": 25.8
+   },
+   "Western Coast Asphalt Co (synthetic)": {
+    "Arterial": 39.8,
+    "Highway": 25.0,
+    "Local": 43.8,
+    "Main": 40.2
+   }
+  },
+  "contractor_road_type_mix_pct": {
+   "Arabian Sea Engineering (synthetic)": {
+    "Arterial": 42.7,
+    "Main": 37.2,
+    "Highway": 11.9,
+    "Local": 8.2
+   },
+   "Deccan Paving Solutions (synthetic)": {
+    "Arterial": 43.9,
+    "Main": 37.3,
+    "Local": 11.5,
+    "Highway": 7.3
+   },
+   "Konkan Roadcon Pvt Ltd (synthetic)": {
+    "Arterial": 47.5,
+    "Main": 35.6,
+    "Local": 9.5,
+    "Highway": 7.4
+   },
+   "Mahalaxmi Civil Contractors (synthetic)": {
+    "Arterial": 46.5,
+    "Main": 34.3,
+    "Local": 10.9,
+    "Highway": 8.3
+   },
+   "Mithi Infra Projects (synthetic)": {
+    "Arterial": 48.3,
+    "Main": 34.8,
+    "Highway": 8.8,
+    "Local": 8.2
+   },
+   "Sahyadri Infra Works (synthetic)": {
+    "Arterial": 44.2,
+    "Main": 38.3,
+    "Highway": 10.4,
+    "Local": 7.1
+   },
+   "Shivneri Construction (synthetic)": {
+    "Arterial": 46.0,
+    "Main": 33.6,
+    "Highway": 10.4,
+    "Local": 10.0
+   },
+   "Western Coast Asphalt Co (synthetic)": {
+    "Arterial": 42.8,
+    "Main": 35.8,
+    "Local": 10.7,
+    "Highway": 10.7
+   }
+  },
+  "notes": [
+   "Over-billing count barely moves between 1.4x and 1.6x (111 to 104): the rule sits in a real gap, not a tuned number.",
+   "Widening the duplicate window to 30 days and 25% cost still finds the same 45; all 45 unlinked work orders in the dataset are these copies.",
+   "Every contractor gets a similar mix of road types, and the contractor ranking holds within each road type, so re-open gaps are not explained by assignment.",
+   "Warranty flags with a utility-trench remark are shown with a possible other cause (recover from the utility agency)."
+  ]
+ },
  "total_spend_inr": 134328183,
  "work_orders": 2499,
  "flag_counts": {

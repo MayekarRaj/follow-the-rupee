@@ -3,8 +3,14 @@
 import { useMemo, useSyncExternalStore } from "react";
 import { createStore } from "./store";
 
-export type Status = "new" | "review" | "recovered" | "dismissed";
-export type StatusRecord = { status: Status; reason?: string; at: number };
+export type Status = "new" | "review" | "contested" | "recovered" | "dismissed";
+export type StatusRecord = {
+  status: Status;
+  reason?: string;
+  /** Optional evidence note, used when the contractor contests. */
+  note?: string;
+  at: number;
+};
 export type StatusMap = Record<string, StatusRecord>;
 
 const store = createStore("ftr.flagStatus.v1");
@@ -31,8 +37,18 @@ export function statusOf(map: StatusMap, key: string): StatusRecord {
   return map[key] ?? { status: "new", at: 0 };
 }
 
-export function setStatus(key: string, status: Status, reason?: string) {
+export function setStatus(
+  key: string,
+  status: Status,
+  reason?: string,
+  note?: string,
+) {
   const map = parse(store.get());
-  map[key] = { status, at: Date.now(), ...(reason ? { reason } : {}) };
+  map[key] = {
+    status,
+    at: Date.now(),
+    ...(reason ? { reason } : {}),
+    ...(note ? { note } : {}),
+  };
   store.set(JSON.stringify(map));
 }
